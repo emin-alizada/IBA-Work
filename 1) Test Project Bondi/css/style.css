@@ -1,0 +1,587 @@
+/***************Common classes of css***************/
+/***************************************************/
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.button{
+    text-decoration: none;
+    color: #ff9e23;
+    background-color: #ff3150;
+    padding: 13px 35px;
+    border-radius: 20px;
+}
+
+.section-header{
+    font-weight: 500;
+    font-size: 35px;
+    color: #1a2940;
+    margin-bottom: 22px;
+}
+
+.section-header:before{
+    content: url("../img/section-header-before.png");
+    display: block;
+    margin-bottom: 49px;
+}
+
+.section-subheader{
+    font-size: 15px;
+    color: #a8b9c0;
+}
+
+.section-subheader:after{
+    content: "";
+    display: block;
+    width: 150px;
+    border-bottom: 2px solid #00c6bf;
+    margin: 18px auto 0;
+}
+
+.blue-text{
+    color: #00c7c0;
+}
+
+.orange-text{
+    color: #ffc501;
+}
+
+/***************End of Common classes of css***************/
+/***************************************************/
+
+
+/***************    Header  ***************/
+/***************************************************/
+
+.header{
+    background-color: #19283f;
+    text-align: center;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding-top: 18px;
+}
+
+.header-nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.header-nav-link{
+    color: #74828d;
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 41px;
+}
+
+
+.header-nav-link:hover{
+    color: #00c7c0;
+}
+
+.header-search{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.header-search:before{
+    content: " ";
+    height: 25px;
+    position: relative;
+    border-left: 1px solid #00c6bf;
+    left: -24px;
+    top: -6px;
+}
+
+.header-login{
+    margin-left: 22px;
+    position: relative;
+    bottom: 7px;
+}
+
+.header-main-text{
+    font-weight: lighter;
+    font-size: 51px;
+    margin-top: 145px;
+    margin-bottom: 8px;
+    color: #f0f8fb;
+}
+
+.header-sub-text{
+    font-size: 15px;
+    color: #6b7985;
+}
+
+.header-button{
+    display: inline-block;
+    margin-top: 34px;
+    margin-bottom: 143px;
+}
+
+/*************** End of   Header  ***************/
+/***************************************************/
+
+
+
+/*************** We are good at (waga) ***************/
+/***************************************************/
+
+.waga{
+    text-align: center;
+    padding-top: 60px;
+}
+
+.waga-list{
+    display: flex;
+    margin-top: 64px;
+}
+
+.waga-list-item{
+    margin-right: 100px;
+}
+
+.waga-list-item:last-of-type{
+    margin-right: 0;
+}
+
+.waga-list-item-number{
+    color: #eff7fa;
+    font-size: 194px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.waga-list-item-icon{
+    position: relative;
+    top: -89px;
+}
+
+.waga-list-item-header{
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffc501;
+    margin-top: -55px;
+}
+
+.waga-list-item-text{
+    color: #c8d2d6;
+    margin-top: 38px;
+    line-height: 30px;
+    font-size: 15px;
+    margin-bottom: 64px;
+}
+
+/*************** End of We are good at ***************/
+/***************************************************/
+
+
+
+/*************** We make this (wmt)  ***************/
+/***************************************************/
+
+.wmt-background{
+    background-color: #eff7fa;
+    padding: 60px 0;
+}
+
+.wmt{
+    text-align: center;
+}
+
+.wmt-nav{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.wmt-nav-item{
+    display: inline-block;
+    padding: 20px 25px;
+}
+
+.wmt-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 30px;
+    margin-bottom: 60px;
+}
+
+.wmt-button{
+    padding: 17px 54px;
+}
+
+/*************** End of We make this (wmt) ***************/
+/***************************************************/
+
+
+
+/*************** Some Staff About Us (ssau)  ***************/
+/***************************************************/
+
+
+.ssau{
+    padding-top: 60px;
+    text-align: center;
+}
+
+.ssau-content{
+    display: flex;
+    text-align: left;
+}
+
+.ssau-header-text{
+    font-weight: lighter;
+    font-size: 15px;
+    color: #c1cdd2;
+    width: 570px;
+    margin: 26px auto 58px;
+}
+
+.ssau-content-text{
+    margin-right: 77px;
+}
+
+.ssau-content-text-header{
+    font-size: 35px;
+    font-weight: 500;
+    color: #1a2940;
+    margin-top: 90px;
+    margin-bottom: 23px;
+    margin-left: 7px;
+}
+
+.ssau-content-text-item{
+    font-size: 15px;
+    font-weight: lighter;
+    color: rgba(168, 185, 192, 255);
+    margin-bottom: 20px;
+
+}
+
+
+.ssau-button{
+    display: inline-block;
+    padding: 17px 49px;
+    margin-top: 25px;
+}
+
+
+
+.ssau-content-photo{
+    position: relative;
+}
+
+.ssau-content-photo-screen{
+    position: absolute;
+    top: 29px;
+    left: 91px;
+}
+
+/*************** End of Some Staff About Us (ssau) ***************/
+/***************************************************/
+
+
+/*************** Meet The Team (mtt)  ***************/
+/***************************************************/
+
+.mtt-background{
+    background-color: #eff7fa;
+    padding-top: 114px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.mtt-header{
+    font-size: 35px;
+    font-weight: 500;
+    color: rgba(255, 197, 1, 255);
+}
+
+.mtt-subheader{
+    color: rgba(168, 185, 192, 255);
+    font-weight: lighter;
+    font-size: 15px;
+    width: 964px;
+    margin-top: 32px;
+    margin-bottom: 60px;
+}
+
+.mtt-cards{
+    display: flex;
+}
+
+.mtt-cards-item{
+    width: 270px;
+    margin-right: 30px;
+}
+
+.mtt-cards-item:last-of-type{
+    margin-right: 0;
+}
+
+.mtt-cards-item-header{
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #33d1cc;
+    color: white;
+    margin-top: -3px;
+}
+
+.mtt-cards-item-text{
+    color: rgba(168, 185, 192, 255);
+    font-size: 15px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 34px;
+    background-color: #fff;
+    height: 85px;
+}
+
+/*************** End of Meet The Team (mtt) ***************/
+/***************************************************/
+
+
+
+/*************** Icons  ***************/
+/***************************************************/
+
+.icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 0;
+}
+
+
+/*************** End of Icons**  ***************/
+/***************************************************/
+
+
+
+/***************    Start your Project Now (SYPN)  ***************/
+/***************************************************/
+
+.sypn{
+    background-color: #19283f;
+    text-align: center;
+}
+
+.sypn-main-text{
+    font-weight: 500;
+    font-size: 35px;
+    color: white;
+    margin-top: 115px;
+    margin-bottom: 18px;
+    display: inline-block;
+}
+
+.sypn-sub-text{
+    color: #4e5c6a;
+    font-size: 15px;
+    margin-bottom: 51px;
+}
+
+.sypn-button{
+    display: inline-block;
+    margin-bottom: 114px;
+}
+
+/********** End of   Start your Project Now (SYPN)  **********/
+/***************************************************/
+
+
+/*************** Read Our Blog  ***************/
+/***************************************************/
+
+
+.rob{
+    padding-top: 60px;
+    padding-bottom: 58px;
+    text-align: center;
+}
+
+.rob-cards{
+    display: flex;
+    margin-top: 60px;
+    text-align: left;
+}
+
+.rob-cards-item{
+    margin-right: 30px;
+}
+
+.rob-cards-item:last-of-type{
+    margin-right: 0;
+}
+
+.rob-cards-item-date{
+    margin-top: 18px;
+    margin-bottom: 11px;
+    color: rgba(168, 185, 192, 255);
+    font-size: 13px;
+}
+
+.rob-cards-item-description{
+    color: rgba(26, 41, 64, 255);
+    font-size: 20px;
+}
+
+.rob-button{
+    display: inline-block;
+    margin-top: 60px;
+}
+
+/*************** End of Read Our Blog  ***************/
+/***************************************************/
+
+
+
+/*************** subscribtion  ***************/
+/***************************************************/
+
+.subscribtion-background{
+    background-color: #ffc400;
+}
+
+.subscribtion-label{
+    margin-left: 111px;
+    margin-right: 41px;
+    color: rgba(26, 41, 64, 255);
+    font-size: 20px;
+}
+
+.subscribtion-mail{
+    border: none;
+    width: 440px;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(240, 248, 251, 255);
+    background-color: transparent;
+    padding-bottom: 11px;
+    margin-right: 40px;
+    outline: none;
+}
+
+.subscribtion-mail::placeholder {
+    color: white;
+}
+
+
+.subscribtion-button{
+    padding: 17px 68px;
+    background-color: #19283f;
+    margin: 23px 0;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/*************** End of subscribtion  ***************/
+/***************************************************/
+
+
+/*************** Footer  ***************/
+/***************************************************/
+
+
+.footer-background{
+    background-color: #19283f;
+    padding-top: 58px;
+    padding-bottom: 53px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info{
+    width: 341px;
+}
+
+.footer-info-text{
+    font-size: 12px;
+    margin-top: 31px;
+    margin-bottom: 76px;
+    color: rgba(168, 185, 192, 255);
+    line-height: 30px;
+}
+
+.footer-info-text-2{
+    font-size: 13px;
+    color: rgba(168, 185, 192, 255);
+    margin-bottom: 13px;
+}
+
+.footer-links-header{
+    font-size: 15px;
+    color: rgba(240, 248, 251, 255);
+    margin-bottom: 27px;
+}
+.footer-links-item{
+    color: rgba(168, 185, 192, 255);
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+.footer-contacts{
+    width: 370px;
+}
+
+.footer-contacts-text{
+    font-size: 15px;
+    color: rgba(168, 185, 192, 255);
+    line-height: 30px;
+    margin-top: 26px;
+    margin-bottom: 41px;
+}
+
+.footer-contacts-button{
+    display: inline-block;
+    padding: 16px 119px;
+    font-size: 13px;
+    color: #fff;
+    margin-bottom: 38px;
+}
+
+
+.footer-contacts-social-fb{
+    padding: 8px 13px;
+    border-radius: 50%;
+    background-color: #347cd2;
+    display: inline-flex;
+    margin-right: 11px;
+}
+
+.footer-contacts-social-tw{
+    padding: 10px 8px;
+    border-radius: 50%;
+    background-color: #1ec4ff;
+    display: inline-flex;
+    margin-right: 11px;
+}
+
+.footer-contacts-social-google{
+    border-radius: 50%;
+    background-color: #d13b35;
+    padding: 8.5px;
+    display: inline-flex;
+    margin-right: 11px;
+}
+
+.footer-contacts-social-dribble{
+    background-color: #ff3298;
+    border-radius: 50%;
+    padding: 8px;
+    display: inline-flex;
+}
+
+/*************** End of Footer  ***************/
+/***************************************************/

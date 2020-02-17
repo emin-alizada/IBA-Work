@@ -75,6 +75,10 @@ body{
     align-items: center;
 }
 
+.header-nav-links-ul{
+    display: flex;
+}
+
 .header-nav-link{
     color: #74828d;
     text-decoration: none;
@@ -206,6 +210,11 @@ body{
     padding: 20px 25px;
 }
 
+.wmt-nav-item-link{
+    text-decoration: none;
+    color: inherit;
+}
+
 .wmt-cards{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -270,6 +279,8 @@ body{
     display: inline-block;
     padding: 17px 49px;
     margin-top: 25px;
+    font-weight: 500;
+    font-size: 15px;
 }
 
 
@@ -531,6 +542,11 @@ body{
     margin-bottom: 30px;
 }
 
+.footer-links-item-a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .footer-contacts{
     width: 370px;
 }
@@ -551,6 +567,9 @@ body{
     margin-bottom: 38px;
 }
 
+.footer-contacts-social-ul{
+    display: flex;
+}
 
 .footer-contacts-social-fb{
     padding: 8px 13px;

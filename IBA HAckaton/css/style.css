@@ -1,0 +1,118 @@
+/***************Common classes of css***************/
+/***************************************************/
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    background-image: url("../img/bgc.png");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    background-color: #fff;
+    border-radius: 30px;
+    padding-bottom: 15px;
+    /*max-width: 90vh;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+
+.content-icon{
+    /*width: 50%;*/
+    transform: scale(0.5);
+}
+
+.content-links{
+    display: flex;
+    justify-content: center;
+}
+
+.content-links-item-link{
+    text-decoration: none;
+    color: #0539c5;
+    padding: 25px 50px;
+    border: 1px solid #002896;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.content-links-item{
+    margin-right: 15px;
+}
+
+.content-links-item-link:hover{
+    color: #fff;
+    background-color: #0539c6;
+}
+
+
+@media only screen and (max-width: 576px) {
+    /*.content-icon{*/
+    /*    width: 30%;*/
+    /*}*/
+    .content{
+        transform: scale(0.6);
+    }
+}
+
+/*===========   Second page   =========*/
+
+.form-container{
+    padding: 40px 60px;
+}
+
+.buttons{
+    display: flex;
+}
+
+.buttons-item-button{
+    padding: 20px 160px;
+    color: #fff;
+    background-color: #e6e6e6;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.form-input-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input-container:last-child{
+    grid-column: 1/span 2;
+}
+
+.form-label{
+    margin-left: 20px;
+    font-weight: 500;
+    color: rgba(5, 57, 198, 255);
+    margin-bottom: 10px;
+}
+
+.form-input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 0 20px 20px;
+    border-radius: 15px;
+    border: 1px solid #0539c6;
+    color: rgba(77, 77, 77, 255);
+}
+
+.form-input::placeholder{
+    color: rgba(77, 77, 77, 255);
+}
+

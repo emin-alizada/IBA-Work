@@ -1,0 +1,1022 @@
+/****************** IMPORTING FONTS ******************/
+@import "fonts.css";
+/*****************************************************/
+
+/****************** Common Classes ******************/
+
+body{
+    font-family: 'Raleway', sans-serif;;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.blue-text{
+    color: #01d8f4;
+}
+
+.button{
+    background-color: transparent;
+    padding: 15px 25px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.button:focus{
+    outline: none;
+}
+
+.header-text{
+    font-size: 40px;
+    text-align: center;
+    color: rgba(63, 66, 68, 255);
+}
+
+.header-text:after{
+    content: "";
+    display: block;
+    width: 170px;
+    border-bottom: 2px solid #00e1ff;
+    margin: 31px auto 28px;
+}
+
+.subheader{
+    font-weight: 300;
+    font-size: 13px;
+    text-align: center;
+}
+
+/*****************************************************/
+
+/******************     Header      ******************/
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*padding: 35px 0 34px 0;*/
+}
+
+.header-nav-logo-container-link-photo{
+    height: 50px;
+    width: auto;
+}
+
+.header-nav-links{
+    display: flex;
+}
+
+.header-nav-links-item{
+    margin-right: 30px;
+}
+
+.header-nav-links-item:last-of-type{
+    margin-right: 0;
+}
+
+.header-nav-links-item-link{
+    display: inline-block;
+    padding: 42px 0;
+    text-transform: uppercase;
+    color: rgba(63, 66, 68, 255);
+    font-weight: 300;
+    font-size: 15px;
+    border-bottom: 2px solid transparent;
+}
+
+.header-nav-links-item-link:hover{
+    color: rgba(0, 225, 255, 255);
+    border-bottom-color: #00e1ff;
+}
+
+/*****************************************************/
+
+/******************     We Make Websites WMW      ******************/
+
+.wmw{
+    background-color: #252726;
+    padding: 283px 0;
+    text-align: center;
+}
+
+.wmw-header{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 39px;
+}
+
+.wmw-button{
+    font-weight: 300;
+    font-size: 15px;
+    color: #fff;
+    padding: 20px 40px;
+}
+
+/*****************************************************/
+
+/******************     Services      ******************/
+
+.services{
+    display: flex;
+    text-align: center;
+}
+
+.services-card{
+    margin-right: 65px;
+}
+
+.services-card:last-child{
+    margin-right: 0;
+}
+
+.services-card-icon{
+    margin-top: 136px;
+    margin-bottom: 54px;
+}
+
+.services-card-header{
+    font-weight: 500;
+    font-size: 15px;
+    color: rgba(63, 66, 68, 255);
+}
+
+.services-card-header:after{
+    content: "";
+    display: block;
+    width: 60px;
+    border-bottom: 2px solid #00e1ff;
+    margin: 24px auto 20px;
+}
+
+.services-card-text{
+    color: rgba(146, 155, 160, 255);
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 152px;
+}
+
+.services-card-icon{
+    height: 51px;
+    width: auto;
+}
+
+/*****************************************************/
+
+
+/*************  Fully Responsive (FR)  ************/
+
+.fr-bgc{
+    padding-top: 52px;
+    background-color: #f7f7f7;
+}
+
+.fr-header{
+    margin-bottom: 88px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.fr-header-item{
+    width: 484px;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 19px 0;
+    color: rgba(63, 66, 68, 255);
+    border: 1px solid #c8cdce;
+    cursor: pointer;
+}
+
+.fr-header-item-active{
+    border-color: #00e1ff;
+    position: relative;
+}
+.fr-header-item-active:after{
+    content: '';
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    background-color: #f7f7f7;
+    transform: rotate(-45deg);
+    bottom: -8px;
+    left: 50%;
+    border-left: 1px solid #00e1ff;
+    border-bottom: 1px solid #00e1ff;
+}
+
+.fr-content{
+    display: flex;
+}
+
+.fr-content-photo{
+    margin-left: 144px;
+    height: 389px;
+    width: 370px;
+    margin-right: 88px;
+}
+
+.fr-content-text-header{
+    color: rgba(63, 66, 68, 255);
+    font-size: 40px;
+    margin-top: 31px;
+    margin-bottom: 34px;
+}
+
+.fr-content-text-description{
+    color: rgba(146, 155, 160, 255);
+    font-size: 15px;
+}
+
+.fr-content-text-button{
+    color: rgba(0, 225, 255, 255);
+    border-color: rgba(0, 225, 255, 255);
+    margin-top: 37px;
+}
+
+/*****************************************************/
+
+
+/*************  Modern and clean design (MACD)  ************/
+
+.macd{
+    background-color: #252726;
+    color: #fff;
+    padding-top: 103px;
+}
+
+.macd-header{
+    color: #fff;
+}
+
+.macd-subheader{
+    width: 747px;
+    margin: 0 auto 117px;
+}
+
+.macd-photo{
+    margin: 0 auto;
+    display: block;
+}
+
+/*****************************************************/
+
+/*********************   history   ********************/
+
+.history{
+    padding: 126px 0 91px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.history-item{
+    display: flex;
+}
+
+.history-item-left{
+    margin-right: 60px;
+    position: relative;
+}
+
+.history-item-left:after{
+    content: url("../img/history-icon.png");
+    position: absolute;
+    right: -67px;
+    top: -3px;
+}
+
+.history-item-left-header{
+    font-size: 17px;
+    color: rgba(0, 225, 255, 255);
+    margin-bottom: 11px;
+}
+
+.history-item-left-date{
+    font-size: 13px;
+    font-weight: 300;
+    color: rgba(200, 205, 206, 255);
+}
+
+.history-item-right{
+    padding-bottom: 37px;
+    padding-left: 66px;
+    border-left: 1px solid #c3d0d8;
+}
+
+.history-item:last-child>.history-item-right{
+    border: none;
+}
+
+.history-item-right-header{
+    color: rgba(63, 66, 68, 255);
+    font-size: 17px;
+}
+
+.history-item-right-text{
+    color: rgba(146, 155, 160, 255);
+    font-size: 13px;
+    width: 467px;
+    margin: 25px 0;
+}
+
+.history-item-right-more{
+    font-size: 13px;
+    font-weight: 300;
+    color: rgba(0, 225, 255, 255);
+}
+
+/*****************************************************/
+
+/*********************   Oue Portfolio (op)   ********************/
+
+.op{
+    padding: 91px 0 61px;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.op-subheader{
+    width: 747px;
+    margin-bottom: 79px;
+}
+
+.op-ul{
+    display: flex;
+    margin-bottom: 58px;
+}
+
+.op-ul-li-button{
+    border-color: transparent;
+}
+
+
+.op-ul-li-button-active{
+    border-color: #00e1ff;
+}
+
+.op-cards{
+    display: flex;
+    justify-content: center;
+}
+
+.op-cards-item{
+    width: 470px;
+    margin-right: 10px;
+}
+
+.op-cards-item:last-child{
+    margin-right: 0;
+}
+
+.op-cards-item-photo-container{
+    position: relative;
+}
+
+
+.op-cards-item-photo-overlay{
+    display: none;
+    width: 470px;
+    height: 300px;
+    background-color: #128493;
+    position: absolute;
+    top: 0;
+}
+
+.op-cards-item-photo-overlay-content{
+    font-size: 87px;
+    font-weight: 200;
+    color: #128493;
+    padding: 0 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-transform: uppercase;
+}
+
+.op-cards-item-photo-container:hover .op-cards-item-photo-overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.op-cards-item-text-container{
+    padding: 33px 0 44px;
+    background-color: #fff;
+}
+
+.op-cards-item-text-header{
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    color: rgba(63, 66, 68, 255);
+}
+
+.op-cards-item-text-header:after{
+    content: "";
+    display: block;
+    width: 70px;
+    border-bottom: 2px solid #00e1ff;
+    margin: 26px auto 23px;
+}
+
+.op-cards-item-text-subheader{
+    font-weight: 300;
+    font-size: 13px;
+    text-align: center;
+    width: 234px;
+    margin: 0 auto;
+}
+
+
+/*****************************************************/
+
+/*********************   Video   ********************/
+
+.video{
+    color: white;
+    background-color: #252726;
+    padding: 199px 0 173px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-header{
+    color: #fff;
+}
+
+.video-subheader{
+    width: 747px;
+}
+
+.video-text{
+    font-weight: 500;
+    font-size: 15px;
+    margin: 20px 0 69px;
+}
+
+/*****************************************************/
+
+/******************   Statistics (st)  ******************/
+
+.st-bgc{
+    background-color: #131316;
+    padding-bottom: 85px;
+    padding-top: 72px;
+}
+
+.st{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+
+.st-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.st-number{
+    font-weight: 300;
+    font-size: 40px;
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+
+.st-text{
+    font-weight: 500;
+    font-size: 13px;
+}
+
+/*****************************************************/
+
+
+/******************   We are the one (wato)  ******************/
+
+.wato{
+    padding: 97px 0;
+    text-align: center;
+}
+
+.wato-subheader{
+    width: 747px;
+    /*margin-bottom: 90px;*/
+    margin: 0 auto 90px;
+}
+
+.wato-cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.wato-cards-item{
+    width: 269px;
+}
+
+.wato-cards-item-photo{
+    position: relative;
+}
+
+.wato-cards-item-photo-text{
+    position: absolute;
+    bottom: 0;
+    padding: 7px 0 13px 0;
+    background-color: #1c1d1e;
+    width: 100%;
+    text-align: center;
+}
+
+.wato-cards-item-photo-text-name{
+    color: rgba(0, 225, 255, 255);
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 13px;
+}
+
+.wato-cards-item-photo-text-role{
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.wato-cards-item-description{
+    background-color: #f7f7f7;
+    font-weight: 300;
+    font-size: 13px;
+    padding: 34px 29px 29px;
+    color: rgba(146, 155, 160, 255);
+}
+
+.wato-cards-item-social{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f7f7f7;
+}
+
+.wato-cards-item-social-item-link{
+    width: 67px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wato-cards-item-social-item-link-photo-hover{
+    display: none;
+}
+
+.wato-cards-item-social-item:hover .wato-cards-item-social-item-link-photo-hover{
+    display: block;
+}
+
+.wato-cards-item-social-item:hover .wato-cards-item-social-item-link-photo{
+    display: none;
+}
+
+.wato-cards-item-social-item.fb:hover{
+    background-color: #36609e;
+}
+
+.wato-cards-item-social-item.twitter:hover{
+    background-color: #2ca9e1;
+}
+
+.wato-cards-item-social-item.google:hover{
+    background-color: #db5442;
+}
+
+.wato-cards-item-social-item.dribble:hover{
+    background-color: #ee558e;
+}
+
+
+/*****************************************************/
+
+
+/******************   About-ket (wcs)  ******************/
+
+.about-ket-bgc{
+    background-color: #f7f7f7;
+    padding: 92px 0;
+}
+
+.about-ket{
+    display: flex;
+}
+
+.about-ket-paragraph{
+    padding: 40px 30px 47px;
+    border: 1px solid #c8cdce;
+    margin-left: 30px;
+}
+
+.about-ket-paragraph-header{
+    color: rgba(63, 66, 68, 255);
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+
+.about-ket-paragraph-text{
+    color: rgba(146, 155, 160, 255);
+    font-weight: 300;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.about-ket-paragraph-text:last-child{
+    margin-bottom: 0;
+}
+
+/*****************************************************/
+
+/**********************   Quotes  *********************/
+
+
+.quote{
+    background-color: #252726;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 95px 0;
+}
+
+.quote-text{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 14px 0;
+}
+
+.quote-author{
+    margin-bottom: 50px;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.quote-direction-arrows{
+    cursor: pointer;
+}
+
+.quote-direction-arrows:first-child{
+    margin-right: 31px;
+}
+
+
+/*****************************************************/
+
+/******************   Check out news (con)  ******************/
+
+.con{
+    padding-top: 87px;
+    padding-bottom: 92px;
+}
+
+.con-subheader{
+    width: 747px;
+    color: rgba(146, 155, 160, 255);
+    margin: 0 auto 100px;
+}
+
+.con-news-item{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+}
+
+.con-news-item-date{
+    margin-right: 33px;
+}
+
+.con-news-item-date-day{
+    color: rgba(0, 225, 255, 255);
+    font-size: 66px;
+    margin-bottom: 12px;
+}
+
+.con-news-item-date-month{
+    color: rgba(146, 155, 160, 255);
+    font-size: 13px;
+}
+
+.con-news-item-content{
+    width: 671px;
+    border-bottom: 2px solid #edf2f6;
+}
+
+.con-news-item-content-text{
+    color: rgba(146, 155, 160, 255);
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 41px;
+    margin-top: 35px;
+}
+
+.con-news-item-content-link{
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    color: rgba(0, 225, 255, 255);
+    margin-bottom: 18px;
+}
+
+/*****************************************************/
+
+/******************   Modern Design (md)  ******************/
+
+.md{
+    background-color: #252726;
+    padding: 139px 0 124px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.md-photo{
+    margin-right: 107px;
+    position: relative;
+}
+
+.md-photo-shadow{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.md-content-header{
+    font-size: 17px;
+    color: #fff;
+}
+
+.md-content-header:after{
+    content: "";
+    display: block;
+    width: 56px;
+    border-bottom: 2px solid #00e1ff;
+    margin: 31px 0 28px 0;
+}
+
+.md-content-text{
+    color: #fff;
+    font-weight: 300;
+    font-size: 13px;
+    width: 670px;
+}
+
+/*****************************************************/
+
+/******************   What Clients say (wcs)  ******************/
+
+.wcs-bgc{
+    padding: 90px;
+    text-align: center;
+}
+
+.wcs-subheader{
+    width: 747px;
+    margin: 0 auto 93px;
+    color: rgba(146, 155, 160, 255);
+}
+
+.wcs-feedback{
+    display: flex;
+}
+
+.wcs-feedback-item{
+    padding: 45px 37px 60px;
+    border: 1px solid #c8cdce;
+    margin-right: 30px;
+}
+
+.wcs-feedback-item:last-child{
+    margin-right: 0;
+}
+
+.wcs-feedback-item-head{
+    font-size: 20px;
+    color: rgba(63, 66, 68, 255);
+    margin-bottom: 11px;
+}
+
+.wcs-feedback-item-subheader{
+    color: rgba(0, 225, 255, 255);
+    font-size: 13px;
+    margin-bottom: 29px;
+}
+
+.wcs-feedback-item-text{
+    color: rgba(146, 155, 160, 255);
+    font-size: 13px;
+    font-weight: 300;
+}
+
+/*****************************************************/
+
+
+
+/******************     Subscribe      ******************/
+
+.subscribe{
+    padding: 94px 0;
+    background-color: #252726;
+    text-align: center;
+}
+
+.subscribe-header{
+    margin-bottom: 43px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.subscribe-button{
+    border-color: #00e1ff;
+    padding: 20px 52px;
+    font-size: 13px;
+    color: #fff;
+}
+
+/*****************************************************/
+
+/******************     Contact Us (cu)      ******************/
+
+.cu-bgc{
+    background-color: #131316;
+    padding: 90px 0;
+}
+
+.cu{
+    max-width: 770px;
+    margin: 0 auto;
+    text-align: right;
+    color: #fff;
+}
+
+.cu-header{
+    color: #fff;
+}
+
+.cu-subheader{
+    margin-bottom: 90px;
+}
+
+.cu-form-input{
+    background-color: transparent;
+    padding: 10px 10px 20px 30px;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.cu-form-input:focus{
+    outline: none;
+}
+
+.cu-form-input::placeholder{
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.cu-form-first{
+    box-sizing: border-box;
+}
+
+.cu-form-border:before{
+    content: "";
+    height: 10px;
+    display: inline-block;
+    position: relative;
+    border-left: 1px solid white;
+    left: -369px;
+    top: 52px;
+}
+
+.cu-form-border:after{
+    content: "";
+    height: 10px;
+    display: inline-block;
+    position: relative;
+    border-left: 1px solid white;
+    left: 1px;
+    top: -13px;
+}
+
+.cu-form-border-2:before{
+    content: "";
+    height: 10px;
+    display: inline-block;
+    position: relative;
+    border-left: 1px solid white;
+    left: -769px;
+    top: 52px;
+}
+
+.cu-form-border-2:after{
+    content: "";
+    height: 10px;
+    display: inline-block;
+    position: relative;
+    border-left: 1px solid white;
+    left: 1px;
+    top: -13px;
+}
+
+.cu-form-first > input{
+    width: 370px;
+    box-sizing: border-box;
+}
+
+
+.cu-form-first:first-child{
+    margin-right: 30px;
+}
+
+.cu-form-first-row{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 90px;
+}
+
+.cu-form-second{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cu-form-submit{
+    align-self: end;
+    border-color: #00e1ff;
+    padding: 18px 35px;
+    color: #fff;
+    margin-top: 36px;
+}
+
+
+/*****************************************************/
+
+/******************     Address      ******************/
+
+
+.address-bgc{
+    background-color: #252726;
+    display: flex;
+    justify-content: center;
+    padding: 127px 111px;
+}
+
+.address{
+    background-color: #07bcd4;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 21px;
+}
+
+.address:after{
+    content: "";
+    position: absolute;
+    border: solid 14px transparent;
+    border-top-color: #07bcd4;
+    bottom: -27px;
+    left: 45%;
+}
+
+.address-text{
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+
+
+/*****************************************************/
+
+
+/******************     Footer      ******************/
+
+.footer{
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+    padding: 47px 0 51px 0;
+    text-align: center;
+    background-color: #131316;
+}
+
+/*****************************************************/

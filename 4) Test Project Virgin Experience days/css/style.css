@@ -439,6 +439,10 @@ body{
     outline: none;
 }
 
+.wptw-slider{
+    margin-bottom: 0!important;
+}
+
 .wptw-slider-item{
     width: 282px !important;
     background-color: #fff;
@@ -666,7 +670,7 @@ body{
 .eos-items{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 120px;
+    margin-bottom: 98px;
     color: #fff;
 }
 
@@ -816,7 +820,8 @@ body{
 }
 
 .instagram{
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
     width: calc(100%/2);
 }
 

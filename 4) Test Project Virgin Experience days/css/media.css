@@ -97,7 +97,9 @@
         line-height: 22px;
     }
 
-
+    .wptw-bgc{
+        padding-bottom: 78px;
+    }
     .wptw, .ns{
         padding-left: 0;
         padding-right: 0;
@@ -113,19 +115,31 @@
         line-height: 27px;
         text-align: center;
     }
+    .ns{
+        padding-top: 35px;
+        margin-bottom: 108px;
+    }
     .ns-slider{
         padding: 0;
+    }
+    .ns-header{
+        margin-bottom: 35px;
     }
     .wptw-slider-item{
         margin: 0 10px;
     }
-
+    .wptw-slider-dots{
+        bottom: -53px;
+    }
 
 
     .eos-header{
         font-size: 22px;
         line-height: 27px;
         text-align: center;
+    }
+    .eos-items{
+        margin-bottom: 18px;
     }
     .eos-items-item-content-header{
         font-weight: bold;

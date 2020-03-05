@@ -46,20 +46,29 @@ $(document).ready(function() {
                 breakpoint: 1400,
                 settings: {
                     slidesToShow: 3,
+                    centerMode: true
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 1165,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    centerMode: true
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 979,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    centerMode: true
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                    arrows: false,
                 }
             }
         ]

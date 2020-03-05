@@ -443,15 +443,16 @@ body{
     width: 282px !important;
     background-color: #fff;
     border-radius: 3px;
+    margin: 0 10px;
 }
 
-.wptw-slider div.slick-active{
-    margin-right: 24px;
-}
+/*.wptw-slider div.slick-active{*/
+/*    margin-right: 24px;*/
+/*}*/
 
-.wptw-slider div.slick-active:last-of-type{
-    margin-right: 0;
-}
+/*.wptw-slider div.slick-active:last-of-type{*/
+/*    margin-right: 0;*/
+/*}*/
 
 .wptw-slider-item-photo-item{
     border-radius: 3px 3px 0 0 ;
@@ -571,7 +572,7 @@ body{
 }
 
 .wptw-slider-arrow-right{
-    right: -80px;
+    right: -60px;
 }
 
 .wptw-slider-dots{

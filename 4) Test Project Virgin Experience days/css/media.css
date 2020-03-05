@@ -1,3 +1,19 @@
+@media screen and  (max-width: 1400px){
+    .ns-slider{
+        padding: 0 80px;
+    }
+    .wptw-slider-arrow-left{
+        left: 0;
+    }
+
+    .wptw-slider-arrow-right{
+        right: 0;
+    }
+    .wptw-slider-item{
+        margin: 0 25px;
+    }
+}
+
 @media screen  and (max-width: 1200px){
     .container{
         padding-left: 20px;
@@ -88,15 +104,27 @@
     }
 
 
-
+    .wptw, .ns{
+        padding-left: 0;
+        padding-right: 0;
+    }
     .wptw-list{
         display: none;
     }
-    .wtpw-header{
+    .wtpw-header, .ns-header{
         font-size: 22px;
         line-height: 27px;
         text-align: center;
     }
+    .ns-slider{
+        padding: 0;
+    }
+    .wptw-slider-item{
+        margin: 0 10px;
+    }
+
+
+
 
     .eos-header{
         font-size: 22px;

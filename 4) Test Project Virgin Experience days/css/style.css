@@ -134,6 +134,12 @@ body{
     align-items: center;
 }
 
+.header__active{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
 .header-buttons{
     display: flex;
     border-radius: 3px;
@@ -203,6 +209,11 @@ body{
     display: block;
     z-index: 1;
 }
+
+/*fix sticky position of menu*/
+/*.header .header-user-dropdown__active{*/
+/*    */
+/*}*/
 
 .header-buttons-items-burger{
     display: none;

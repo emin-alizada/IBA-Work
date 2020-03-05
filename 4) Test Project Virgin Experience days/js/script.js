@@ -21,6 +21,7 @@ const burgerDropdown = document.querySelector(".header-burger-dropdown");
 
 burgerButton.addEventListener("click", (event) => {
     burgerDropdown.classList.toggle("header-burger-dropdown__active");
+    document.querySelector(".header-bgc").classList.toggle("header__active");
     event.stopPropagation();
 });
 
@@ -84,5 +85,6 @@ document.addEventListener("click", (event) => {
     }
     if (burgerDropdown.classList.contains("header-burger-dropdown__active")){
         burgerDropdown.classList.remove("header-burger-dropdown__active");
+        document.querySelector(".header-bgc").classList.remove("header__active");
     }
 });

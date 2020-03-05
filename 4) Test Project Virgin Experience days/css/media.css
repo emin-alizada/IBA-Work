@@ -1,13 +1,7 @@
 @media screen and  (max-width: 1400px){
-    .ns-slider{
-        padding: 0 80px;
-    }
-    .wptw-slider-arrow-left{
-        left: 0;
-    }
-
-    .wptw-slider-arrow-right{
-        right: 0;
+    .wptw-slider{
+        width: 80%;
+        margin: 0 auto;
     }
     .wptw-slider-item{
         margin: 0 25px;
@@ -108,6 +102,9 @@
         padding-left: 0;
         padding-right: 0;
     }
+    .wptw-slider{
+        width: 100%;
+    }
     .wptw-list{
         display: none;
     }
@@ -122,7 +119,6 @@
     .wptw-slider-item{
         margin: 0 10px;
     }
-
 
 
 

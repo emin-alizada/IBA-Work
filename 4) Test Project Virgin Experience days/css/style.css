@@ -297,12 +297,12 @@ body{
     line-height: 16px;
     text-transform: uppercase;
     color: #032F47;
-    transition: transform 0.5s;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .categories-list-item-link:hover{
-    color: #D90529;
-    transform: scale(1.1);
+    background-color: #D90529;
+    color: #fff;
 }
 
 
@@ -954,3 +954,84 @@ body{
 }
 
 /**************************************************************/
+
+/******************* Site Location (sl) ***************************/
+
+.sl-bgc{
+    background-color: #F2F4F7;
+}
+
+.sl{
+    padding: 22px 0;
+}
+
+.sl-list{
+    display: flex;
+}
+
+.sl-list-item{
+    margin-right: 28px;
+}
+
+.sl-list-item:last-child{
+    margin-right: 0;
+}
+
+.sl-list-item-link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+    position: relative;
+}
+
+.sl-list-item-link:hover{
+    color: #333333;
+}
+
+.sl-list-item-link>.sl-list-item-link-icon{
+    font-size: 12px;
+    position: absolute;
+    left: -15px;
+    top: 3px;
+}
+
+/**************************************************************/
+
+
+/**************************************************************/
+/**************************************************************/
+/**************************************************************/
+/**************************************************************/
+/**************************************************************/
+/******************* Partnership page *************************/
+
+/******************* Partner-info *************************/
+
+.partner{
+    padding: 60px 0 50px;
+    max-width: 894px;
+    color: #333333;
+    border-bottom: 1px solid #DADADA;
+}
+
+.partner-header{
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 41px;
+    margin-bottom: 40px;
+}
+
+.partner-text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.parner-subheader{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}

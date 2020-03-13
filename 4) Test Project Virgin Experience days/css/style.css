@@ -986,6 +986,10 @@ body{
 }
 
 .sl-list-item-link:hover{
+    text-decoration: underline;
+}
+
+.sl-list-item-link-active{
     color: #333333;
 }
 
@@ -1035,3 +1039,172 @@ body{
     margin-top: 50px;
     margin-bottom: 30px;
 }
+
+.partner-form{
+    color: #333333;
+    max-width: 588px;
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+
+.partner-form-header{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 40px;
+}
+
+.partner-form-input-container{
+    display: flex;
+    flex-direction: column;
+    color: #828282;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 30px;
+}
+
+.partner-form-input-container:last-child{
+    margin-bottom: 40px;
+}
+
+.partner-form-input{
+    margin-top: 12px;
+    border: 1px solid #828282;
+    border-radius: 2px;
+
+    padding: 20px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.partner-form-input:focus{
+    outline: none;
+}
+
+.partner-form-input::placeholder{
+    color: #828282;
+}
+
+textarea.partner-form-input{
+    resize: none;
+    min-height: 165px;
+}
+
+.partner-form-terms-conditions{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.partner-form-terms-conditions-link{
+    text-decoration: underline;
+    color: #333333;
+}
+
+.partner-form-submit{
+    padding-top: 17px;
+    padding-bottom: 17px;
+    background: #D90529;
+    border-radius: 2px;
+    display: block;
+    width: 100%;
+    max-width: 448px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 50px;
+}
+
+.partner-form-submit:focus{
+    outline: none;
+}
+
+/**************************************************************/
+/**************************************************************/
+/**************************************************************/
+/**************************************************************/
+/**************************************************************/
+
+/******************* Help Center Contact-us page *************************/
+
+
+/******************* Help Center ***************************/
+
+.hc{
+    margin-top: 60px;
+    padding-bottom: 15px;
+    color: #333333;
+    max-width: 894px;
+    border-bottom: 1px solid #DADADA;;
+}
+
+.hc-header{
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 41px;
+    margin-bottom: 40px;
+}
+
+.hc-text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 60px;
+}
+
+.hc-contacts{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hc-contacts-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+    margin-right: 30px;
+}
+
+.hc-contacts-header{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+    margin-bottom: 10px;
+}
+
+.hc-contacts-contact{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #3A7CE0;
+    margin-bottom: 6px;
+}
+
+.hc-contacts-contact:last-child{
+    margin-bottom: 0;
+}
+
+/**************************************************************/
+
+/******************* FAQ ***************************/
+
+.hc-faq{
+    color: #333333;
+}
+
+.hc-faq-header{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 41px;
+}
+
+/**************************************************************/

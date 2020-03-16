@@ -44,7 +44,59 @@
     <h4 class="hc-faq-header">FAQ</h4>
     <div class="hc-faq-content">
         <div class="hc-faq-content-selector">
-
+            <ul class="hc-faq-content-selector-list">
+                <li class="hc-faq-content-selector-list-item">
+                    <button class="hc-faq-content-selector-list-item-btn hc-faq-content-selector-list-item-btn__active" data-category="general">
+                        <i class="fas fa-info-circle hc-faq-content-selector-list-item-btn-icon"></i>
+                        <span class="hc-faq-content-selector-list-item-btn-text">General</span>
+                    </button>
+                </li>
+                <li class="hc-faq-content-selector-list-item">
+                    <button class="hc-faq-content-selector-list-item-btn" data-category="delivery">
+                        <i class="fas fa-truck hc-faq-content-selector-list-item-btn-icon"></i>
+                        <span class="hc-faq-content-selector-list-item-btn-text">Delivery</span>
+                    </button>
+                </li>
+                <li class="hc-faq-content-selector-list-item">
+                    <button class="hc-faq-content-selector-list-item-btn" data-category="cancellation">
+                        <i class="fas fa-times-circle hc-faq-content-selector-list-item-btn-icon"></i>
+                        <span class="hc-faq-content-selector-list-item-btn-text">Cancellation</span>
+                    </button>
+                </li>
+                <li class="hc-faq-content-selector-list-item">
+                    <button class="hc-faq-content-selector-list-item-btn" data-category="payment">
+                        <i class="fas fa-credit-card hc-faq-content-selector-list-item-btn-icon"></i>
+                        <span class="hc-faq-content-selector-list-item-btn-text">Payment</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="hc-faq-content-container">
+            <div class="hc-faq-content-item" data-category="general">
+                <h6 class="hc-faq-content-item-header">Our step-by-step trading academy will guide you through the world of Forex Trading and teach you everything you need to know?</h6>
+                <p class="hc-faq-content-item-description">The key trading terms can be found in the trader's glossary.</p>
+                <button class="hc-faq-content-item-btn"><i class="fas fa-chevron-down"></i></button>
+            </div>
+            <div class="hc-faq-content-item" data-category="delivery">
+                <h6 class="hc-faq-content-item-header">How many days does it take delivery?</h6>
+                <p class="hc-faq-content-item-description">Usually it's one business day delivery.</p>
+                <button class="hc-faq-content-item-btn"><i class="fas fa-chevron-down"></i></button>
+            </div>
+            <div class="hc-faq-content-item" data-category="cancellation">
+                <h6 class="hc-faq-content-item-header">Can I cancell my order?</h6>
+                <p class="hc-faq-content-item-description">Of course you can, but nobody is gonna return your money.</p>
+                <button class="hc-faq-content-item-btn"><i class="fas fa-chevron-down"></i></button>
+            </div>
+            <div class="hc-faq-content-item" data-category="general">
+                <h6 class="hc-faq-content-item-header">Are the products original?</h6>
+                <p class="hc-faq-content-item-description">Products are 100% apple original.</p>
+                <button class="hc-faq-content-item-btn"><i class="fas fa-chevron-down"></i></button>
+            </div>
+            <div class="hc-faq-content-item" data-category="payment">
+                <h6 class="hc-faq-content-item-header">Can we pay with our kidney for apple products?</h6>
+                <p class="hc-faq-content-item-description">Unfortunately we don't buy kidneys, you first need to sell it after that pay us.</p>
+                <button class="hc-faq-content-item-btn"><i class="fas fa-chevron-down"></i></button>
+            </div>
         </div>
     </div>
 </div>

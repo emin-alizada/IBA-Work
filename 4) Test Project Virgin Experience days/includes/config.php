@@ -1,5 +1,5 @@
 <?php
-switch (basename($_SERVER["REQUEST_URI"])) {
+switch (explode("?",basename($_SERVER["REQUEST_URI"]))[0]) {
     case "category.php":
         $CURRENT_PAGE = "Category";
         $PAGE_TITLE = "Category";

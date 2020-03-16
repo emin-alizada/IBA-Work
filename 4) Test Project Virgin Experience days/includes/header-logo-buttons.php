@@ -1,4 +1,3 @@
-
 <header class="header-bgc">
     <div class="header container">
         <a href="#"><img src="img/logo.png" alt="logo" class="header-logo"></a>

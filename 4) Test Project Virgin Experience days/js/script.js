@@ -76,7 +76,7 @@ $(document).ready(function() {
     });
 });
 
-document.addEventListener("click", (event) => {
+document.addEventListener("click", () => {
     if (languageSelector.classList.contains("nav-lang-list__active")){
         languageSelector.classList.remove("nav-lang-list__active");
     }
@@ -88,3 +88,54 @@ document.addEventListener("click", (event) => {
         document.querySelector(".header-bgc").classList.remove("header__active");
     }
 });
+
+// *************** End of General Part***************
+
+// *************** Help Center and Contact us ***************
+
+if(document.querySelector(".hc-faq")){
+
+    const faqItems = document.querySelectorAll(".hc-faq-content-item");
+    faqItems.forEach(item => {
+        item.addEventListener('click', event => {
+            faqItems.forEach( question => {
+               if(question !== event.currentTarget) {
+                   question.classList.remove('hc-faq-content-item__active');
+               }
+            });
+            item.classList.toggle('hc-faq-content-item__active');
+        });
+    });
+
+
+    function clearActiveFromSelector() {
+        document.querySelectorAll('.hc-faq-content-selector-list-item-btn').forEach(btn => {
+            btn.classList.remove("hc-faq-content-selector-list-item-btn__active");
+        })
+    }
+
+    function filterFAQ(filter) {
+        document.querySelectorAll('.hc-faq-content-item').forEach(content => {
+            content.dataset.category === filter ?
+                content.style.display = 'block' :
+                content.style.display = 'none';
+
+        })
+    }
+
+    filterFAQ('general');
+
+    const faqSelector = document.querySelector(".hc-faq-content-selector");
+    faqSelector.addEventListener('click', event => {
+        if (event.target.classList.contains('hc-faq-content-selector-list-item-btn')){
+            clearActiveFromSelector();
+            event.target.classList.add('hc-faq-content-selector-list-item-btn__active');
+            filterFAQ(event.target.dataset.category);
+        }
+        else if (event.target.parentElement.classList.contains('hc-faq-content-selector-list-item-btn')){
+            clearActiveFromSelector();
+            event.target.parentElement.classList.add('hc-faq-content-selector-list-item-btn__active');
+            filterFAQ(event.target.parentElement.dataset.category);
+        }
+    });
+}

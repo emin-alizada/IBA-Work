@@ -37,7 +37,7 @@
             </label>
             <label class="partner-form-input-container">
                 Mobile
-                <input type="number" placeholder="+994506666666" class="partner-form-input">
+                <input type="tel" placeholder="+994506666666" class="partner-form-input">
             </label>
             <label class="partner-form-input-container">
                 Company Name

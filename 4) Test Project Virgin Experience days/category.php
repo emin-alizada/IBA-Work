@@ -1,173 +1,545 @@
+<?php include 'includes/config.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--    Reset CSS-->
-    <link rel="stylesheet" href="css/reset.css">
-    <!--    Font Family-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i&display=swap"
-          rel="stylesheet">
-    <!--    Font Awesome-->
-    <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-            crossorigin="anonymous"
-    />
-    <!--    Slick-->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
-    <title>Virgin Experience days</title>
+    <?php include 'includes/head-tags-content.php' ?>
 </head>
 <body>
-<nav class="nav-bgc">
-    <nav class="nav container">
-        <ul class="nav-ul">
-            <li class="nav-ul-item"><a href="" class="nav-ul-item-link">About us</a></li>
-            <li class="nav-ul-item"><a href="" class="nav-ul-item-link">Partnership</a></li>
-            <li class="nav-ul-item"><a href="" class="nav-ul-item-link">Become a supplier</a></li>
-            <li class="nav-ul-item"><a href="" class="nav-ul-item-link">Contact us</a></li>
-            <li class="nav-ul-item"><a href="" class="nav-ul-item-link">Help</a></li>
-        </ul>
-        <div class="nav-lang-picker">
-            <button class="nav-lang">AZ</button>
-            <ul class="nav-lang-list">
-                <li class="nav-lang-list-item">
-                    <a href="" class="nav-lang-list-item-link">AZ</a>
-                </li>
-                <li class="nav-lang-list-item">
-                    <a href="" class="nav-lang-list-item-link">EN</a>
-                </li>
-                <li class="nav-lang-list-item">
-                    <a href="" class="nav-lang-list-item-link">RU</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</nav>
+<?php include "includes/navigation-header.php" ?>
 
-<header class="header-bgc">
-    <div class="header container">
-        <a href="#"><img src="img/logo.png" alt="logo" class="header-logo"></a>
-        <ul class="header-buttons">
-            <li class="header-buttons-items"><i class="fas fa-search header-buttons-item"></i></li>
-            <li class="header-buttons-items"><i class="fas fa-shopping-cart header-buttons-item"></i></li>
-            <li class="header-buttons-items header-buttons-items-user" id="userButton">
-                <i class="fas fa-user header-buttons-item"></i>
-                <ul class="header-user-dropdown">
-                    <li class="header-user-dropdown-item"><a href="" class="header-user-dropdown-item-link"><i
-                            class="fas fa-receipt header-user-dropdown-item-link-icon"></i> My Orders</a></li>
-                    <li class="header-user-dropdown-item"><a href="" class="header-user-dropdown-item-link"><i
-                            class="fas fa-sign-out-alt header-user-dropdown-item-link-icon"></i>Sign Out</a></li>
-                </ul>
-            </li>
-            <li class="header-buttons-items header-buttons-items-burger" id="burgerButton">
-                <i class="fas fa-bars header-buttons-item"></i>
-                <ul class="header-burger-dropdown">
-                    <li class="header-burger-dropdown-item header-burger-dropdown-item-flex">
-                        <a href="" class="header-burger-dropdown-item-link">
-                            <i class="fas fa-receipt header-burger-dropdown-item-link-icon-reciept"></i> My Orders
-                        </a>
-                        <a href="" class="header-burger-dropdown-item-link">
-                            Sign Out<i class="fas fa-sign-out-alt header-burger-dropdown-item-link-icon-log-out"></i>
-                        </a>
-                    </li>
-                    <li class="header-burger-dropdown-item">
-                        <a href="" class="header-burger-dropdown-item-link">Events & Trainings</a>
-                    </li>
-                    <li class="header-burger-dropdown-item">
-                        <a href="" class="header-burger-dropdown-item-link">News & Media</a>
-                    </li>
-                    <li class="header-burger-dropdown-item">
-                        <a href="" class="header-burger-dropdown-item-link">Membership</a>
-                    </li>
-                    <li class="header-burger-dropdown-item">
-                        <a href="" class="header-burger-dropdown-item-link">Classification</a>
-                    </li>
-                    <li class="header-burger-dropdown-item">
-                        <a href="" class="header-burger-dropdown-item-link">Reports</a>
-                    </li>
-                    <li class="header-burger-dropdown-item">
-                        <a href="" class="header-burger-dropdown-item-link">Members area</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+<?php include "includes/header-logo-buttons.php" ?>
+
+<?php include "includes/categories.php"; ?>
+
+<?php include "includes/site-location.php"; ?>
+
+<div class="c-info">
+    <div class="container">
+        <h2 class="c-info-header">Driving</h2>
+        <p class="c-info-text">Take control of two supercars for two 2 lap drives around the historic Goodwood Motor
+            Circuit. Choose two from seven speedy supercars from Lamborghini, Ferrari and more</p>
     </div>
-</header>
-
-<div class="categories container">
-    <ul class="categories-list">
-        <li class="categories-list-item"><a href="#" class="categories-list-item-link">Driving</a></li>
-        <li class="categories-list-item"><a href="#" class="categories-list-item-link">Food and drink</a></li>
-        <li class="categories-list-item"><a href="#" class="categories-list-item-link">Spa and Beauty</a></li>
-        <li class="categories-list-item"><a href="#" class="categories-list-item-link">Days out and Tours</a></li>
-        <li class="categories-list-item"><a href="#" class="categories-list-item-link">Flying</a></li>
-        <li class="categories-list-item"><a href="#" class="categories-list-item-link">Sport</a></li>
-        <li class="categories-list-item"><a href="#" class="categories-list-item-link">Theatre and events</a></li>
-        <li class="categories-list-item"><a href="#" class="categories-list-item-link">Arts and crafts</a></li>
-    </ul>
 </div>
 
+<div class="c-background">
+    <div class="c container">
+        <div class="c-filters">
+            <button class="c-filters-toggler-btn">Filters<i class="fas fa-filter"></i></button>
 
-<footer>
-    <section class="footer-nav">
-        <div class="footer-nav-flex container">
-            <ul class="footer-nav-site">
-                <li class="footer-nav-site-item">
-                    <a href="" class="footer-nav-site-item-link">About us</a>
-                </li>
-                <li class="footer-nav-site-item">
-                    <a href="" class="footer-nav-site-item-link">Partnership</a>
-                </li>
-                <li class="footer-nav-site-item">
-                    <a href="" class="footer-nav-site-item-link">Contact us</a>
-                </li>
-                <li class="footer-nav-site-item">
-                    <a href="" class="footer-nav-site-item-link">Help Center</a>
-                </li>
-            </ul>
-            <ul class="footer-nav-social">
-                <li class="footer-nav-social-item">
-                    <a href="" class="footer-nav-social-item-link">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                </li>
-                <li class="footer-nav-social-item">
-                    <a href="" class="footer-nav-social-item-link">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li class="footer-nav-social-item">
-                    <a href="" class="footer-nav-social-item-link">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </li>
-                <li class="footer-nav-social-item">
-                    <a href="" class="footer-nav-social-item-link">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </li>
-            </ul>
+            <div class="c-filters-order-and-view c-filters-mobile">
+                <button class="c-filters-header c-filters-order-and-view-header">Order by<i class="fas fa-chevron-down c-filters-header-icon__rotate c-filters-header-icon"></i></button>
+                <div class="c-filters-order">
+                    <ul class="c-filters-order-list">
+                        <li class="c-filters-order-list-item">
+                            <button class="c-filters-order-list-item-btn c-filters-order-list-item-btn__active">New</button>
+                        </li>
+                        <li class="c-filters-order-list-item">
+                            <button class="c-filters-order-list-item-btn">Popularity</button>
+                        </li>
+                        <li class="c-filters-order-list-item">
+                            <button class="c-filters-order-list-item-btn">Price(low to high)</button>
+                        </li>
+                        <li class="c-filters-order-list-item">
+                            <button class="c-filters-order-list-item-btn">Price(high to low)</button>
+                        </li>
+                        <li class="c-filters-order-list-item">
+                            <button class="c-filters-order-list-item-btn">Rating</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="c-filters-view">
+                    <ul class="c-filters-view-list">
+                        <li class="c-filters-view-list-item">
+                            <button class="c-filters-view-list-item-btn c-filters-view-list-item-btn__active" data-view="card">
+                                <i class="fas fa-th"></i>
+                                Card
+                            </button>
+                        </li>
+                        <li class="c-filters-view-list-item">
+                            <button class="c-filters-view-list-item-btn" data-view="list">
+                                <i class="fas fa-list"></i>
+                                List
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="c-filters-item c-filters-mobile">
+                <button class="c-filters-header">Subcategory<i class="fas fa-chevron-down c-filters-header-icon__rotate c-filters-header-icon"></i></button>
+                <div class="c-filters-labels">
+                    <label class="c-filters-label">Supercars
+                        <input type="checkbox" checked="checked">
+                        <span class="c-filters-checkmark"></span>
+                    </label>
+                    <label class="c-filters-label">Aston martin
+                        <input type="checkbox">
+                        <span class="c-filters-checkmark"></span>
+                    </label>
+                    <label class="c-filters-label">Ferrari
+                        <input type="checkbox">
+                        <span class="c-filters-checkmark"></span>
+                    </label>
+                    <label class="c-filters-label">Lamborghini
+                        <input type="checkbox">
+                        <span class="c-filters-checkmark"></span>
+                    </label>
+                    <label class="c-filters-label">Real Race Tracks
+                        <input type="checkbox">
+                        <span class="c-filters-checkmark"></span>
+                    </label>
+                    <label class="c-filters-label">Multiple Car Experiences
+                        <input type="checkbox">
+                        <span class="c-filters-checkmark"></span>
+                    </label>
+                    <label class="c-filters-label">Electric cars
+                        <input type="checkbox">
+                        <span class="c-filters-checkmark"></span>
+                    </label>
+                    <label class="c-filters-label">Muscle cars
+                        <input type="checkbox">
+                        <span class="c-filters-checkmark"></span>
+                    </label>
+                    <label class="c-filters-label">Go karting
+                        <input type="checkbox">
+                        <span class="c-filters-checkmark"></span>
+                    </label>
+                    <label class="c-filters-label">Off Road/ 4x4
+                        <input type="checkbox">
+                        <span class="c-filters-checkmark"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="c-filters-item c-filters-mobile">
+                <button class="c-filters-header">Price / AZN<i class="fas fa-chevron-down c-filters-header-icon__rotate c-filters-header-icon"></i></button>
+                <div class="c-filters-price">
+                    <input value="500" min="500" max="50000" step="500" type="range">
+                    <input value="50000" min="500" max="50000" step="500" type="range">
+                    <div class="c-filters-prices-text-container">
+                        <input type="number" class="c-filters-prices-text" value="22">
+                        <input type="number" class="c-filters-prices-text" value="55">
+                    </div>
+                </div>
+            </div>
+
+            <div class="c-filters-item c-filters-mobile">
+                <button class="c-filters-header">Location<i class="fas fa-chevron-down c-filters-header-icon__rotate c-filters-header-icon"></i></button>
+                <div class="c-filters-labels">
+                    <label class="c-filters-label">Baku
+                        <input type="checkbox" checked="checked">
+                        <span class="c-filters-checkmark"></span>
+                    </label>
+                    <label class="c-filters-label">Shaki
+                        <input type="checkbox">
+                        <span class="c-filters-checkmark"></span>
+                    </label>
+                    <label class="c-filters-label">Balakan
+                        <input type="checkbox">
+                        <span class="c-filters-checkmark"></span>
+                    </label>
+                    <label class="c-filters-label">Qusar
+                        <input type="checkbox">
+                        <span class="c-filters-checkmark"></span>
+                    </label>
+                    <label class="c-filters-label">Qabala
+                        <input type="checkbox">
+                        <span class="c-filters-checkmark"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="c-filters-item c-filters-mobile">
+                <button class="c-filters-header">Rating<i class="fas fa-chevron-down c-filters-header-icon__rotate c-filters-header-icon"></i></button>
+                <div class="c-filters-labels">
+                    <label class="c-filters-label">
+                        <span>
+                            <i class="fas fa-star c-filters-star"></i>
+                            <i class="fas fa-star c-filters-star"></i>
+                            <i class="fas fa-star c-filters-star"></i>
+                            <i class="fas fa-star c-filters-star"></i>
+                            <i class="fas fa-star c-filters-star"></i>
+                            (12)
+                        </span>
+                        <input type="checkbox" checked="checked">
+                        <span class="c-filters-checkmark"></span>
+                    </label>
+                    <label class="c-filters-label">
+                        <span>
+                            <i class="fas fa-star c-filters-star"></i>
+                            <i class="fas fa-star c-filters-star"></i>
+                            <i class="fas fa-star c-filters-star"></i>
+                            <i class="fas fa-star c-filters-star"></i>
+                            <i class="far fa-star c-filters-star"></i>
+                            &up (45)
+                        </span>
+                        <input type="checkbox">
+                        <span class="c-filters-checkmark"></span>
+                    </label>
+                    <label class="c-filters-label">
+                        <span>
+                            <i class="fas fa-star c-filters-star"></i>
+                            <i class="fas fa-star c-filters-star"></i>
+                            <i class="fas fa-star c-filters-star"></i>
+                            <i class="far fa-star c-filters-star"></i>
+                            <i class="far fa-star c-filters-star"></i>
+                            &up (67)
+                        </span>
+                        <input type="checkbox">
+                        <span class="c-filters-checkmark"></span>
+                    </label>
+                    <label class="c-filters-label">
+                        <span>
+                            <i class="fas fa-star c-filters-star"></i>
+                            <i class="fas fa-star c-filters-star"></i>
+                            <i class="far fa-star c-filters-star"></i>
+                            <i class="far fa-star c-filters-star"></i>
+                            <i class="far fa-star c-filters-star"></i>
+                            &up (21)
+                        </span>
+                        <input type="checkbox">
+                        <span class="c-filters-checkmark"></span>
+                    </label>
+                    <label class="c-filters-label">
+                        <span>
+                            <i class="fas fa-star c-filters-star"></i>
+                            <i class="far fa-star c-filters-star"></i>
+                            <i class="far fa-star c-filters-star"></i>
+                            <i class="far fa-star c-filters-star"></i>
+                            <i class="far fa-star c-filters-star"></i>
+                            &up (4)
+                        </span>
+                        <input type="checkbox">
+                        <span class="c-filters-checkmark"></span>
+                    </label>
+                </div>
+            </div>
+
         </div>
-    </section>
-    <section class="footer-agreement container">
-        <p class="footer-agreement-copyright">&copy; 2020. EUROTOURISM</p>
-        <ul class="footer-agreement-nav">
-            <li class="footer-agreement-nav-item">
-                <a href="" class="footer-agreement-nav-item-link">Terms & Conditions</a>
-            </li>
-            <li class="footer-agreement-nav-item">
-                <a href="" class="footer-agreement-nav-item-link">Privacy Policy</a>
-            </li>
-        </ul>
-    </section>
-</footer>
+        <div class="c-products">
+            <div class="c-products-item">
+                <div class="c-products-item-photo">
+                    <img src="img/category-driving-1.jpg" alt="" class="c-products-item-photo-item">
+                </div>
+                <div class="c-products-item-content">
+                    <div>
+                        <h4 class="c-products-item-content-header">Handcraft with craft gerhod lorem ipsum</h4>
+                        <div class="c-products-item-content-rating">
+                            <i class="fas fa-star c-products-item-content-rating-star                         c-products-item-content-rating-star__active"></i>
+                            <i class="fas fa-star c-products-item-content-rating-star                         c-products-item-content-rating-star__active"></i>
+                            <i class="fas fa-star c-products-item-content-rating-star                         c-products-item-content-rating-star__active"></i>
+                            <i class="fas fa-star c-products-item-content-rating-star                         c-products-item-content-rating-star__active"></i>
+                            <i class="fas fa-star c-products-item-content-rating-star"></i>
+                        </div>
+                        <div class="c-products-item-content-location-people">
+                            <p class="c-products-item-content-location"><span><i
+                                            class="fas fa-map-marker-alt  c-products-item-content-location-people-icon"></i></span>Baku,
+                                Quba</p>
+                            <p class="c-products-item-content-people"><span><i
+                                            class="fas fa-user  c-products-item-content-location-people-icon"></i></span>for
+                                2 persons (couple)</p>
+                        </div>
+                        <div class="c-products-item-content-description">
+                            <ul class="c-products-item-content-description-list">
+                                <li class="c-products-item-content-description-list-item">Drive five supercars from an
+                                    amazing selection including Ferrari and Lamborghini
+                                </li>
+                                <li class="c-products-item-content-description-list-item">Speed around a quality venue or
+                                    Real Race Track on 15 miles total driving distance
+                                </li>
+                                <li class="c-products-item-content-description-list-item">Available weekdays AND weekends
+                                    from February to November
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="c-products-item-content-price-and-cart">
+                        <div class="c-products-item-content-price">
+                            <p class="c-products-item-content-price-sale">185 AZN</p>
+                            <p class="c-products-item-content-price-current">120 AZN</p>
+                        </div>
+                        <div class="c-products-item-content-cart">
+                            <button class="c-products-item-content-cart-button"><i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c-products-item">
+                <div class="c-products-item-photo">
+                    <img src="img/category-driving-2.jpg" alt="" class="c-products-item-photo-item">
+                </div>
+                <div class="c-products-item-content">
+                    <div>
+                        <h4 class="c-products-item-content-header">Handcraft with craft gerhod lorem ipsum</h4>
+                        <div class="c-products-item-content-rating">
+                            <i class="fas fa-star c-products-item-content-rating-star                         c-products-item-content-rating-star__active"></i>
+                            <i class="fas fa-star c-products-item-content-rating-star                         c-products-item-content-rating-star__active"></i>
+                            <i class="fas fa-star c-products-item-content-rating-star                         c-products-item-content-rating-star__active"></i>
+                            <i class="fas fa-star c-products-item-content-rating-star                         c-products-item-content-rating-star__active"></i>
+                            <i class="fas fa-star c-products-item-content-rating-star"></i>
+                        </div>
+                        <div class="c-products-item-content-location-people">
+                            <p class="c-products-item-content-location"><span><i
+                                            class="fas fa-map-marker-alt  c-products-item-content-location-people-icon"></i></span>Baku,
+                                Quba</p>
+                            <p class="c-products-item-content-people"><span><i
+                                            class="fas fa-user  c-products-item-content-location-people-icon"></i></span>for
+                                2 persons (couple)</p>
+                        </div>
+                        <div class="c-products-item-content-description">
+                            <ul class="c-products-item-content-description-list">
+                                <li class="c-products-item-content-description-list-item">Drive five supercars from an
+                                    amazing selection including Ferrari and Lamborghini
+                                </li>
+                                <li class="c-products-item-content-description-list-item">Speed around a quality venue or
+                                    Real Race Track on 15 miles total driving distance
+                                </li>
+                                <li class="c-products-item-content-description-list-item">Available weekdays AND weekends
+                                    from February to November
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="c-products-item-content-price-and-cart">
+                        <div class="c-products-item-content-price">
+                            <p class="c-products-item-content-price-sale">185 AZN</p>
+                            <p class="c-products-item-content-price-current">120 AZN</p>
+                        </div>
+                        <div class="c-products-item-content-cart">
+                            <button class="c-products-item-content-cart-button"><i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c-products-item">
+                <div class="c-products-item-photo">
+                    <img src="img/category-driving-3.jpg" alt="" class="c-products-item-photo-item">
+                </div>
+                <div class="c-products-item-content">
+                    <div>
+                        <h4 class="c-products-item-content-header">Handcraft with craft gerhod lorem ipsum</h4>
+                        <div class="c-products-item-content-rating">
+                            <i class="fas fa-star c-products-item-content-rating-star                         c-products-item-content-rating-star__active"></i>
+                            <i class="fas fa-star c-products-item-content-rating-star                         c-products-item-content-rating-star__active"></i>
+                            <i class="fas fa-star c-products-item-content-rating-star                         c-products-item-content-rating-star__active"></i>
+                            <i class="fas fa-star c-products-item-content-rating-star                         c-products-item-content-rating-star__active"></i>
+                            <i class="fas fa-star c-products-item-content-rating-star"></i>
+                        </div>
+                        <div class="c-products-item-content-location-people">
+                            <p class="c-products-item-content-location"><span><i
+                                            class="fas fa-map-marker-alt  c-products-item-content-location-people-icon"></i></span>Baku,
+                                Quba</p>
+                            <p class="c-products-item-content-people"><span><i
+                                            class="fas fa-user  c-products-item-content-location-people-icon"></i></span>for
+                                2 persons (couple)</p>
+                        </div>
+                        <div class="c-products-item-content-description">
+                            <ul class="c-products-item-content-description-list">
+                                <li class="c-products-item-content-description-list-item">Drive five supercars from an
+                                    amazing selection including Ferrari and Lamborghini
+                                </li>
+                                <li class="c-products-item-content-description-list-item">Speed around a quality venue or
+                                    Real Race Track on 15 miles total driving distance
+                                </li>
+                                <li class="c-products-item-content-description-list-item">Available weekdays AND weekends
+                                    from February to November
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="c-products-item-content-price-and-cart">
+                        <div class="c-products-item-content-price">
+                            <p class="c-products-item-content-price-sale">185 AZN</p>
+                            <p class="c-products-item-content-price-current">120 AZN</p>
+                        </div>
+                        <div class="c-products-item-content-cart">
+                            <button class="c-products-item-content-cart-button"><i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c-products-item">
+                <div class="c-products-item-photo">
+                    <img src="img/category-driving-1.jpg" alt="" class="c-products-item-photo-item">
+                </div>
+                <div class="c-products-item-content">
+                    <div>
+                        <h4 class="c-products-item-content-header">Handcraft with craft gerhod lorem ipsum</h4>
+                        <div class="c-products-item-content-rating">
+                            <i class="fas fa-star c-products-item-content-rating-star                         c-products-item-content-rating-star__active"></i>
+                            <i class="fas fa-star c-products-item-content-rating-star                         c-products-item-content-rating-star__active"></i>
+                            <i class="fas fa-star c-products-item-content-rating-star                         c-products-item-content-rating-star__active"></i>
+                            <i class="fas fa-star c-products-item-content-rating-star                         c-products-item-content-rating-star__active"></i>
+                            <i class="fas fa-star c-products-item-content-rating-star"></i>
+                        </div>
+                        <div class="c-products-item-content-location-people">
+                            <p class="c-products-item-content-location"><span><i
+                                            class="fas fa-map-marker-alt  c-products-item-content-location-people-icon"></i></span>Baku,
+                                Quba</p>
+                            <p class="c-products-item-content-people"><span><i
+                                            class="fas fa-user  c-products-item-content-location-people-icon"></i></span>for
+                                2 persons (couple)</p>
+                        </div>
+                        <div class="c-products-item-content-description">
+                            <ul class="c-products-item-content-description-list">
+                                <li class="c-products-item-content-description-list-item">Drive five supercars from an
+                                    amazing selection including Ferrari and Lamborghini
+                                </li>
+                                <li class="c-products-item-content-description-list-item">Speed around a quality venue or
+                                    Real Race Track on 15 miles total driving distance
+                                </li>
+                                <li class="c-products-item-content-description-list-item">Available weekdays AND weekends
+                                    from February to November
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="c-products-item-content-price-and-cart">
+                        <div class="c-products-item-content-price">
+                            <p class="c-products-item-content-price-sale">185 AZN</p>
+                            <p class="c-products-item-content-price-current">120 AZN</p>
+                        </div>
+                        <div class="c-products-item-content-cart">
+                            <button class="c-products-item-content-cart-button"><i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c-products-item">
+                <div class="c-products-item-photo">
+                    <img src="img/category-driving-2.jpg" alt="" class="c-products-item-photo-item">
+                </div>
+                <div class="c-products-item-content">
+                    <div>
+                        <h4 class="c-products-item-content-header">Handcraft with craft gerhod lorem ipsum</h4>
+                        <div class="c-products-item-content-rating">
+                            <i class="fas fa-star c-products-item-content-rating-star                         c-products-item-content-rating-star__active"></i>
+                            <i class="fas fa-star c-products-item-content-rating-star                         c-products-item-content-rating-star__active"></i>
+                            <i class="fas fa-star c-products-item-content-rating-star                         c-products-item-content-rating-star__active"></i>
+                            <i class="fas fa-star c-products-item-content-rating-star                         c-products-item-content-rating-star__active"></i>
+                            <i class="fas fa-star c-products-item-content-rating-star"></i>
+                        </div>
+                        <div class="c-products-item-content-location-people">
+                            <p class="c-products-item-content-location"><span><i
+                                            class="fas fa-map-marker-alt  c-products-item-content-location-people-icon"></i></span>Baku,
+                                Quba</p>
+                            <p class="c-products-item-content-people"><span><i
+                                            class="fas fa-user  c-products-item-content-location-people-icon"></i></span>for
+                                2 persons (couple)</p>
+                        </div>
+                        <div class="c-products-item-content-description">
+                            <ul class="c-products-item-content-description-list">
+                                <li class="c-products-item-content-description-list-item">Drive five supercars from an
+                                    amazing selection including Ferrari and Lamborghini
+                                </li>
+                                <li class="c-products-item-content-description-list-item">Speed around a quality venue or
+                                    Real Race Track on 15 miles total driving distance
+                                </li>
+                                <li class="c-products-item-content-description-list-item">Available weekdays AND weekends
+                                    from February to November
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="c-products-item-content-price-and-cart">
+                        <div class="c-products-item-content-price">
+                            <p class="c-products-item-content-price-sale">185 AZN</p>
+                            <p class="c-products-item-content-price-current">120 AZN</p>
+                        </div>
+                        <div class="c-products-item-content-cart">
+                            <button class="c-products-item-content-cart-button"><i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c-products-item">
+                <div class="c-products-item-photo">
+                    <img src="img/category-driving-3.jpg" alt="" class="c-products-item-photo-item">
+                </div>
+                <div class="c-products-item-content">
+                    <div>
+                        <h4 class="c-products-item-content-header">Handcraft with craft gerhod lorem ipsum</h4>
+                        <div class="c-products-item-content-rating">
+                            <i class="fas fa-star c-products-item-content-rating-star                         c-products-item-content-rating-star__active"></i>
+                            <i class="fas fa-star c-products-item-content-rating-star                         c-products-item-content-rating-star__active"></i>
+                            <i class="fas fa-star c-products-item-content-rating-star                         c-products-item-content-rating-star__active"></i>
+                            <i class="fas fa-star c-products-item-content-rating-star                         c-products-item-content-rating-star__active"></i>
+                            <i class="fas fa-star c-products-item-content-rating-star"></i>
+                        </div>
+                        <div class="c-products-item-content-location-people">
+                            <p class="c-products-item-content-location"><span><i
+                                            class="fas fa-map-marker-alt  c-products-item-content-location-people-icon"></i></span>Baku,
+                                Quba</p>
+                            <p class="c-products-item-content-people"><span><i
+                                            class="fas fa-user  c-products-item-content-location-people-icon"></i></span>for
+                                2 persons (couple)</p>
+                        </div>
+                        <div class="c-products-item-content-description">
+                            <ul class="c-products-item-content-description-list">
+                                <li class="c-products-item-content-description-list-item">Drive five supercars from an
+                                    amazing selection including Ferrari and Lamborghini
+                                </li>
+                                <li class="c-products-item-content-description-list-item">Speed around a quality venue or
+                                    Real Race Track on 15 miles total driving distance
+                                </li>
+                                <li class="c-products-item-content-description-list-item">Available weekdays AND weekends
+                                    from February to November
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="c-products-item-content-price-and-cart">
+                        <div class="c-products-item-content-price">
+                            <p class="c-products-item-content-price-sale">185 AZN</p>
+                            <p class="c-products-item-content-price-current">120 AZN</p>
+                        </div>
+                        <div class="c-products-item-content-cart">
+                            <button class="c-products-item-content-cart-button"><i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c-pagination-and-results">
+                <div class="c-pagination">
+                    <ul class="c-pagination-list">
+                        <li class="c-pagination-list-item">
+                            <a href="#" class="c-pagination-list-item-link"><i class="fas fa-chevron-left"></i></a>
+                        </li>
+                        <li class="c-pagination-list-item">
+                            <a href="#" class="c-pagination-list-item-link">1</a>
+                        </li>
+                        <li class="c-pagination-list-item">
+                            <a href="#" class="c-pagination-list-item-link">2</a>
+                        </li>
+                        <li class="c-pagination-list-item">
+                            <a href="#" class="c-pagination-list-item-link c-pagination-list-item-link__others">...</a>
+                        </li>
+                        <li class="c-pagination-list-item">
+                            <a href="#" class="c-pagination-list-item-link">23</a>
+                        </li>
+                        <li class="c-pagination-list-item">
+                            <a href="#" class="c-pagination-list-item-link">24</a>
+                        </li>
+                        <li class="c-pagination-list-item">
+                            <a href="#" class="c-pagination-list-item-link"><i class="fas fa-chevron-right"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+                <p class="c-pagination-results">Showing products  1-30 in 500</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<?php include "includes/footer.php"; ?>
+
 
 <script src="js/jquery.js"></script>
 <script src="slick/slick.js"></script>

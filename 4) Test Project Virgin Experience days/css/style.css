@@ -1125,6 +1125,61 @@ textarea.partner-form-input {
     outline: none;
 }
 
+.partner-form-submit:disabled{
+    background-color: #7c0317;
+    cursor: not-allowed;
+}
+
+.partner-form-warning {
+    color: #D90529;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.partner-form-result {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@keyframes partner-form-loading-animation {
+    0% { transform: rotate(0deg) }
+    50% { transform: rotate(180deg) }
+    100% { transform: rotate(360deg) }
+}
+
+.partner-form-loading div {
+    position: absolute;
+    animation: partner-form-loading-animation 1s linear infinite;
+    width: 80px;
+    height: 80px;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 0 0 #e15b64;
+    transform-origin: 40px 41px;
+}
+.partner-form-loading-container {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 10px auto 0;
+    overflow: hidden;
+    background: none;
+}
+.partner-form-loading {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0; /* see note above */
+}
+.partner-form-loading div { box-sizing: content-box; }
+
+
+
 /**************************************************************/
 /**************************************************************/
 /**************************************************************/

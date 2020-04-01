@@ -29,23 +29,23 @@
         <div class="partner-form-inputs">
             <label class="partner-form-input-container">
                 Mail address
-                <input type="email" placeholder="emin@gmail.com" class="partner-form-input">
+                <input type="email" id="partnerMail" name="mail" placeholder="emin@gmail.com" class="partner-form-input">
             </label>
             <label class="partner-form-input-container">
                 First Name
-                <input type="text" placeholder="Emin Alizada" class="partner-form-input">
+                <input type="text" name="name" id="partnerName" placeholder="Emin Alizada" class="partner-form-input">
             </label>
             <label class="partner-form-input-container">
                 Mobile
-                <input type="tel" placeholder="+994506666666" class="partner-form-input">
+                <input type="tel" name="phone" id="partnerPhone" placeholder="+994506666666" class="partner-form-input">
             </label>
             <label class="partner-form-input-container">
                 Company Name
-                <input type="text" placeholder="International Bank of Azerbaijan" class="partner-form-input">
+                <input type="text" name="company" id="partnerCompany" placeholder="International Bank of Azerbaijan" class="partner-form-input">
             </label>
             <label class="partner-form-input-container">
                 Message
-                <textarea placeholder="Your message here..." class="partner-form-input"></textarea>
+                <textarea placeholder="Your message here..." name="message" class="partner-form-input"></textarea>
             </label>
             <p class="partner-form-terms-conditions">
                 By creating your account, you agree to our <a href="#" class="partner-form-terms-conditions-link">Terms and Conditions</a> & <a href="#" class="partner-form-terms-conditions-link">Privacy Policy</a>

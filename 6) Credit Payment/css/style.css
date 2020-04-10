@@ -1,34 +1,37 @@
+@import url("font.css");
+
 html, body {
     height: 100%;
+    font-family: 'San Francisco', sans-serif;
 }
 
 .container {
     min-height: 100%;
     display: flex;
-    font-family: San Francisco, sans-serif;
 }
 
 .content {
-    width: calc(100% - 46.875%);
+    width: 52%;
 }
 
 .iba {
-    width: 46.875%;
-    background: #0047BA url("../img/iba-logo-big.png");
-    background-size: cover;
+    width: calc(100% - 52%);
+    background: #0047BA url("../img/logo.svg") 5% 10%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .content-optimal-logo {
-    padding-left: 17.5%;
-    margin-top: 30px;
-    margin-bottom: 110px;
+    padding-left: 130px;
+    margin-top: 100px;
+    margin-bottom: 40px;
 }
 
 .content-form {
-    padding-left: 17.5%;
+    padding-left: 130px;
+    padding-right: 50px;
+    margin-bottom: 60px;
 }
 
 .content-form-container{
@@ -45,8 +48,14 @@ html, body {
     border-radius: 2px;
     font-size: 16px;
     line-height: 20px;
-    width: 370px;
+    width: 100%;
+    max-width: 470px;
     color: #000;
+
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .content-form-input:focus {
@@ -98,7 +107,8 @@ html, body {
 }
 
 .content-form-submit {
-    width: 370px;
+    width: 100%;
+    max-width: 470px;
     background: #0047BA;
     border-radius: 2px;
     font-size: 15px;
@@ -106,7 +116,9 @@ html, body {
     padding: 19px;
     color: #ffffff;
     cursor: pointer;
-    margin-bottom: 22px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .content-form-submit:hover{
@@ -195,4 +207,9 @@ html, body {
 
 .d-none {
     display: none;
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
 }

@@ -88,6 +88,7 @@ $(".content-form-submit").click(function (event) {
     $("#price").trigger("focusout");
 
     if (validationPassed){
+        $('body').addClass('stop-scrolling');
         let overlay = `
     <div class="overlay">
     <div class="overlay-content">
@@ -116,6 +117,7 @@ $(".content-form-submit").click(function (event) {
         $("script:first-of-type").before(overlay);
         $(".overlay-close").click(function (event) {
             $(".overlay").remove();
+            $('body').removeClass('stop-scrolling');
         })
 
         $(".overlay-content-submit").click(function () {

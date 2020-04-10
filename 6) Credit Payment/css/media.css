@@ -2,15 +2,26 @@
 
 }
 
-@media screen  and (max-width: 1200px) {
+@media screen  and (max-width: 1280px) {
+    .content-form, .content-optimal-logo {
+        padding-left: 80px;
+    }
+}
 
+@media screen  and (max-width: 1200px) {
+    .content-form, .content-optimal-logo {
+        padding-left: 50px;
+    }
+    .content-optimal-logo {
+        margin-top: 70px;
+    }
 }
 
 @media screen  and (max-width: 979px) {
     .container{
         padding: 22px;
         min-height: 0;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .content, .iba {
@@ -30,6 +41,7 @@
 
     .content-optimal-logo , .content-form {
         padding-left: 0;
+        padding-right: 0;
     }
 
     .content-optimal-logo {
@@ -38,6 +50,7 @@
 
     .content-form-input, .content-form-submit {
         width: 100%;
+        max-width: none;
     }
 
     .overlay-content-submit {

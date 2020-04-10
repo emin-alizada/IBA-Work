@@ -1,0 +1,198 @@
+html, body {
+    height: 100%;
+}
+
+.container {
+    min-height: 100%;
+    display: flex;
+    font-family: San Francisco, sans-serif;
+}
+
+.content {
+    width: calc(100% - 46.875%);
+}
+
+.iba {
+    width: 46.875%;
+    background: #0047BA url("../img/iba-logo-big.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-optimal-logo {
+    padding-left: 17.5%;
+    margin-top: 30px;
+    margin-bottom: 110px;
+}
+
+.content-form {
+    padding-left: 17.5%;
+}
+
+.content-form-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+    position: relative;
+}
+
+.content-form-input {
+    padding: 19px 20px;
+    border: 1px solid #E4E4E4;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-size: 16px;
+    line-height: 20px;
+    width: 370px;
+    color: #000;
+}
+
+.content-form-input:focus {
+    border-color: #000;
+    outline: none;
+}
+
+.content-form-input-number::-webkit-outer-spin-button,
+.content-form-input-number::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.content-form-input-number {
+    -moz-appearance: textfield;
+}
+
+.content-form-input-label {
+    pointer-events: none;
+    position: absolute;
+    transition: all 200ms;
+    color: #8A8A8A;
+}
+
+.content-form-input + .content-form-input-label {
+    top: 8px;
+    left: 21px;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.content-form-input:placeholder-shown + .content-form-input-label {
+    top: 20px;
+    left: 21px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.content-form-input:not(:placeholder-shown) , .content-form-input:focus {
+    padding-top: 29px;
+    padding-bottom: 9px;
+}
+
+.content-form-input:focus + .content-form-input-label {
+    top: 8px;
+    left: 21px;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.content-form-submit {
+    width: 370px;
+    background: #0047BA;
+    border-radius: 2px;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 19px;
+    color: #ffffff;
+    cursor: pointer;
+    margin-bottom: 22px;
+}
+
+.content-form-submit:hover{
+    background: #0043AF;
+}
+
+.content-form-submit:focus {
+    outline: none;
+}
+
+.content-form-input-error {
+    border-color: #FF0000;
+}
+
+.content-form-input-error-text {
+    color: #FF0000;
+    margin-top: 8px;
+    margin-left: 20px;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+
+/***************** Overlay Starts *****************/
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-content {
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 50px 60px;
+}
+
+.overlay-content-info {
+    margin-bottom: 18px;
+}
+
+.overlay-content-info-header {
+    font-size: 13px;
+    line-height: 16px;
+    color: #8A8A8A;
+    margin-bottom: 5px;
+}
+
+.overlay-content-info-text {
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.overlay-content-price {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000000;
+    margin: 30px 0;
+}
+
+.overlay-content-submit {
+    padding: 19px 85px;
+    background: #0047BA;
+    border-radius: 2px;
+    color: #ffffff;
+}
+
+.overlay-close {
+    position: absolute;
+    top: 50px;
+    right: 135px;
+}
+
+.overlay-close-img {
+    width: 34px;
+    height: 34px;
+}
+
+.d-none {
+    display: none;
+}

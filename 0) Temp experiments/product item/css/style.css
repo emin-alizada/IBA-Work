@@ -1,33 +1,45 @@
-@keyframes partner-form-loading-animation {
-    0% { transform: rotate(0deg) }
-    50% { transform: rotate(180deg) }
-    100% { transform: rotate(360deg) }
+.content-form-container{
+    margin-bottom: 22px;
+    position: relative;
+}
+.content-form-input {
+    padding: 19px 20px;
+    border: 1px solid #E4E4E4;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-size: 16px;
+    line-height: 20px;
+    width: 370px;
+    color: #000;
+}
+.content-form-input:focus {
+    border-color: #000;
+    outline: none;
 }
 
-.partner-form-loading div {
+.content-form-input-label {
     position: absolute;
-    animation: partner-form-loading-animation 1s linear infinite;
-    width: 80px;
-    height: 80px;
-    top: 10px;
-    left: 10px;
-    border-radius: 50%;
-    box-shadow: 0 4px 0 0 #e15b64;
-    transform-origin: 40px 41px;
+    transition: all 200ms;
+    color: #8A8A8A;
 }
-.partner-form-loading-container {
-    width: 100px;
-    height: 100px;
-    display: inline-block;
-    overflow: hidden;
-    background: none;
+
+.content-form-input + .content-form-input-label {
+        top: 8px;
+        left: 21px;
+        font-size: 13px;
+        line-height: 16px;
 }
-.partner-form-loading {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform: translateZ(0) scale(1);
-    backface-visibility: hidden;
-    transform-origin: 0 0; /* see note above */
+
+.content-form-input:placeholder-shown + .content-form-input-label {
+    top: 20px;
+    left: 21px;
+    font-size: 16px;
+    line-height: 20px;
 }
-.partner-form-loading div { box-sizing: content-box; }
+
+.content-form-input:focus + .content-form-input-label {
+    top: 8px;
+    left: 21px;
+    font-size: 13px;
+    line-height: 16px;
+}

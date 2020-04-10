@@ -1,0 +1,79 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Credit Payment</title>
+</head>
+<body>
+
+
+
+<div class="container">
+    <div class="content">
+        <div class="content-optimal-logo">
+            <img src="img/optimal-logo.png" class="content-optimal-logo-img" alt="Optimal Electronics">
+        </div>
+        <form action="#" class="content-form">
+            <div class="content-form-container">
+                <input type="text" class="content-form-input" name="name" placeholder=" " id="name">
+                <label class="content-form-input-label">Ad, Soyad</label>
+            </div>
+            <div class="content-form-container">
+                <input type="text" class="content-form-input" name="contractId" id="contractId" placeholder=" ">
+                <label class="content-form-input-label">Müqavilə nömrəsi</label>
+            </div>
+            <div class="content-form-container">
+                <input type="tel" class="content-form-input" name="phoneNumber" id="phoneNumber" placeholder=" ">
+                <label class="content-form-input-label">Əlaqə nömrəsi</label>
+            </div>
+            <div class="content-form-container">
+                <input type="email" class="content-form-input" name="mail" id="mail" placeholder=" ">
+                <label class="content-form-input-label">E-poçt - optional</label>
+            </div>
+            <div class="content-form-container">
+                <input type="number" class="content-form-input content-form-input-number" name="price"  id="price" placeholder=" ">
+                <label class="content-form-input-label">Məbləğ</label>
+            </div>
+            <input type="submit" value="ÖDƏNİŞƏ KEÇ" class="content-form-submit">
+        </form>
+    </div>
+    <div class="iba">
+        <a href="https://ibar.az">
+            <img class="iba-logo" src="img/iba-logo.svg" alt="IBA Logo">
+        </a>
+    </div>
+</div>
+
+<div class="overlay d-none">
+    <div class="overlay-content">
+        <div class="overlay-content-info">
+            <h3 class="overlay-content-info-header">Ad, Soyad</h3>
+            <p class="overlay-content-info-text">Emin Alizada</p>
+        </div>
+        <div class="overlay-content-info">
+            <h3 class="overlay-content-info-header">Müqavilə nömrəsi</h3>
+            <p class="overlay-content-info-text">11230940323</p>
+        </div>
+        <div class="overlay-content-info">
+            <h3 class="overlay-content-info-header">E-poçt</h3>
+            <p class="overlay-content-info-text">məmməd@gmail.com</p>
+        </div>
+        <div class="overlay-content-info">
+            <h3 class="overlay-content-info-header">Ad, Soyad</h3>
+            <p class="overlay-content-info-text">Emin Alizada</p>
+        </div>
+        <p class="overlay-content-price">18.00 AZN</p>
+        <button class="overlay-content-submit">TƏSDİQ ET</button>
+    </div>
+    <button class="overlay-close"><img src="img/close.png" alt="" class="overlay-close-img"></button>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.inputmask.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

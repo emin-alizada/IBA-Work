@@ -1,0 +1,120 @@
+@media screen and  (max-width: 1400px) {
+
+}
+
+@media screen  and (max-width: 1200px) {
+
+}
+
+@media screen  and (max-width: 979px) {
+    .container{
+        padding: 22px;
+        min-height: 0;
+        flex-direction: column-reverse;
+    }
+
+    .content, .iba {
+        width: auto;
+    }
+
+    .iba {
+        background: #0047BA url("../img/iba-logo-big-tablet.png");
+        border-radius: 2px;
+    }
+
+    .iba-logo {
+        width: 232px;
+        height: auto;
+        margin: 50px 0;
+    }
+
+    .content-optimal-logo , .content-form {
+        padding-left: 0;
+    }
+
+    .content-optimal-logo {
+        margin: 40px 0;
+    }
+
+    .content-form-input, .content-form-submit {
+        width: 100%;
+    }
+
+    .overlay-content-submit {
+        padding: 19px 74px;
+    }
+
+    .overlay-close {
+        top: 30px;
+        right: 30px;
+    }
+
+    .overlay-close-img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 764px) {
+
+
+}
+
+@media screen and (max-width: 639px) {
+    .container{
+        padding: 16px;
+    }
+
+    .iba-logo {
+        width: 153px;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .content-optimal-logo {
+        margin: 24px 0;
+    }
+
+    .content-optimal-logo-img {
+        width: 156px;
+        height: auto;
+    }
+
+    .content-form-container{
+        margin-bottom: 16px;
+    }
+
+    .content-form-input, .content-form-submit {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 414px) {
+
+    .overlay-content {
+        padding: 40px 24px;
+        width: calc(100% - 32px);
+        box-sizing: border-box;
+    }
+
+    .overlay-content-submit {
+        padding: 19px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .overlay-close {
+        top: 24px;
+        right: 24px;
+    }
+
+    .overlay-close-img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+
+}

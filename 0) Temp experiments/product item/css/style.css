@@ -1,45 +1,19 @@
-.content-form-container{
-    margin-bottom: 22px;
+.a {
     position: relative;
-}
-.content-form-input {
-    padding: 19px 20px;
-    border: 1px solid #E4E4E4;
-    box-sizing: border-box;
-    border-radius: 2px;
-    font-size: 16px;
-    line-height: 20px;
-    width: 370px;
-    color: #000;
-}
-.content-form-input:focus {
-    border-color: #000;
-    outline: none;
+    background-color: lightblue;
+    height: 500px;
 }
 
-.content-form-input-label {
+.b {
     position: absolute;
-    transition: all 200ms;
-    color: #8A8A8A;
+    bottom: -50px;
+    left: -50px;
+    width: 100px;
+    height: 100px;
+    background-color: deeppink;
 }
 
-.content-form-input + .content-form-input-label {
-        top: 8px;
-        left: 21px;
-        font-size: 13px;
-        line-height: 16px;
-}
-
-.content-form-input:placeholder-shown + .content-form-input-label {
-    top: 20px;
-    left: 21px;
-    font-size: 16px;
-    line-height: 20px;
-}
-
-.content-form-input:focus + .content-form-input-label {
-    top: 8px;
-    left: 21px;
-    font-size: 13px;
-    line-height: 16px;
+.c {
+    background-color: lightgreen;
+    height: 300px;
 }

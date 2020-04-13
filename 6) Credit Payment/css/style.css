@@ -141,6 +141,19 @@ html, body {
     line-height: 17px;
 }
 
+.content-form-error{
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.content-form-error-text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FF0000;
+    margin-left: 10px;
+}
 
 /***************** Overlay Starts *****************/
 

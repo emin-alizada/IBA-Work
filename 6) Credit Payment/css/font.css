@@ -1,6 +1,14 @@
 @font-face {
     font-family: "San Francisco";
     font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url("../font/San Francisco-Light.otf") format('otf');
+}
+
+@font-face {
+    font-family: "San Francisco";
+    font-style: normal;
     font-weight: 400;
     font-display: swap;
     src: url("../font/San Francisco-Regular.otf") format('otf');
@@ -12,4 +20,12 @@
     font-weight: 500;
     font-display: swap;
     src: url("../font/San Francisco-Medium.otf") format('otf');
+}
+
+@font-face {
+    font-family: "San Francisco";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("../font/San Francisco-Semibold.otf") format('otf');
 }

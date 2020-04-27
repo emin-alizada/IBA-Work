@@ -23,15 +23,7 @@ html, body {
 }
 
 .content-optimal-logo {
-    padding-left: 130px;
-    margin-top: 100px;
     margin-bottom: 40px;
-}
-
-.content-form {
-    padding-left: 130px;
-    padding-right: 50px;
-    margin-bottom: 60px;
 }
 
 .content-form-container{
@@ -225,4 +217,55 @@ html, body {
 .stop-scrolling {
     height: 100%;
     overflow: hidden;
+}
+
+
+/**************************  IBALINK PAGE ***********************/
+
+.content-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ibalink {
+    max-width: 470px;
+    color: #001230;
+}
+
+.ibalink-subheader {
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4D5A6F;
+    letter-spacing: 1.3px;
+}
+
+.ibalink-header {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 20px;
+}
+
+.ibalink-text {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.ibalink-button {
+    display: block;
+    background: #0047BA;
+    border-radius: 2px;
+    padding: 19px 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 1px;
 }

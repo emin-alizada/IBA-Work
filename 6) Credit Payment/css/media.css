@@ -32,6 +32,16 @@
         margin: 50px 0;
     }
 
+    .content-language {
+        left: auto;
+        top: 45px;
+        right: 0;
+    }
+
+    .content-main-wrapper {
+        margin: 0;
+    }
+
     .content-optimal-logo , .content-form {
         padding-left: 0;
         padding-right: 0;
@@ -89,6 +99,12 @@
         width: 153px;
         height: auto;
         margin: 20px 0;
+    }
+
+    .content-language {
+        left: auto;
+        top: 24px;
+        right: 0;
     }
 
     .content-optimal-logo {

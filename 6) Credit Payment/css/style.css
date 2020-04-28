@@ -12,6 +12,7 @@ html, body {
 
 .content {
     width: 52%;
+    position: relative;
 }
 
 .iba {
@@ -20,6 +21,38 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.content-language {
+    position: absolute;
+    left: calc((100% - 470px)/2);
+    top: 24px;
+}
+
+.content-language-list {
+    display: flex;
+}
+
+.content-language-list-item {
+    margin-right: 14px;
+}
+
+.content-language-list-item:last-of-type {
+    margin-right: 0;
+}
+
+.content-language-list-item-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.64px;
+    text-decoration-line: underline;
+    color: #001230;
+    text-transform: uppercase;
+}
+
+.content-main-wrapper {
+    margin: 55px 0;
 }
 
 .content-optimal-logo {

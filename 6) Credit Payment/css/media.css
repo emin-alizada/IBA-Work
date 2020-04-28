@@ -41,6 +41,10 @@
         margin: 40px 0;
     }
 
+    .content-form {
+        min-width: 0;
+    }
+
     .content-form-input, .content-form-submit {
         width: 100%;
         max-width: none;

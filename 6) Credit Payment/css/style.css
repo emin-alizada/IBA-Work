@@ -59,6 +59,11 @@ html, body {
     margin-bottom: 40px;
 }
 
+.content-optimal-logo-img {
+    width: 197px;
+    height: auto;
+}
+
 .content-form {
     min-width: 470px;
 }

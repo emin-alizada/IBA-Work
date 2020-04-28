@@ -45,10 +45,14 @@ html, body {
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
-    letter-spacing: 0.64px;
+    letter-spacing: 1px;
     text-decoration-line: underline;
-    color: #001230;
+    color: #99A0AC;
     text-transform: uppercase;
+}
+
+.content-language-list-item-link-active {
+    color: #001230;
 }
 
 .content-main-wrapper {

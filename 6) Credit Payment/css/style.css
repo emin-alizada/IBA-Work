@@ -53,6 +53,11 @@ html, body {
 
 .content-language-list-item-link-active {
     color: #001230;
+    text-decoration: none;
+}
+
+.content-language-list-item-link:hover {
+    text-decoration: none;
 }
 
 .content-main-wrapper {

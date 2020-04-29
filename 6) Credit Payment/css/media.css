@@ -77,11 +77,20 @@
 
     .ibalink {
         max-width: none;
-        margin-top: 40px;
+        margin-top: 30px;
+    }
+
+    .ibalink-logo {
+        position: static;
     }
 
     .content-center {
         display: block;
+    }
+
+    .ibalink-contacts {
+        position: static;
+        margin-bottom: 12px;
     }
 }
 

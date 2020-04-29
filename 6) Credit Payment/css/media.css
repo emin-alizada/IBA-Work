@@ -75,6 +75,12 @@
     }
 
 
+    .ibalink-iba {
+        width: auto;
+        border-radius: 2px;
+        padding: 0;
+    }
+
     .ibalink {
         max-width: none;
         margin-top: 30px;
@@ -91,6 +97,9 @@
     .ibalink-contacts {
         position: static;
         margin-bottom: 12px;
+    }
+    .ibalink-iba-photo, .ibalink-iba-text-container {
+        display: none;
     }
 }
 

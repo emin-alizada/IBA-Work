@@ -280,6 +280,34 @@ html, body {
 
 /**************************  IBALINK PAGE ***********************/
 
+.ibalink-iba {
+    width: calc(100% - 52%);
+    background: #0047BA url("../img/ibalink-bg.svg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.ibalink-iba-text-container {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    color: #FFFFFF;
+    margin-right: 200px;
+}
+
+.ibalink-iba-text {
+    padding: 0 10px;
+}
+
+.ibalink-iba-text-highlight {
+    background: #CA007C;
+    border-radius: 6px;
+}
+
 .content-center {
     display: flex;
     justify-content: center;

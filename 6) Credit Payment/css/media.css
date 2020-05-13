@@ -129,10 +129,11 @@
         margin: 24px 0;
     }
 
-    .content-optimal-logo-img {
-        width: 156px;
-        height: auto;
-    }
+    /*.content-optimal-logo-img {*/
+    /*    width: auto;*/
+    /*    !*max-width: 156px;*!*/
+    /*    height: auto;*/
+    /*}*/
 
     .content-form-container{
         margin-bottom: 16px;

@@ -69,8 +69,10 @@ html, body {
 }
 
 .content-optimal-logo-img {
-    width: 197px;
+    width: auto;
     height: auto;
+    max-width: 200px;
+    max-height: 60px;
 }
 
 .content-form {

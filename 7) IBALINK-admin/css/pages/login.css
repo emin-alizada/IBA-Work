@@ -1,0 +1,28 @@
+/* l stands for login */
+
+.l-container {
+    min-height: 100%;
+    display: flex;
+}
+
+.l-brand {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #02307A url("../../img/iba-logo-bg.svg") -51px -100px;
+}
+
+.l-right {
+    background-color: deepskyblue;
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.l-right-content {
+
+}

@@ -1,0 +1,47 @@
+.h-100 {
+    height: 100%;
+}
+
+.w-max-470 {
+    max-width: 470px;
+}
+
+
+ /*Font Sizes*/
+.fs-sm {
+    font-size: 14px;
+}
+
+.fs-md {
+    font-size: 18px;
+}
+
+.fs-lg {
+    font-size: 24px;
+}
+
+.fs-xl {
+    font-size: 36px;
+}
+
+/*Font Weights*/
+
+.fw-300 {
+     font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}

@@ -14,9 +14,8 @@
 }
 
 .l-right {
-    background-color: deepskyblue;
     width: 60%;
-
+    background: #E5E5E5;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,4 +24,15 @@
 
 .l-right-content {
 
+}
+
+.l-right-content-ibalink {
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    color: #4D5A6F;
+}
+
+.l-right-content-header {
+    line-height: 43px;
+    color: #001230;
 }

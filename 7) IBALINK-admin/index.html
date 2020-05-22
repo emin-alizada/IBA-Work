@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
-    <title>Credit Payment</title>
+    <title>IBALINK Log in</title>
 </head>
 <body class="h-100">
 
@@ -20,15 +20,19 @@
     <div class="l-right">
         <div class="l-right-content w-max-470">
             <h6 class="l-right-content-ibalink fw-600 fs-sm">IBALINK</h6>
-            <h2 class="l-right-content-header fw-500 fs-xl">The quick brown fox jumps over the lazy dog</h2>
+            <h2 class="l-right-content-header fw-500 fs-xl">Məlumatlarınızı qeyd edərək daxil olun</h2>
             <form action="#" class="l-right-content-form">
-                <div class="l-right-content-form-input-container">
-                    <input type="number" class="l-right-content-form-input" placeholder="Müştəri kodu">
+                <div class="error-message-container d-none">
+                    <img src="img/error-icon.svg" alt="Error" class="error-message-icon">
+                    <p class="error-message-text">Müştəri kodu və ya mobil nömrə düzgün deyil</p>
                 </div>
                 <div class="l-right-content-form-input-container">
-                    <input type="number" class="l-right-content-form-input" placeholder="Mobil nömrə">
+                    <input type="number" class="l-right-content-form-input" placeholder="Müştəri kodu" required>
                 </div>
-                <input type="submit" class="l-right-content-form-submit">
+                <div class="l-right-content-form-input-container">
+                    <input type="number" class="l-right-content-form-input" placeholder="Mobil nömrə" required>
+                </div>
+                <input type="submit" class="l-right-content-form-submit" value="DAXİL OL">
             </form>
         </div>
     </div>

@@ -6,8 +6,18 @@
     max-width: 470px;
 }
 
+.d-none {
+    display: none !important;
+}
 
+/****************************************************/
  /*Font Sizes*/
+/****************************************************/
+
+.fs-xs {
+    font-size: 12px;
+}
+
 .fs-sm {
     font-size: 14px;
 }
@@ -44,4 +54,68 @@
 
 .fw-700 {
     font-weight: 700;
+}
+
+/****************************************************/
+/*general input styling*/
+/****************************************************/
+
+input {
+    width: 100%;
+    padding: 20px;
+    background: #FFFFFF;
+    border: 1px solid #D6D9DE;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #001230;
+}
+
+input::placeholder{
+    color: #99A0AC;
+}
+
+input:focus {
+    outline: none;
+    border-color: #001230;
+}
+
+input[type=submit] {
+    background: #1B68FF;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 400ms ease-in-out;
+    border: none;
+}
+
+input[type=submit]:hover {
+    background: #185EE7;
+}
+
+/****************************************************/
+/*Error Message*/
+/****************************************************/
+
+.error-message-container {
+    display: flex;
+    align-items: center;
+
+    background: #FCEBED;
+    border-radius: 2px;
+    padding: 13px 16px;
+    margin-bottom: 24px;
+}
+
+.error-message-icon {
+    margin-right: 12px;
+}
+
+.error-message-text {
+    line-height: 20px;
+    color: #581A1A;
 }

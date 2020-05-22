@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>IBALINK OTP</title>
+</head>
+<body class="h-100">
+
+<div class="l-container">
+    <div class="l-brand">
+        <a href="https://www.ibar.az/" class="l-brand-link">
+            <img src="img/iba-logo.svg" alt="IBA" class="l-brand-link-logo">
+        </a>
+    </div>
+    <div class="l-right">
+        <div class="l-right-content l-right-content-otp w-max-470">
+            <div class="l-right-content-otp-back">
+                <a href="#" class="l-right-content-otp-back-link fw-600 fs-sm">
+                    <img src="img/left-icon.svg" alt="Back" class="l-right-content-otp-back-link-icon">
+                    <span>GERİYƏ</span>
+                </a>
+            </div>
+            <div>
+                <div class="l-right-content-timer">
+                    <span class="l-right-content-timer-text fw-500">Qalan müddət</span>
+                    <span class="l-right-content-timer-time fw-700 fs-xs">02:00</span>
+                </div>
+                <h2 class="l-right-content-header fw-500 fs-xl">Mobil nömrənizə gələn
+                    kodu daxil edin</h2>
+                <form action="#" class="l-right-content-form">
+                    <div class="error-message-container d-none">
+                        <img src="img/error-icon.svg" alt="Error" class="error-message-icon">
+                        <p class="error-message-text">Müştəri kodu və ya mobil nömrə düzgün deyil</p>
+                    </div>
+                    <div class="l-right-content-form-input-container">
+                        <input type="number" class="l-right-content-form-input" placeholder="Müştəri kodu" required>
+                    </div>
+                    <div class="l-right-content-form-input-container">
+                        <input type="number" class="l-right-content-form-input" placeholder="Mobil nömrə" required>
+                    </div>
+                    <input type="submit" class="l-right-content-form-submit" value="DAXİL OL">
+                </form>
+            </div>
+            <div class="l-right-content-otp-resend">
+                <p class="l-right-content-otp-resend-text">OTP kod hələ də gəlməyib?</p>
+                <a href="#" class="l-right-content-otp-link">Yenidən göndər</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

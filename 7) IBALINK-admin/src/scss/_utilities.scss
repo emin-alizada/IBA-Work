@@ -70,6 +70,7 @@ input {
     font-weight: 500;
     line-height: 20px;
     color: #001230;
+    -webkit-appearance:none;
 }
 
 input::placeholder{
@@ -91,6 +92,7 @@ input[type=submit] {
     cursor: pointer;
     transition: background-color 400ms ease-in-out;
     border: none;
+    -webkit-appearance: none;
 }
 
 input[type=submit]:hover {

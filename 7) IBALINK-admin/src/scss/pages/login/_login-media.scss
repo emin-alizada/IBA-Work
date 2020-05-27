@@ -34,6 +34,10 @@
         max-width: none;
         width: 100%;
     }
+
+    .l-right-content-header {
+        margin-bottom: 30px;
+    }
 }
 
 @media screen and (max-width: 764px) {
@@ -58,6 +62,10 @@
 
     .l-right-content-form-input-container{
         margin-bottom: 16px;
+    }
+
+    .l-brand, .l-right {
+        padding: 16px;
     }
 }
 

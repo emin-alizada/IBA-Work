@@ -1,7 +1,0 @@
-@import url("font.css");
-@import url("utilities.css");
-@import url("pages/login.css");
-
-html, body {
-    font-family: 'San Francisco', sans-serif;
-}

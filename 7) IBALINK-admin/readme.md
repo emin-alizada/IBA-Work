@@ -1,1 +1,0 @@
-Məncə tam hazırdı amma birdə göz atın, bəlkə nəysə gözümdən qaçıb.

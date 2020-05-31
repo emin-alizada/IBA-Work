@@ -46,6 +46,37 @@
                 margin-top: auto;
                 margin-bottom: 60px;
                 display: flex;
+
+                &-text {
+                    margin-right: 8px;
+                    color: #4D5A6F;
+                    line-height: 20px;
+                }
+                &-link {
+                    text-decoration-line: underline;
+                    color: #1B68FF;
+                }
+            }
+
+            &-mobile {
+                display: none;
+            }
+
+            &-lg {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 30px;
+
+                &-input {
+                    width: 70px;
+                    margin-right: 10px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
             }
         }
 

@@ -26,7 +26,7 @@
             <div>
                 <div class="l-right-content-timer">
                     <span class="l-right-content-timer-text fw-500">Qalan müddət</span>
-                    <span class="l-right-content-timer-time fw-700 fs-xs">02:00</span>
+                    <span class="l-right-content-timer-time fw-700 fs-xs" id="otpTimer">02:00</span>
                 </div>
                 <h2 class="l-right-content-header fw-500 fs-xl">Mobil nömrənizə gələn
                     kodu daxil edin</h2>
@@ -37,18 +37,25 @@
                         <p class="error-message-text">Müştəri kodu və ya mobil nömrə düzgün deyil</p>
                     </div>
 <!--                    End of Error message-->
-                    <div class="l-right-content-form-input-container">
-                        <input type="number" class="l-right-content-form-input" placeholder="Müştəri kodu" required>
+<!--                    Mobile OTP-->
+                    <div class="l-right-content-form-input-container l-right-content-otp-mobile">
+                        <input type="text" class="l-right-content-form-input" placeholder="OTP kod" required>
                     </div>
-                    <div class="l-right-content-form-input-container">
-                        <input type="number" class="l-right-content-form-input" placeholder="Mobil nömrə" required>
+<!--                    Tablet and Desctop OTP-->
+                    <div class="l-right-content-otp-lg" id="otpDesc" data-group-name="digits" data-autosubmit="false" >
+                        <input type="text" class="l-right-content-otp-lg-input" placeholder="_" id="digit-1" name="digit-1" data-next="digit-2" />
+                        <input type="text" class="l-right-content-otp-lg-input" placeholder="_" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+                        <input type="text" class="l-right-content-otp-lg-input" placeholder="_" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+                        <input type="text" class="l-right-content-otp-lg-input" placeholder="_" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" />
+                        <input type="text" class="l-right-content-otp-lg-input" placeholder="_" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4" />
+                        <input type="text" class="l-right-content-otp-lg-input" placeholder="_" id="digit-6" name="digit-6" data-previous="digit-5" />
                     </div>
                     <input type="submit" class="l-right-content-form-submit" value="DAXİL OL">
                 </form>
             </div>
             <div class="l-right-content-otp-resend">
-                <p class="l-right-content-otp-resend-text">OTP kod hələ də gəlməyib?</p>
-                <a href="#" class="l-right-content-otp-link">Yenidən göndər</a>
+                <p class="l-right-content-otp-resend-text fw-300">OTP kod hələ də gəlməyib?</p>
+                <a href="#" class="l-right-content-otp-resend-link">Yenidən göndər</a>
             </div>
         </div>
     </div>

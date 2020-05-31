@@ -1,43 +1,63 @@
-@media screen and  (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
 
 }
 
-@media screen  and (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
 
 }
 
-@media screen  and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
 
 }
 
-@media screen  and (max-width: 992px) {
-    .l-container {
-        flex-direction: column;
+@media screen and (max-width: 992px) {
+  .l-container {
+    flex-direction: column;
+  }
 
-    }
+  .l-brand {
+    width: 100%;
+    padding: 24px;
+    justify-content: flex-start;
+    background: #02307A;
+  }
 
-    .l-brand, .l-right {
-        width: 100%;
-        padding: 24px;
-    }
+  .l-right {
+    width: 100%;
+    padding: 24px;
+    align-items: start;
 
-    .l-brand {
-        justify-content: flex-start;
-        background: #02307A;
-    }
+    &-content {
+      max-width: none;
+      width: 100%;
 
-    .l-right {
-        align-items: start;
-    }
+      &-otp {
 
-    .l-right-content {
-        max-width: none;
-        width: 100%;
-    }
+        &-back {
+          margin-top: 0;
+          margin-bottom: 32px;
+        }
 
-    .l-right-content-header {
+        &-resend {
+          margin-top: 60px;
+          margin-bottom: 20px;
+          flex-direction: column;
+
+          &-text {
+            margin-bottom: 6px;
+          }
+        }
+      }
+
+      &-ibalink {
+        margin-top: 14px;
+      }
+
+      &-header {
         margin-bottom: 30px;
+      }
     }
+  }
 }
 
 @media screen and (max-width: 764px) {
@@ -46,27 +66,52 @@
 }
 
 @media screen and (max-width: 639px) {
-    .l-brand-link-logo {
-        max-width: 174px;
-    }
+  .l-brand {
+    padding: 16px;
 
-    .l-right-content-ibalink {
+    &-link-logo {
+      max-width: 174px;
+    }
+  }
+
+  .l-right {
+    padding: 16px;
+
+    &-content {
+
+      &-otp {
+        &-resend {
+          margin-top: 30px;
+        }
+
+        &-mobile {
+          display: block;
+        }
+
+        &-lg {
+          display: none;
+        }
+      }
+
+      &-ibalink {
         margin-bottom: 10px;
-    }
+      }
 
-    .l-right-content-header {
+      &-header {
         font-weight: 600;
         font-size: 24px;
         line-height: 30px;
-    }
+      }
 
-    .l-right-content-form-input-container{
-        margin-bottom: 16px;
-    }
+      &-form {
 
-    .l-brand, .l-right {
-        padding: 16px;
+        &-input-container {
+          margin-bottom: 16px;
+        }
+      }
     }
+  }
+
 }
 
 @media screen and (max-width: 414px) {

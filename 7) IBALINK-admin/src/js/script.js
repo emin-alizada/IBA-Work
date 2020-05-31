@@ -44,3 +44,4 @@ function countdown(seconds, element) {
 if ($("#otpTimer")){
     countdown(120, $("#otpTimer"));
 }
+

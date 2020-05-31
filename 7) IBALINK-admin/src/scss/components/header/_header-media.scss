@@ -1,0 +1,43 @@
+@media screen and (max-width: 1400px) {
+
+}
+
+@media screen and (max-width: 1280px) {
+
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 979px) {
+  .header {
+    &-list {
+      display: none;
+    }
+
+    &-company {
+      display: none;
+    }
+
+    &-burger {
+      display: inline-block;
+    }
+  }
+}
+
+@media screen and (max-width: 764px) {
+
+
+}
+
+@media screen and (max-width: 639px) {
+
+}
+
+@media screen and (max-width: 414px) {
+
+}
+
+@media screen and (max-width: 374px) {
+}

@@ -1,4 +1,5 @@
 @import "pages/login/login-media";
+@import "components/header/header-media";
 
 @media screen and  (max-width: 1400px) {
 
@@ -9,11 +10,17 @@
 }
 
 @media screen  and (max-width: 1200px) {
-
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 
 @media screen  and (max-width: 979px) {
-
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 
 @media screen and (max-width: 764px) {
@@ -22,7 +29,10 @@
 }
 
 @media screen and (max-width: 639px) {
-
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 @media screen and (max-width: 414px) {

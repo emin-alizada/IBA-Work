@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140px" height="170px" viewBox="0 0 140 170" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>1</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="140" height="170" rx="2"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1">
+            <g id="Clipped">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Rectangle"></g>
+                <g id="Group" mask="url(#mask-2)" fill-rule="nonzero">
+                    <g transform="translate(3.000000, 28.000000)" id="Path">
+                        <polygon fill="#ECAF4A" points="0.623 49.9211 85.858 0.7106 126.121 70.4484 40.886 119.659"></polygon>
+                        <polygon fill="#F9D28D" points="27.743 34.2632 58.738 16.3685 72.159 39.6144 41.164 57.5091"></polygon>
+                        <polygon fill="#D18B29" points="95.565 62.2609 103.314 57.7872 107.788 65.5359 100.039 70.0096"></polygon>
+                        <polygon fill="#D18B29" points="80.068 71.2083 87.817 66.7346 92.29 74.483 84.542 78.957"></polygon>
+                        <polygon fill="#D69F44" points="36.412 111.91 121.647 62.6997 126.121 70.4484 40.886 119.659"></polygon>
+                        <polygon fill="#ECAF4A" points="29.263 126.369 137.744 63.7379 182.481 141.224 74 203.856"></polygon>
+                        <polygon fill="#F9D28D" points="68.006 104.001 99.001 86.106 112.422 109.352 81.427 127.247"></polygon>
+                        <polygon fill="#D18B29" points="136.428 141.984 144.176 137.511 148.65 145.259 140.901 149.733"></polygon>
+                        <polygon fill="#D69F44" points="69.526 196.107 178.007 133.476 182.481 141.224 74 203.856"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

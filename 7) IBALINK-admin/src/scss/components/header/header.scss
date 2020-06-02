@@ -76,4 +76,75 @@
     display: none;
     margin-left: auto;
   }
+
+  &-dropdown-menu {
+    height: calc(100% - 48px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    &-content {
+      margin: auto 0;
+      width: 100%;
+
+      &-company {
+        text-align: center;
+
+        &-header {
+          line-height: 30px;
+          color: #001230;
+          margin-bottom: 10px;
+        }
+
+        &-number {
+          line-height: 20px;
+          color: #99A0AC;
+          margin-bottom: 30px;
+        }
+      }
+
+      &-link {
+
+        &-item {
+          margin-bottom: 14px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+
+          &-link {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 18px 0;
+            background: #F6F6F9;
+            border-radius: 2px;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+            color: #001230;
+
+
+            &-logo {
+              margin-right: 8px;
+            }
+          }
+        }
+      }
+    }
+
+    &-logout {
+      padding: 12px 30px;
+      line-height: 20px;
+      letter-spacing: 0.04em;
+      color: #99A0AC;
+      //margin-bottom: 100px;
+    }
+  }
+
+  &-modal {
+    display: none;
+  }
 }

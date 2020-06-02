@@ -45,3 +45,22 @@ if ($("#otpTimer")){
     countdown(120, $("#otpTimer"));
 }
 
+function openDropdown() {
+    $(".modal-container").removeClass("d-none");
+    // $(".modal-container").css('display', 'block');
+    document.body.style.overflow = "hidden";
+    // $(".modal-container").animate({height: "100vh"});
+}
+
+function closeMenu() {
+    // $(".modal-container").animate({height: "0"}, function () {
+    //     $(".modal-container").addClass("d-none");
+    //     document.body.style.overflow = "auto";
+    // });
+
+    $(".modal-container").addClass("d-none");
+    document.body.style.overflow = "auto";
+}
+
+$("#headerDropdownButton").on("click", openDropdown);
+$("#closeDropdown").on("click", closeMenu)

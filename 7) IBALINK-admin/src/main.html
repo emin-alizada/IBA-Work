@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>IBALINK OTP</title>
 </head>
-<body>
+<body class="body-bg">
 
 <nav class="header-bgc">
     <nav class="header container">
@@ -39,7 +39,95 @@
             <img src="img/burger.svg" alt="">
         </button>
     </nav>
+    <section class="modal-container d-none header-modal">
+        <section class="modal">
+            <div class="modal-header">
+                <span class="modal-header-text">Delete me later</span>
+                <button class="modal-header-close" id="closeDropdown">
+                    <img src="img/closeBtn.svg" alt="">
+                </button>
+            </div>
+            <div class="modal-content header-dropdown-menu">
+                <div class="header-dropdown-menu-content">
+                    <div class="header-dropdown-menu-content-company">
+                        <h2 class="header-dropdown-menu-content-company-header fs-lg fw-600">Optimal Electronics</h2>
+                        <p class="header-dropdown-menu-content-company-number">050 311 00 00</p>
+                    </div>
+                    <ul class="header-dropdown-menu-content-link">
+                        <li class="header-dropdown-menu-content-link-item">
+                            <a href="#" class="header-dropdown-menu-content-link-item-link fw-500">
+                                <img src="img/hesabat.svg" class="header-dropdown-menu-content-link-item-link-logo" alt="">
+                                <span>Hesabatlar</span>
+                            </a>
+                        </li>
+                        <li class="header-dropdown-menu-content-link-item">
+                            <a href="#" class="header-dropdown-menu-content-link-item-link fw-500">
+                                <img src="img/bonus.svg" class="header-dropdown-menu-content-link-item-link-logo" alt="">
+                                <span>Bonuslar</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="header-dropdown-menu-logout fs-sm fw-600">LOG OUT</a>
+            </div>
+        </section>
+    </section>
 </nav>
+
+<div class="m container">
+<!--    if three inputs add class of m-lg-bg-3 next to m-lg-bg -->
+    <div class="m-lg-bg">
+        <div class="m-lg w-max-470">
+            <h4 class="m-lg-subheader fw-600 fs-sm">LİNK GENERASİYASI</h4>
+            <h2 class="m-lg-header fw-500 fs-xl">Linki müştəriylə paylaşın və ödənişinizi əldə edin</h2>
+            <form action="#" class="m-lg-form">
+<!--                Error Message-->
+                <div class="error-message-container d-none">
+                    <img src="img/error-icon.svg" alt="Error" class="error-message-icon">
+                    <p class="error-message-text">Müştəri kodu və ya mobil nömrə düzgün deyil</p>
+                </div>
+<!--                End of Error Message-->
+
+<!--                Third input, if required-->
+<!--                <div class="m-lg-form-input-container input-container">-->
+<!--                    <input type="number" class="m-lg-form-input input-animated" placeholder=" ">-->
+<!--                    <label>Şifariş nömrəsi</label>-->
+<!--                </div>-->
+<!--                End of third Input-->
+
+                <div class="m-lg-form-input-container input-container">
+                    <input type="number" class="m-lg-form-input input-animated" placeholder=" ">
+                    <label>Şifariş nömrəsi</label>
+                    <span class="m-lg-form-error fs-sm">Bu field doldurulmalıdır</span>
+                </div>
+                <div class="m-lg-form-input-container input-container">
+                    <input type="number" class="m-lg-form-input input-animated" placeholder=" ">
+                    <label>Məbləğ</label>
+                </div>
+                <div class="m-lg-form-input-container">
+                    <input type="submit" class="m-lg-form-input-submit" value="GENERASİYA ET">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="m-statistics w-max-470">
+        <div class="m-statistics-item">
+            <h5 class="m-statistics-item-header fs-md">Ümumi satışlarınızın sayı</h5>
+            <p class="m-statistics-item-text fs-xxl">18</p>
+            <img src="img/packages.svg" class="m-statistics-item-photo" alt="">
+        </div>
+        <div class="m-statistics-item">
+            <h5 class="m-statistics-item-header fs-md">Əldə etdiyiniz gəlir (AZN)</h5>
+            <p class="m-statistics-item-text fs-xxl">6000000</p>
+            <img src="img/coins.svg" class="m-statistics-item-photo" alt="">
+        </div>
+        <div class="m-statistics-item">
+            <h5 class="m-statistics-item-header fs-md">Qazandığınız bonuslar</h5>
+            <p class="m-statistics-item-text fs-xxl">500</p>
+            <img src="img/bags.svg" class="m-statistics-item-photo" alt="">
+        </div>
+    </div>
+</div>
 
 <script src="js/script.js"></script>
 </body>

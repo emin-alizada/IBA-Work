@@ -1,0 +1,98 @@
+//M stands for main
+
+.m {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  //align-items: flex-start;
+
+  //lg stands for link generation
+  &-lg {
+    &-bg {
+      width: 60%;
+      padding: 100px 16px;
+      background: #02307A url("../img/iba-logo-bg.svg") -152px -206px;
+      margin-right: 30px;
+      border-radius: 2px;
+      display: flex;
+      justify-content: center;
+
+      &-3 {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+    }
+
+    &-subheader {
+      line-height: 20px;
+      letter-spacing: 0.08em;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 12px;
+    }
+
+    &-header {
+      line-height: 43px;
+      color: #FFFFFF;
+      margin-bottom: 34px;
+    }
+
+    &-form {
+
+      &-input {
+
+        &-container {
+          margin-bottom: 22px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      &-error {
+        display: inline-block;
+        padding: 6px 10px;
+        line-height: 16px;
+        color: #FFFFFF;
+        background: #EB5757;
+        border-radius: 2px;
+        position: absolute;
+        right: 15px;
+        top: calc(50% - 14px);
+      }
+    }
+  }
+
+  &-statistics {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-item {
+      background: #FFFFFF;
+      border-radius: 2px;
+      position: relative;
+      padding: 34px 40px;
+
+      &-header {
+        line-height: 24px;
+        color: #4D5A6F;
+        margin-bottom: 14px;
+      }
+
+      &-text {
+        line-height: 64px;
+        color: #001230;
+        position: relative;
+        z-index: 5;
+      }
+
+      &-photo {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}

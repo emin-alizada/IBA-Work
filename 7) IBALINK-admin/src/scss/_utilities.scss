@@ -39,6 +39,10 @@
     font-size: 36px;
 }
 
+.fs-xxl {
+    font-size: 64px;
+}
+
 /*Font Weights*/
 
 .fw-300 {
@@ -65,9 +69,13 @@
 /*general input styling*/
 /****************************************************/
 
+.input-container {
+    position: relative;
+}
+
 input {
     width: 100%;
-    padding: 20px;
+    padding: 19px;
     background: #FFFFFF;
     border: 1px solid #D6D9DE;
     border-radius: 2px;
@@ -88,6 +96,7 @@ input:focus {
 }
 
 input[type=submit] {
+    padding: 19px;
     background: #1B68FF;
     font-weight: 500;
     font-size: 15px;
@@ -102,6 +111,39 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background: #185EE7;
+}
+
+label {
+    pointer-events: none;
+    position: absolute;
+    transition: all 200ms;
+    color: #99A0AC;
+}
+
+.input-animated + label {
+    top: 8px;
+    left: 21px;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.input-animated:placeholder-shown + label {
+    top: 20px;
+    left: 21px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.input-animated:not(:placeholder-shown), .input-animated:focus {
+    padding-top: 29px;
+    padding-bottom: 9px;
+}
+
+.input-animated:focus + label {
+    top: 8px;
+    left: 21px;
+    font-size: 13px;
+    line-height: 16px;
 }
 
 /****************************************************/
@@ -125,4 +167,24 @@ input[type=submit]:hover {
 .error-message-text {
     line-height: 20px;
     color: #581A1A;
+}
+
+.input-error-text {
+    margin-top: 8px;
+    margin-left: 20px;
+    line-height: 17px;
+    color: #EB5757;
+    display: block;
+}
+
+.input-error-border {
+    border-color: #EB5757;
+}
+
+/****************************************************/
+/*BG for Body*/
+/****************************************************/
+
+.body-bg {
+    background: #F6F6F9;
 }

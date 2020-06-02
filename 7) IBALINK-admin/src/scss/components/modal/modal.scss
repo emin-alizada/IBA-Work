@@ -1,0 +1,23 @@
+.modal {
+  padding: 16px;
+  height: 100%;
+  &-container {
+    height: -webkit-fill-available;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+  }
+
+  &-header {
+    display: flex;
+    align-items: center;
+    padding-top: 2px;
+    padding-bottom: 18px;
+
+    &-close {
+      margin-left: auto;
+    }
+  }
+}

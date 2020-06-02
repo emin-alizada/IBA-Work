@@ -55,6 +55,10 @@
                 &-link {
                     text-decoration-line: underline;
                     color: #1B68FF;
+
+                    &:hover {
+                        color: #02307A;
+                    }
                 }
             }
 

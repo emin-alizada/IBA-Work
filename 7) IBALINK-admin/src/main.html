@@ -35,14 +35,13 @@
             </div>
             <a href="#" class="header-company-logout fs-sm fw-600">LOG OUT</a>
         </div>
-        <button class="header-burger" id="headerDropdownButton">
+        <button class="header-burger" data-modal-id="navDropdown" id="headerDropdownButton">
             <img src="img/burger.svg" alt="">
         </button>
     </nav>
-    <section class="modal-container d-none header-modal">
+    <section id="navDropdown" class="modal-container d-none header-modal">
         <section class="modal">
             <div class="modal-header">
-                <span class="modal-header-text">Delete me later</span>
                 <button class="modal-header-close" id="closeDropdown">
                     <img src="img/closeBtn.svg" alt="">
                 </button>
@@ -128,6 +127,102 @@
         </div>
     </div>
 </div>
+
+<!--Modal of Link Generation-->
+<section id="mLgModal" class="modal-container m-lg-modal">
+    <section class="modal">
+        <div class="modal-header">
+            <span class="modal-header-text fs-xl fw-500">Linki paylaş</span>
+            <button class="modal-header-close" onclick="closeModal()">
+                <img src="img/closeBtn.svg" alt="">
+            </button>
+        </div>
+        <div class="modal-content m-lg-modal-content">
+            <div class="m-lg-modal-content-link">
+                <span class="m-lg-modal-content-link-text fw-300">www.ibalink.com/23499982317372138</span>
+                <button class="m-lg-modal-content-link-copy fw-600 fs-sm">
+                    <img src="img/copy-passive.svg" alt="" class="m-lg-modal-content-link-copy-icon">
+                    <span class="m-lg-modal-content-link-copy-text">
+                        COPY
+                    </span>
+                </button>
+            </div>
+            <ul class="m-lg-modal-content-radios">
+                <li class="m-lg-modal-content-radios-item">
+                    <label class="radio-label m-lg-modal-content-radios-item-label">SMS
+                        <input type="radio" class="input-radio" name="radio" checked="checked" value="smsForm">
+                        <span class="radio-checkmark"></span>
+                    </label>
+                </li>
+                <li class="m-lg-modal-content-radios-item">
+                    <label class="radio-label m-lg-modal-content-radios-item-label">E-poçt
+                        <input type="radio" class="input-radio" name="radio" value="mailForm">
+                        <span class="radio-checkmark"></span>
+                    </label>
+                </li>
+                <li class="m-lg-modal-content-radios-item">
+                    <label class="radio-label m-lg-modal-content-radios-item-label">Sosial media
+                        <input type="radio" class="input-radio" name="radio" value="socialForm">
+                        <span class="radio-checkmark"></span>
+                    </label>
+                </li>
+            </ul>
+            <div class="m-lg-modal-content-send">
+                <form action="#" id="smsForm" class="m-lg-modal-content-send-form">
+                    <div class="m-lg-form-input-container input-container">
+                        <input type="number" class="m-lg-form-input input-animated" placeholder=" ">
+                        <label>Mobil nömrə</label>
+                    </div>
+                    <div class="m-lg-form-input-container">
+                        <input type="submit" class="m-lg-form-input-submit" value="GÖNDƏR">
+                    </div>
+                </form>
+                <form action="#" id="mailForm" class="m-lg-modal-content-send-form d-none">
+                    <div class="m-lg-form-input-container input-container">
+                        <input type="number" class="m-lg-form-input input-animated" placeholder=" ">
+                        <label>E-poçt ünvanı</label>
+                    </div>
+                    <div class="m-lg-form-input-container">
+                        <input type="submit" class="m-lg-form-input-submit" value="GÖNDƏR">
+                    </div>
+                </form>
+                <div class="m-lg-modal-content-send-social d-none" id="socialForm">
+                    <a href="#" class="m-lg-modal-content-send-social-link">
+                        <img src="img/whatsapp.svg" alt="">
+                    </a>
+                    <a href="#" class="m-lg-modal-content-send-social-link">
+                        <img src="img/messenger.svg" alt="">
+                    </a>
+                    <a href="#" class="m-lg-modal-content-send-social-link">
+                        <img src="img/instagram.svg" alt="">
+                    </a>
+                    <a href="#" class="m-lg-modal-content-send-social-link">
+                        <img src="img/telegram.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+<!--Successful sending-->
+<section class="modal-container m-lg-modal d-none">
+    <section class="modal">
+        <div class="modal-header">
+            <button class="modal-header-close" onclick="closeModal()">
+                <img src="img/closeBtn.svg" alt="">
+            </button>
+        </div>
+        <div class="modal-content m-lg-modal-content">
+            <div class="m-lg-modal-content-success">
+                <div class="m-lg-modal-content-success-icon">
+                    <img src="img/send-success.svg" alt="">
+                </div>
+                <h4 class="m-lg-modal-content-success-text fw-500 fs-xl">Keçid göndərildi</h4>
+            </div>
+        </div>
+    </section>
+</section>
 
 <script src="js/script.js"></script>
 </body>

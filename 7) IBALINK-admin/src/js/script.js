@@ -45,22 +45,43 @@ if ($("#otpTimer")){
     countdown(120, $("#otpTimer"));
 }
 
-function openDropdown() {
-    $(".modal-container").removeClass("d-none");
+function openModal(e, modalId) {
+    const id = modalId || $(this).data("modalId");
+    $(`#${id}`).removeClass("d-none");
+
+    $(`#${id}`).on('click', function (event) {
+        if (id === event.target.id){
+            closeModal();
+        }
+    })
+
     // $(".modal-container").css('display', 'block');
     document.body.style.overflow = "hidden";
     // $(".modal-container").animate({height: "100vh"});
 }
 
-function closeMenu() {
+function closeModal() {
     // $(".modal-container").animate({height: "0"}, function () {
     //     $(".modal-container").addClass("d-none");
     //     document.body.style.overflow = "auto";
     // });
-
     $(".modal-container").addClass("d-none");
     document.body.style.overflow = "auto";
 }
 
-$("#headerDropdownButton").on("click", openDropdown);
-$("#closeDropdown").on("click", closeMenu)
+$("#headerDropdownButton").on("click", openModal);
+$("#closeDropdown").on("click", closeModal)
+
+$(".m-lg-modal-content-radios  input").on('click', function (event) {
+    $(".m-lg-modal-content-send").children().each(function () {
+        if (!(this.id === event.currentTarget.value && !$(this).hasClass('d-none'))){
+            $(this).addClass('d-none');
+            if (this.id === event.currentTarget.value){
+                $(this).removeClass('d-none');
+            }
+        }
+        else {
+            console.log('active')
+        }
+    })
+})

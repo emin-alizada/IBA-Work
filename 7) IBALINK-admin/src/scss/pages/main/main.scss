@@ -61,6 +61,102 @@
         top: calc(50% - 14px);
       }
     }
+
+    &-modal {
+
+      &-content {
+        display: flex;
+        flex-direction: column;
+
+        &-link {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 42px;
+
+          &-text {
+            line-height: 20px;
+            color: #001230;
+          }
+
+          &-copy {
+            display: flex;
+            align-items: center;
+            line-height: 20px;
+            letter-spacing: 0.04em;
+            color: #99A0AC;
+
+            &-icon {
+              margin-right: 4px;
+            }
+
+            &:hover {
+              color: #001230;
+            }
+
+            &:hover &-icon {
+              filter: brightness(0) saturate(100%) invert(41%) sepia(60%) saturate(6619%) hue-rotate(214deg) brightness(100%) contrast(103%);
+            }
+          }
+        }
+
+        &-radios {
+          display: flex;
+          margin-bottom: 40px;
+
+          &-item {
+            margin-right: 30px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+
+            &-label {
+              line-height: 20px;
+              color: #001230;
+            }
+          }
+        }
+
+        &-send {
+
+          &-social {
+            display: flex;
+
+            &-link {
+              width: 52px;
+              height: 52px;
+              background: #99A0AC;
+              border-radius: 50%;
+              margin-right: 16px;
+
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              &:last-child {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+
+        &-success {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          &-icon {
+            margin-bottom: 40px;
+          }
+
+          &-text {
+            line-height: 44px;
+            color: #001230;
+          }
+        }
+      }
+    }
   }
 
   &-statistics {

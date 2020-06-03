@@ -11,7 +11,7 @@
 }
 
 @media screen  and (max-width: 979px) {
-    .container{
+    .radio-label{
         padding: 22px;
         min-height: 0;
         flex-direction: column;
@@ -109,7 +109,7 @@
 }
 
 @media screen and (max-width: 639px) {
-    .container{
+    .radio-label{
         padding: 16px;
     }
 

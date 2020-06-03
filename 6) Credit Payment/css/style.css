@@ -5,7 +5,7 @@ html, body {
     font-family: 'San Francisco', sans-serif;
 }
 
-.container {
+.radio-label {
     min-height: 100%;
     display: flex;
 }

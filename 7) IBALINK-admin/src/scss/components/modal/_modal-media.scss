@@ -11,7 +11,34 @@
 }
 
 @media screen  and (max-width: 979px) {
+  .modal {
+    padding: 24px;
+    height: 100%;
+    width: 100%;
+    max-height: none;
+    min-height: 0;
+    &-container {
+      height: -webkit-fill-available;
+      width: 100%;
+      background-color: #fff;
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+    }
 
+    &-header {
+      display: flex;
+      align-items: center;
+      padding-top: 2px;
+      padding-bottom: 18px;
+
+      &-close {
+        margin-left: auto;
+        position: static;
+        filter: none;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 764px) {
@@ -20,7 +47,9 @@
 }
 
 @media screen and (max-width: 639px) {
-
+  .modal {
+    padding: 24px;
+  }
 }
 
 @media screen and (max-width: 414px) {

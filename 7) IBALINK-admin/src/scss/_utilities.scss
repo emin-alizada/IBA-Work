@@ -1,3 +1,15 @@
+/****************************************************/
+/*Colors*/
+/****************************************************/
+
+$whatsapp:              #4CAF50;
+$messenger:             #2196F3;
+$instagram:             #BE0048;
+$telegram:              #039BE5;
+
+/****************************************************/
+/*General*/
+/****************************************************/
 .container {
     max-width: 1170px;
     margin: 0 auto;
@@ -9,6 +21,10 @@
 
 .w-max-470 {
     max-width: 470px;
+}
+
+.w-max-570 {
+    max-width: 570px;
 }
 
 .d-none {
@@ -144,6 +160,63 @@ label {
     left: 21px;
     font-size: 13px;
     line-height: 16px;
+}
+
+/****************************************************/
+/*Input Radio*/
+/****************************************************/
+
+.radio-label {
+    display: block;
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    user-select: none;
+    pointer-events: auto;
+}
+
+.radio-label .input-radio {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 0;
+    padding: 0;
+}
+
+.radio-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 2px solid #D6D9DE;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.radio-label .input-radio:checked ~ .radio-checkmark {
+    background-color: #1B68FF;
+    border-color: #1B68FF;
+}
+
+.radio-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radio-label .input-radio:checked ~ .radio-checkmark:after {
+    display: block;
+}
+
+.radio-label .radio-checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
 }
 
 /****************************************************/

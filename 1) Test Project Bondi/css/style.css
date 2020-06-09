@@ -4,7 +4,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.radio-label{
+.container{
     max-width: 1170px;
     margin: 0 auto;
 }

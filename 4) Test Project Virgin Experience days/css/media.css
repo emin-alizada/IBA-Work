@@ -10,7 +10,7 @@
 }
 
 @media screen  and (max-width: 1200px) {
-    .radio-label {
+    .container {
         padding-left: 20px;
         padding-right: 20px;
     }

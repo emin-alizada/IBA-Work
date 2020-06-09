@@ -1,4 +1,4 @@
-.radio-label {
+.container {
     display: block;
     position: relative;
     padding-left: 28px;
@@ -11,7 +11,7 @@
     user-select: none;
 }
 
-.radio-label .input-radio {
+.container .input-radio {
     position: absolute;
     opacity: 0;
     cursor: pointer;

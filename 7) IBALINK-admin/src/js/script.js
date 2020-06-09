@@ -46,6 +46,7 @@ if ($("#otpTimer")){
 }
 
 function openModal(e, modalId) {
+    document.body.style.overflow = "hidden";
     const id = modalId || $(this).data("modalId");
     $(`#${id}`).removeClass("d-none");
 
@@ -56,7 +57,6 @@ function openModal(e, modalId) {
     })
 
     // $(".modal-container").css('display', 'block');
-    document.body.style.overflow = "hidden";
     // $(".modal-container").animate({height: "100vh"});
 }
 
@@ -70,7 +70,21 @@ function closeModal() {
 }
 
 $("#headerDropdownButton").on("click", openModal);
-$("#closeDropdown").on("click", closeModal)
+$("#openHistory").on("click", function(e) {
+    // request goes here
+    let hasItemInHistory = true;
+
+    if (hasItemInHistory){
+        openModal(e, 'historyModalWithContent')
+    }
+    else {
+        openModal(e, 'historyModalempty')
+    }
+});
+$(".b-content-item").on('click', function (e) {
+    openModal(e, 'bonusModal');
+})
+$("#closeDropdown").on("click", closeModal);
 
 $(".m-lg-modal-content-radios  input").on('click', function (event) {
     $(".m-lg-modal-content-send").children().each(function () {
@@ -80,8 +94,40 @@ $(".m-lg-modal-content-radios  input").on('click', function (event) {
                 $(this).removeClass('d-none');
             }
         }
-        else {
-            console.log('active')
-        }
     })
+})
+
+$('#lgCopyButton').on('click', function () {
+
+    const copyToClipboard = str => {
+        const el = document.createElement('textarea');
+        el.value = str;
+        el.setAttribute('readonly', '');
+        el.style.position = 'absolute';
+        el.style.left = '-9999px';
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+    };
+
+    copyToClipboard($('#lgLink').text());
+
+    const successSpan = $(this).find('.m-lg-modal-content-link-copy-success');
+
+    successSpan.css("display", "flex")
+        .hide()
+        .fadeIn(600);
+    setTimeout(function () {
+        successSpan.fadeOut(600)
+    }, 1000)
+})
+
+$('#bonusSwapButton').on('click', function (e) {
+    let isEnoughBalance = true;
+
+    if (isEnoughBalance) {
+        closeModal();
+        openModal(e, 'bonusModalSuccess');
+    }
 })

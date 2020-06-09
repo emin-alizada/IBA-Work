@@ -48,7 +48,16 @@
 
 @media screen and (max-width: 639px) {
   .modal {
-    padding: 24px;
+    padding: 16px;
+
+    &-header {
+
+      &-text {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
   }
 }
 

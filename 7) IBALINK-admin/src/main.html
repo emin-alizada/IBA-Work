@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>IBALINK OTP</title>
+    <title>IBALINK Main</title>
 </head>
 <body class="body-bg">
 
@@ -129,9 +129,9 @@
 </div>
 
 <!--Modal of Link Generation-->
-<section id="mLgModal" class="modal-container m-lg-modal">
+<section id="mLgModal" class="modal-container m-lg-modal d-none">
     <section class="modal">
-        <div class="modal-header">
+        <div class="modal-header m-lg-modal-header">
             <span class="modal-header-text fs-xl fw-500">Linki paylaş</span>
             <button class="modal-header-close" onclick="closeModal()">
                 <img src="img/closeBtn.svg" alt="">
@@ -139,11 +139,15 @@
         </div>
         <div class="modal-content m-lg-modal-content">
             <div class="m-lg-modal-content-link">
-                <span class="m-lg-modal-content-link-text fw-300">www.ibalink.com/23499982317372138</span>
-                <button class="m-lg-modal-content-link-copy fw-600 fs-sm">
+                <span id="lgLink" class="m-lg-modal-content-link-text fw-300">www.ibalink.com/23499982317372138</span>
+                <button id="lgCopyButton" class="m-lg-modal-content-link-copy fw-600 fs-sm">
                     <img src="img/copy-passive.svg" alt="" class="m-lg-modal-content-link-copy-icon">
                     <span class="m-lg-modal-content-link-copy-text">
                         COPY
+                    </span>
+                    <span class="m-lg-modal-content-link-copy-success">
+                        <img src="img/success-icon.svg" class="m-lg-modal-content-link-copy-success-icon" alt="">
+                        <span>Link kopyalandı</span>
                     </span>
                 </button>
             </div>
@@ -187,16 +191,16 @@
                     </div>
                 </form>
                 <div class="m-lg-modal-content-send-social d-none" id="socialForm">
-                    <a href="#" class="m-lg-modal-content-send-social-link">
+                    <a href="#" class="m-lg-modal-content-send-social-link m-lg-modal-content-send-social-link-whatsapp">
                         <img src="img/whatsapp.svg" alt="">
                     </a>
-                    <a href="#" class="m-lg-modal-content-send-social-link">
+                    <a href="#" class="m-lg-modal-content-send-social-link m-lg-modal-content-send-social-link-messenger">
                         <img src="img/messenger.svg" alt="">
                     </a>
-                    <a href="#" class="m-lg-modal-content-send-social-link">
+                    <a href="#" class="m-lg-modal-content-send-social-link m-lg-modal-content-send-social-link-instagram">
                         <img src="img/instagram.svg" alt="">
                     </a>
-                    <a href="#" class="m-lg-modal-content-send-social-link">
+                    <a href="#" class="m-lg-modal-content-send-social-link m-lg-modal-content-send-social-link-telegram">
                         <img src="img/telegram.svg" alt="">
                     </a>
                 </div>
@@ -206,7 +210,7 @@
 </section>
 
 <!--Successful sending-->
-<section class="modal-container m-lg-modal d-none">
+<section class="modal-container m-lg-modal">
     <section class="modal">
         <div class="modal-header">
             <button class="modal-header-close" onclick="closeModal()">

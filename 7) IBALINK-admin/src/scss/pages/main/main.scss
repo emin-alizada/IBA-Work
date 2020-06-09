@@ -64,6 +64,10 @@
 
     &-modal {
 
+      &-header {
+        margin-bottom: 0;
+      }
+
       &-content {
         display: flex;
         flex-direction: column;
@@ -73,6 +77,7 @@
           justify-content: space-between;
           align-items: center;
           margin-bottom: 42px;
+          padding-top: 16px;
 
           &-text {
             line-height: 20px;
@@ -85,6 +90,7 @@
             line-height: 20px;
             letter-spacing: 0.04em;
             color: #99A0AC;
+            position: relative;
 
             &-icon {
               margin-right: 4px;
@@ -97,12 +103,44 @@
             &:hover &-icon {
               filter: brightness(0) saturate(100%) invert(41%) sepia(60%) saturate(6619%) hue-rotate(214deg) brightness(100%) contrast(103%);
             }
+
+            &-success {
+              position: absolute;
+              left: -188px;
+              padding: 14px 16px;
+              border: 1.5px solid #D6D9DE;
+              border-radius: 4px;
+              background-color: #fff;
+              line-height: 20px;
+              color: #001230;
+
+              //display: flex;
+              display: none;
+              align-items: center;
+
+              &:after {
+                content: "";
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                background-color: #fff;
+                border-top: solid 1.5px #D6D9DE;
+                border-right: solid 1.5px #D6D9DE;
+                transform: rotate(45deg);
+                top: 17.5px;
+                right: -6.7px;
+              }
+
+              &-icon {
+                margin-right: 10px;
+              }
+            }
           }
         }
 
         &-radios {
           display: flex;
-          margin-bottom: 40px;
+          margin-bottom: 22px;
 
           &-item {
             margin-right: 30px;
@@ -129,10 +167,27 @@
               background: #99A0AC;
               border-radius: 50%;
               margin-right: 16px;
+              transition: background-color 400ms ease-in-out;
 
               display: flex;
               justify-content: center;
               align-items: center;
+
+              &-whatsapp:hover {
+                background-color: $whatsapp;
+              }
+
+              &-messenger:hover {
+                background-color: $messenger;
+              }
+
+              &-instagram:hover {
+                background-color: $instagram;
+              }
+
+              &-telegram:hover {
+                background-color: $telegram;
+              }
 
               &:last-child {
                 margin-right: 0;

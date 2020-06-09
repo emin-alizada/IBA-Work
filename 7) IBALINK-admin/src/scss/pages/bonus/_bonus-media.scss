@@ -1,0 +1,107 @@
+@media screen and  (max-width: 1400px) {
+
+}
+
+@media screen  and (max-width: 1280px) {
+
+}
+
+@media screen  and (max-width: 1200px) {
+    .b {
+
+      &-header {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+
+      &-content {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+    }
+}
+
+@media screen  and (max-width: 979px) {
+  .b {
+
+    &-header {
+
+    }
+
+    &-content {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 764px) {
+  .b {
+
+    &-header {
+
+    }
+
+    &-content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+}
+
+@media screen and (max-width: 639px) {
+  .b {
+
+
+    &-header {
+      padding-left: 16px;
+      padding-right: 16px;
+
+      &-bonus {
+        flex-direction: column;
+
+        &-text {
+          font-weight: 400;
+          font-size: 14px;
+
+          &-colon {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &-content {
+      padding-left: 16px;
+      padding-right: 16px;
+      grid-template-columns: 1fr;
+    }
+
+    &-modal {
+
+      &-bonus {
+        &-content {
+
+          &-text {
+            &-header {
+              font-weight: 600;
+              margin-bottom: 16px;
+            }
+
+            &-par {
+              margin-bottom: 15px;
+              font-weight: 300;
+              line-height: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+
+}
+
+@media screen and (max-width: 374px) {
+}

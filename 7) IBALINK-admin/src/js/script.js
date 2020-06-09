@@ -130,4 +130,8 @@ $('#bonusSwapButton').on('click', function (e) {
         closeModal();
         openModal(e, 'bonusModalSuccess');
     }
+    else {
+        $('#bonusModal .error-message-container').removeClass('d-none');
+
+    }
 })

@@ -1,7 +1,9 @@
+//Fonts are replaced by one thinner option
+
 @font-face {
     font-family: "San Francisco";
     font-style: normal;
-    font-weight: 100;
+    font-weight: 200;
     font-display: swap;
     src: url("../font/San-Francisco-Thin.ttf") format('truetype');
 }
@@ -9,7 +11,7 @@
 @font-face {
     font-family: "San Francisco";
     font-style: normal;
-    font-weight: 200;
+    font-weight: 300;
     font-display: swap;
     src: url("../font/San-Francisco-Ultralight.ttf") format('truetype');
 }
@@ -17,7 +19,7 @@
 @font-face {
     font-family: "San Francisco";
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     font-display: swap;
     src: url("../font/San-Francisco-Light.ttf") format('truetype');
 }
@@ -25,7 +27,7 @@
 @font-face {
     font-family: "San Francisco";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-display: swap;
     src: url("../font/San-Francisco-Regular.ttf") format('truetype');
 }
@@ -33,7 +35,7 @@
 @font-face {
     font-family: "San Francisco";
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-display: swap;
     src: url("../font/San-Francisco-Medium.ttf") format('truetype');
 }
@@ -41,7 +43,7 @@
 @font-face {
     font-family: "San Francisco";
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-display: swap;
     src: url("../font/San-Francisco-Semibold.ttf") format('truetype');
 }
@@ -49,7 +51,7 @@
 @font-face {
     font-family: "San Francisco";
     font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
     font-display: swap;
     src: url("../font/San-Francisco-Bold.ttf") format('truetype');
 }
@@ -57,15 +59,7 @@
 @font-face {
     font-family: "San Francisco";
     font-style: normal;
-    font-weight: 800;
-    font-display: swap;
-    src: url("../font/San-Francisco-Extrabold.ttf") format('truetype');
-}
-
-@font-face {
-    font-family: "San Francisco";
-    font-style: normal;
     font-weight: 900;
     font-display: swap;
-    src: url("../font/San-Francisco-Black.ttf") format('truetype');
+    src: url("../font/San-Francisco-Extrabold.ttf") format('truetype');
 }

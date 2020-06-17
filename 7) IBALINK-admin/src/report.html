@@ -1,0 +1,877 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>IBALINK Hesabat</title>
+</head>
+<body class="body-bg">
+
+<nav class="header-bgc">
+    <nav class="header container">
+        <a href="#" class="header-link">
+            <img src="img/abb-blue.svg" alt="IBA logo" class="header-link-logo">
+        </a>
+        <ul class="header-list">
+            <li class="header-list-item">
+                <a href="#" class="header-list-item-link header-list-item-link__active fw-500">
+                    <img src="img/hesabat.svg" class="header-list-item-link-logo" alt="">
+                    <span>Hesabatlar</span>
+                </a>
+            </li>
+            <li class="header-list-item">
+                <a href="#" class="header-list-item-link header-list-item-link__passive fw-500">
+                    <img src="img/bonus.svg" class="header-list-item-link-logo" alt="">
+                    <span>Bonuslar</span>
+                </a>
+            </li>
+        </ul>
+        <div class="header-company">
+            <div class="header-company-info">
+                <h1 class="header-company-info-name fs-md">Optimal Electronics</h1>
+                <span class="header-company-info-tel fs-sm fw-500">050 282 85 30</span>
+            </div>
+            <a href="#" class="header-company-logout fs-sm fw-600">LOG OUT</a>
+        </div>
+        <button class="header-burger" data-modal-id="navDropdown" id="headerDropdownButton">
+            <img src="img/burger.svg" alt="">
+        </button>
+    </nav>
+    <section id="navDropdown" class="modal-container d-none header-modal">
+        <section class="modal">
+            <div class="modal-header">
+                <button class="modal-header-close" id="closeDropdown">
+                    <img src="img/closeBtn.svg" alt="">
+                </button>
+            </div>
+            <div class="modal-content header-dropdown-menu">
+                <div class="header-dropdown-menu-content">
+                    <div class="header-dropdown-menu-content-company">
+                        <h2 class="header-dropdown-menu-content-company-header fs-lg fw-600">Optimal Electronics</h2>
+                        <p class="header-dropdown-menu-content-company-number">050 311 00 00</p>
+                    </div>
+                    <ul class="header-dropdown-menu-content-link">
+                        <li class="header-dropdown-menu-content-link-item">
+                            <a href="#" class="header-dropdown-menu-content-link-item-link fw-500">
+                                <img src="img/hesabat.svg" class="header-dropdown-menu-content-link-item-link-logo"
+                                     alt="">
+                                <span>Hesabatlar</span>
+                            </a>
+                        </li>
+                        <li class="header-dropdown-menu-content-link-item">
+                            <a href="#" class="header-dropdown-menu-content-link-item-link fw-500">
+                                <img src="img/bonus.svg" class="header-dropdown-menu-content-link-item-link-logo"
+                                     alt="">
+                                <span>Bonuslar</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="header-dropdown-menu-logout fs-sm fw-600">LOG OUT</a>
+            </div>
+        </section>
+    </section>
+    <section class="dark-blue-bg">
+        <div class="r-header container">
+            <div class="r-header-main">
+                <ul class="r-header-main-month">
+                    <li class="r-header-main-month-item">
+                        <a href="#" class="r-header-main-month-item-link r-header-main-month-item-link-active fw-600">
+                            Ümumi <span
+                                class="r-header-main-month-item-link-amount r-header-main-month-item-link-amount-active fw-700 fs-xs">2560</span>
+                        </a>
+                    </li>
+                    <li class="r-header-main-month-item">
+                        <a href="#" class="r-header-main-month-item-link fw-600">
+                            Aprel <span class="r-header-main-month-item-link-amount fw-700 fs-xs">34</span>
+                        </a>
+                    </li>
+                    <li class="r-header-main-month-item">
+                        <a href="#" class="r-header-main-month-item-link fw-600">
+                            Sentyabr <span class="r-header-main-month-item-link-amount fw-700 fs-xs">34</span>
+                        </a>
+                    </li>
+                    <li class="r-header-main-month-item">
+                        <a href="#" class="r-header-main-month-item-link fw-600">
+                            Sentyabr <span class="r-header-main-month-item-link-amount fw-700 fs-xs">34</span>
+                        </a>
+                    </li>
+                    <li class="r-header-main-month-item">
+                        <a href="#" class="r-header-main-month-item-link fw-600">
+                            Sentyabr <span class="r-header-main-month-item-link-amount fw-700 fs-xs">34</span>
+                        </a>
+                    </li>
+                    <li class="r-header-main-month-item">
+                        <a href="#" class="r-header-main-month-item-link fw-600">
+                            Sentyabr <span class="r-header-main-month-item-link-amount fw-700 fs-xs">34</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="r-header-main-controls">
+                    <a href="#" class="r-header-main-controls-item fs-sm fw-600">
+                        <img src="img/export.svg" class="r-header-main-controls-item-icon" alt="">
+                        EXPORT
+                    </a>
+                    <button id="openFilters" class="r-header-main-controls-item r-header-main-controls-filter fs-sm fw-600">
+                        <img src="img/filter.svg" class="r-header-main-controls-item-icon" alt="">
+                        <span class="r-header-main-controls-filter-text">FILTER <span class="r-header-main-controls-filter-text-number"></span></span>
+                    </button>
+                </div>
+            </div>
+            <div class="r-header-filter-wrapper d-none">
+                <div class="r-header-filter">
+                    <h5 class="r-header-filter-header fw-600 fs-lg">Filtrlər</h5>
+                    <div class="r-header-filter-container">
+                        <form action="#" class="r-header-filter-form">
+                            <div class="r-header-filter-form-wrapper ">
+                                <h3 class="r-header-filter-form-header fw-600">
+                                    RRN / Sifariş nömrəsi <img src="img/arrow-down.svg" alt="">
+                                </h3>
+                                <div class="r-header-filter-form-wrapper-input">
+                                    <div class="input-container">
+                                        <input type="number" class="input-animated" placeholder=" ">
+                                        <label>RRN</label>
+                                    </div>
+                                    <div class="r-header-filter-form-wrapper-input-rrn-submit">
+                                        <input type="submit" value="Axtar">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <form action="#" class="r-header-filter-form" id="filterForm">
+                            <div class="r-header-filter-form-wrapper ">
+                                <h3 class="r-header-filter-form-header fw-600">
+                                    Veb Resurs <img src="img/arrow-down.svg" alt="">
+                                </h3>
+                                <div class="r-header-filter-form-wrapper-input r-header-filter-form-wrapper-input-resource">
+                                    <div class="input-container r-header-filter-form-wrapper-input-checkbox-container">
+                                        <label class="checkbox-label r-header-filter-form-wrapper-input-checkbox">Borussia Dortmund
+                                            <input type="checkbox" name="borusia" class="input-checkbox">
+                                            <span class="checkbox-checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="input-container r-header-filter-form-wrapper-input-checkbox-container">
+                                        <label class="checkbox-label r-header-filter-form-wrapper-input-checkbox">Borussia Dortmund
+                                            <input type="checkbox" class="input-checkbox">
+                                            <span class="checkbox-checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="input-container r-header-filter-form-wrapper-input-checkbox-container">
+                                        <label class="checkbox-label r-header-filter-form-wrapper-input-checkbox">Borussia Dortmund
+                                            <input type="checkbox" class="input-checkbox">
+                                            <span class="checkbox-checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="input-container r-header-filter-form-wrapper-input-checkbox-container">
+                                        <label class="checkbox-label r-header-filter-form-wrapper-input-checkbox">Borussia Dortmund
+                                            <input type="checkbox" class="input-checkbox">
+                                            <span class="checkbox-checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="input-container r-header-filter-form-wrapper-input-checkbox-container">
+                                        <label class="checkbox-label r-header-filter-form-wrapper-input-checkbox">Borussia Dortmund
+                                            <input type="checkbox" class="input-checkbox">
+                                            <span class="checkbox-checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="input-container r-header-filter-form-wrapper-input-checkbox-container">
+                                        <label class="checkbox-label r-header-filter-form-wrapper-input-checkbox">Borussia Dortmund
+                                            <input type="checkbox" class="input-checkbox">
+                                            <span class="checkbox-checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="input-container r-header-filter-form-wrapper-input-checkbox-container">
+                                        <label class="checkbox-label r-header-filter-form-wrapper-input-checkbox">Borussia Dortmund
+                                            <input type="checkbox" class="input-checkbox">
+                                            <span class="checkbox-checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="input-container r-header-filter-form-wrapper-input-checkbox-container">
+                                        <label class="checkbox-label r-header-filter-form-wrapper-input-checkbox">Borussia Dortmund
+                                            <input type="checkbox" class="input-checkbox">
+                                            <span class="checkbox-checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="input-container r-header-filter-form-wrapper-input-checkbox-container">
+                                        <label class="checkbox-label r-header-filter-form-wrapper-input-checkbox">Borussia Dortmund
+                                            <input type="checkbox" class="input-checkbox">
+                                            <span class="checkbox-checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="input-container r-header-filter-form-wrapper-input-checkbox-container">
+                                        <label class="checkbox-label r-header-filter-form-wrapper-input-checkbox">Borussia Dortmund
+                                            <input type="checkbox" class="input-checkbox">
+                                            <span class="checkbox-checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="input-container r-header-filter-form-wrapper-input-checkbox-container">
+                                        <label class="checkbox-label r-header-filter-form-wrapper-input-checkbox">Borussia Dortmund
+                                            <input type="checkbox" class="input-checkbox">
+                                            <span class="checkbox-checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="input-container r-header-filter-form-wrapper-input-checkbox-container">
+                                        <label class="checkbox-label r-header-filter-form-wrapper-input-checkbox">Borussia Dortmund
+                                            <input type="checkbox" class="input-checkbox">
+                                            <span class="checkbox-checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="input-container r-header-filter-form-wrapper-input-checkbox-container">
+                                        <label class="checkbox-label r-header-filter-form-wrapper-input-checkbox">Borussia Dortmund
+                                            <input type="checkbox" class="input-checkbox">
+                                            <span class="checkbox-checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="input-container r-header-filter-form-wrapper-input-checkbox-container">
+                                        <label class="checkbox-label r-header-filter-form-wrapper-input-checkbox">Borussia Dortmund
+                                            <input type="checkbox" class="input-checkbox">
+                                            <span class="checkbox-checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="input-container r-header-filter-form-wrapper-input-checkbox-container">
+                                        <label class="checkbox-label r-header-filter-form-wrapper-input-checkbox">Borussia Dortmund
+                                            <input type="checkbox" class="input-checkbox">
+                                            <span class="checkbox-checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="input-container r-header-filter-form-wrapper-input-checkbox-container">
+                                        <label class="checkbox-label r-header-filter-form-wrapper-input-checkbox">Borussia Dortmund
+                                            <input type="checkbox" class="input-checkbox">
+                                            <span class="checkbox-checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="input-container r-header-filter-form-wrapper-input-checkbox-container">
+                                        <label class="checkbox-label r-header-filter-form-wrapper-input-checkbox">Borussia Dortmund
+                                            <input type="checkbox" class="input-checkbox">
+                                            <span class="checkbox-checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="input-container r-header-filter-form-wrapper-input-checkbox-container">
+                                        <label class="checkbox-label r-header-filter-form-wrapper-input-checkbox">Borussia Dortmund
+                                            <input type="checkbox" class="input-checkbox">
+                                            <span class="checkbox-checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="input-container r-header-filter-form-wrapper-input-checkbox-container">
+                                        <label class="checkbox-label r-header-filter-form-wrapper-input-checkbox">Borussia Dortmund
+                                            <input type="checkbox" class="input-checkbox">
+                                            <span class="checkbox-checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="input-container r-header-filter-form-wrapper-input-checkbox-container">
+                                        <label class="checkbox-label r-header-filter-form-wrapper-input-checkbox">Borussia Dortmund
+                                            <input type="checkbox" class="input-checkbox">
+                                            <span class="checkbox-checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="input-container r-header-filter-form-wrapper-input-checkbox-container">
+                                        <label class="checkbox-label r-header-filter-form-wrapper-input-checkbox">Borussia Dortmund
+                                            <input type="checkbox" class="input-checkbox">
+                                            <span class="checkbox-checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="r-header-filter-form-wrapper ">
+                                <h3 class="r-header-filter-form-header fw-600">
+                                    Məbləğ <img src="img/arrow-down.svg" alt="">
+                                </h3>
+                                <div class="r-header-filter-form-wrapper-input r-header-filter-form-wrapper-input-price">
+                                    <h6 class="r-header-filter-form-wrapper-input-price-header fs-md fw-500">Məbləğ aralığını seçin</h6>
+                                    <div class="input-container">
+                                        <div class="r-header-filter-form-wrapper-input-price-slider">
+                                            <input type="text" class="js-range-slider" name="my_range" value="" id="rangeInput"/>
+                                        </div>
+                                        <div class="r-header-filter-form-wrapper-input-price-inputs">
+                                            <div class="input-container">
+                                                <input type="number" class="input-animated" placeholder=" " id="rangeInputFrom">
+                                                <label>Minimum</label>
+                                            </div>
+                                            <p class="r-header-filter-form-wrapper-input-price-inputs-seperator">&mdash;</p>
+                                            <div class="input-container">
+                                                <input type="number" class="input-animated" placeholder=" " id="rangeInputTo">
+                                                <label>Maksimum</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="r-header-filter-form-wrapper ">
+                                <h3 class="r-header-filter-form-header">
+                                        Tarix <img src="img/arrow-down.svg" alt="">
+                                </h3>
+                                <div class="r-header-filter-form-wrapper-input r-header-filter-form-wrapper-input-date">
+                                    <div class="input-container r-header-filter-form-wrapper-input-date-container">
+                                        <input type="text" class="input-animated" id="dateRangeFrom" placeholder=" ">
+                                        <label>From</label>
+                                    </div>
+                                    <div class="input-container r-header-filter-form-wrapper-input-date-container">
+                                        <input type="text" class="input-animated" placeholder=" " id="dateRangeTo">
+                                        <label>To</label>
+                                    </div>
+                                    <div class="input-container">
+                                        <button class="button-standard" id="dataRangeApply" type="button">Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="r-header-filter-form-wrapper ">
+                                <h3 class="r-header-filter-form-header fw-600">
+                                    Status <img src="img/arrow-down.svg" alt="">
+                                </h3>
+                                <div class="r-header-filter-form-wrapper-input r-header-filter-form-wrapper-input-resource r-header-filter-form-wrapper-input-status">
+                                    <div class="input-container r-header-filter-form-wrapper-input-checkbox-container">
+                                        <label class="checkbox-label r-header-filter-form-wrapper-input-checkbox">Ödənilmiş
+                                            <input type="checkbox" class="input-checkbox">
+                                            <span class="checkbox-checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="input-container r-header-filter-form-wrapper-input-checkbox-container">
+                                        <label class="checkbox-label r-header-filter-form-wrapper-input-checkbox">Ödənilməmiş
+                                            <input type="checkbox" class="input-checkbox">
+                                            <span class="checkbox-checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="input-container r-header-filter-form-wrapper-input-checkbox-container">
+                                        <label class="checkbox-label r-header-filter-form-wrapper-input-checkbox">Ləğv edilmiş
+                                            <input type="checkbox" class="input-checkbox">
+                                            <span class="checkbox-checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <button id="closeFilters" class="r-header-filter-close">
+                        <img src="img/closeBtn.svg" alt="">
+                    </button>
+                </div>
+                <div class="r-header-filter-actives d-none">
+                    <div class="r-header-filter-actives-list-container">
+                        <div class="r-header-filter-actives-list">
+
+                        </div>
+                        <button class="r-header-filter-actives-list-clear" id="filterFormReset">Clear all</button>
+                    </div>
+                    <div class="r-header-filter-actives-submit-container">
+                        <button class="r-header-filter-actives-submit fw-600 fs-sm" id="filterFormSubmit">AXTAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</nav>
+
+
+<section class="r-table container">
+    <div class="r-table-row-header">
+        <p class="r-table-row-resource">VEB RESURS</p>
+        <p class="r-table-row-date">TARİX</p>
+        <p class="r-table-row-name">ADI/SOYADI</p>
+        <p class="r-table-row-amount">MƏBLƏĞ</p>
+        <p class="r-table-row-currency">VALYUTA</p>
+        <p class="r-table-row-status">STATUS</p>
+        <span class="r-table-row-button"></span>
+    </div>
+    <div class="r-table-row">
+        <p class="r-table-row-resource">Optimal Nərimanov</p>
+        <p class="r-table-row-date">Apr 20, 2020</p>
+        <p class="r-table-row-name">Sebastian Langkamp</p>
+        <p class="r-table-row-amount">1200,00</p>
+        <p class="r-table-row-currency">AZN</p>
+        <p class="r-table-row-status"><span class="r-table-row-status-text r-table-row-status-text-paid fw-600 fs-xs">ÖDƏNİLİB</span>
+        </p>
+        <button class="r-table-row-button">
+            <img src="img/to-right-icon.svg" alt="">
+        </button>
+    </div>
+    <div class="r-table-row">
+        <p class="r-table-row-resource">azerbaijan French University</p>
+        <p class="r-table-row-date">Apr 20, 2020</p>
+        <p class="r-table-row-name">Sebastian Langkamp</p>
+        <p class="r-table-row-amount">1200,00</p>
+        <p class="r-table-row-currency">AZN</p>
+        <p class="r-table-row-status"><span
+                class="r-table-row-status-text r-table-row-status-text-not-paid fw-600 fs-xs">ÖDƏNİLMƏYİB</span></p>
+        <button class="r-table-row-button">
+            <img src="img/to-right-icon.svg" alt="">
+        </button>
+    </div>
+    <div class="r-table-row">
+        <p class="r-table-row-resource">Optimal Nərimanov</p>
+        <p class="r-table-row-date">Apr 20, 2020</p>
+        <p class="r-table-row-name">Sebastian Langkamp</p>
+        <p class="r-table-row-amount">1200,00</p>
+        <p class="r-table-row-currency">AZN</p>
+        <p class="r-table-row-status"><span
+                class="r-table-row-status-text r-table-row-status-text-cancelled fw-600 fs-xs">LƏĞV OLUNUB</span></p>
+        <button class="r-table-row-button">
+            <img src="img/to-right-icon.svg" alt="">
+        </button>
+    </div>
+    <div class="r-table-row">
+        <p class="r-table-row-resource">Optimal Nərimanov</p>
+        <p class="r-table-row-date">Apr 20, 2020</p>
+        <p class="r-table-row-name">Sebastian Langkamp</p>
+        <p class="r-table-row-amount">1200,00</p>
+        <p class="r-table-row-currency">AZN</p>
+        <p class="r-table-row-status"><span class="r-table-row-status-text r-table-row-status-text-paid fw-600 fs-xs">ÖDƏNİLİB</span>
+        </p>
+        <button class="r-table-row-button">
+            <img src="img/to-right-icon.svg" alt="">
+        </button>
+    </div>
+    <div class="r-table-row">
+        <p class="r-table-row-resource">azerbaijan French University</p>
+        <p class="r-table-row-date">Apr 20, 2020</p>
+        <p class="r-table-row-name">Sebastian Langkamp</p>
+        <p class="r-table-row-amount">1200,00</p>
+        <p class="r-table-row-currency">AZN</p>
+        <p class="r-table-row-status"><span
+                class="r-table-row-status-text r-table-row-status-text-not-paid fw-600 fs-xs">ÖDƏNİLMƏYİB</span></p>
+        <button class="r-table-row-button">
+            <img src="img/to-right-icon.svg" alt="">
+        </button>
+    </div>
+    <div class="r-table-row">
+        <p class="r-table-row-resource">Optimal Nərimanov</p>
+        <p class="r-table-row-date">Apr 20, 2020</p>
+        <p class="r-table-row-name">Sebastian Langkamp</p>
+        <p class="r-table-row-amount">1200,00</p>
+        <p class="r-table-row-currency">AZN</p>
+        <p class="r-table-row-status"><span
+                class="r-table-row-status-text r-table-row-status-text-cancelled fw-600 fs-xs">LƏĞV OLUNUB</span></p>
+        <button class="r-table-row-button">
+            <img src="img/to-right-icon.svg" alt="">
+        </button>
+    </div>
+    <div class="r-table-row">
+        <p class="r-table-row-resource">Optimal Nərimanov</p>
+        <p class="r-table-row-date">Apr 20, 2020</p>
+        <p class="r-table-row-name">Sebastian Langkamp</p>
+        <p class="r-table-row-amount">1200,00</p>
+        <p class="r-table-row-currency">AZN</p>
+        <p class="r-table-row-status"><span class="r-table-row-status-text r-table-row-status-text-paid fw-600 fs-xs">ÖDƏNİLİB</span>
+        </p>
+        <button class="r-table-row-button">
+            <img src="img/to-right-icon.svg" alt="">
+        </button>
+    </div>
+    <div class="r-table-row">
+        <p class="r-table-row-resource">azerbaijan French University</p>
+        <p class="r-table-row-date">Apr 20, 2020</p>
+        <p class="r-table-row-name">Sebastian Langkamp</p>
+        <p class="r-table-row-amount">1200,00</p>
+        <p class="r-table-row-currency">AZN</p>
+        <p class="r-table-row-status"><span
+                class="r-table-row-status-text r-table-row-status-text-not-paid fw-600 fs-xs">ÖDƏNİLMƏYİB</span></p>
+        <button class="r-table-row-button">
+            <img src="img/to-right-icon.svg" alt="">
+        </button>
+    </div>
+    <div class="r-table-row">
+        <p class="r-table-row-resource">Optimal Nərimanov</p>
+        <p class="r-table-row-date">Apr 20, 2020</p>
+        <p class="r-table-row-name">Sebastian Langkamp</p>
+        <p class="r-table-row-amount">1200,00</p>
+        <p class="r-table-row-currency">AZN</p>
+        <p class="r-table-row-status"><span
+                class="r-table-row-status-text r-table-row-status-text-cancelled fw-600 fs-xs">LƏĞV OLUNUB</span></p>
+        <button class="r-table-row-button">
+            <img src="img/to-right-icon.svg" alt="">
+        </button>
+    </div>
+    <div class="r-table-row">
+        <p class="r-table-row-resource">Optimal Nərimanov</p>
+        <p class="r-table-row-date">Apr 20, 2020</p>
+        <p class="r-table-row-name">Sebastian Langkamp</p>
+        <p class="r-table-row-amount">1200,00</p>
+        <p class="r-table-row-currency">AZN</p>
+        <p class="r-table-row-status"><span class="r-table-row-status-text r-table-row-status-text-paid fw-600 fs-xs">ÖDƏNİLİB</span>
+        </p>
+        <button class="r-table-row-button">
+            <img src="img/to-right-icon.svg" alt="">
+        </button>
+    </div>
+    <div class="r-table-row">
+        <p class="r-table-row-resource">azerbaijan French University</p>
+        <p class="r-table-row-date">Apr 20, 2020</p>
+        <p class="r-table-row-name">Sebastian Langkamp</p>
+        <p class="r-table-row-amount">1200,00</p>
+        <p class="r-table-row-currency">AZN</p>
+        <p class="r-table-row-status"><span
+                class="r-table-row-status-text r-table-row-status-text-not-paid fw-600 fs-xs">ÖDƏNİLMƏYİB</span></p>
+        <button class="r-table-row-button">
+            <img src="img/to-right-icon.svg" alt="">
+        </button>
+    </div>
+    <div class="r-table-row">
+        <p class="r-table-row-resource">Optimal Nərimanov</p>
+        <p class="r-table-row-date">Apr 20, 2020</p>
+        <p class="r-table-row-name">Sebastian Langkamp</p>
+        <p class="r-table-row-amount">1200,00</p>
+        <p class="r-table-row-currency">AZN</p>
+        <p class="r-table-row-status"><span
+                class="r-table-row-status-text r-table-row-status-text-cancelled fw-600 fs-xs">LƏĞV OLUNUB</span></p>
+        <button class="r-table-row-button">
+            <img src="img/to-right-icon.svg" alt="">
+        </button>
+    </div>
+    <div class="r-table-row">
+        <p class="r-table-row-resource">Optimal Nərimanov</p>
+        <p class="r-table-row-date">Apr 20, 2020</p>
+        <p class="r-table-row-name">Sebastian Langkamp</p>
+        <p class="r-table-row-amount">1200,00</p>
+        <p class="r-table-row-currency">AZN</p>
+        <p class="r-table-row-status"><span class="r-table-row-status-text r-table-row-status-text-paid fw-600 fs-xs">ÖDƏNİLİB</span>
+        </p>
+        <button class="r-table-row-button">
+            <img src="img/to-right-icon.svg" alt="">
+        </button>
+    </div>
+    <div class="r-table-row">
+        <p class="r-table-row-resource">azerbaijan French University</p>
+        <p class="r-table-row-date">Apr 20, 2020</p>
+        <p class="r-table-row-name">Sebastian Langkamp</p>
+        <p class="r-table-row-amount">1200,00</p>
+        <p class="r-table-row-currency">AZN</p>
+        <p class="r-table-row-status"><span
+                class="r-table-row-status-text r-table-row-status-text-not-paid fw-600 fs-xs">ÖDƏNİLMƏYİB</span></p>
+        <button class="r-table-row-button">
+            <img src="img/to-right-icon.svg" alt="">
+        </button>
+    </div>
+    <div class="r-table-row">
+        <p class="r-table-row-resource">Optimal Nərimanov</p>
+        <p class="r-table-row-date">Apr 20, 2020</p>
+        <p class="r-table-row-name">Sebastian Langkamp</p>
+        <p class="r-table-row-amount">1200,00</p>
+        <p class="r-table-row-currency">AZN</p>
+        <p class="r-table-row-status"><span
+                class="r-table-row-status-text r-table-row-status-text-cancelled fw-600 fs-xs">LƏĞV OLUNUB</span></p>
+        <button class="r-table-row-button">
+            <img src="img/to-right-icon.svg" alt="">
+        </button>
+    </div>
+    <div class="r-table-row">
+        <p class="r-table-row-resource">Optimal Nərimanov</p>
+        <p class="r-table-row-date">Apr 20, 2020</p>
+        <p class="r-table-row-name">Sebastian Langkamp</p>
+        <p class="r-table-row-amount">1200,00</p>
+        <p class="r-table-row-currency">AZN</p>
+        <p class="r-table-row-status"><span class="r-table-row-status-text r-table-row-status-text-paid fw-600 fs-xs">ÖDƏNİLİB</span>
+        </p>
+        <button class="r-table-row-button">
+            <img src="img/to-right-icon.svg" alt="">
+        </button>
+    </div>
+    <div class="r-table-row">
+        <p class="r-table-row-resource">azerbaijan French University</p>
+        <p class="r-table-row-date">Apr 20, 2020</p>
+        <p class="r-table-row-name">Sebastian Langkamp</p>
+        <p class="r-table-row-amount">1200,00</p>
+        <p class="r-table-row-currency">AZN</p>
+        <p class="r-table-row-status"><span
+                class="r-table-row-status-text r-table-row-status-text-not-paid fw-600 fs-xs">ÖDƏNİLMƏYİB</span></p>
+        <button class="r-table-row-button">
+            <img src="img/to-right-icon.svg" alt="">
+        </button>
+    </div>
+    <div class="r-table-row">
+        <p class="r-table-row-resource">Optimal Nərimanov</p>
+        <p class="r-table-row-date">Apr 20, 2020</p>
+        <p class="r-table-row-name">Sebastian Langkamp</p>
+        <p class="r-table-row-amount">1200,00</p>
+        <p class="r-table-row-currency">AZN</p>
+        <p class="r-table-row-status"><span
+                class="r-table-row-status-text r-table-row-status-text-cancelled fw-600 fs-xs">LƏĞV OLUNUB</span></p>
+        <button class="r-table-row-button">
+            <img src="img/to-right-icon.svg" alt="">
+        </button>
+    </div>
+    <div class="r-table-row">
+        <p class="r-table-row-resource">Optimal Nərimanov</p>
+        <p class="r-table-row-date">Apr 20, 2020</p>
+        <p class="r-table-row-name">Sebastian Langkamp</p>
+        <p class="r-table-row-amount">1200,00</p>
+        <p class="r-table-row-currency">AZN</p>
+        <p class="r-table-row-status"><span class="r-table-row-status-text r-table-row-status-text-paid fw-600 fs-xs">ÖDƏNİLİB</span>
+        </p>
+        <button class="r-table-row-button">
+            <img src="img/to-right-icon.svg" alt="">
+        </button>
+    </div>
+    <div class="r-table-row">
+        <p class="r-table-row-resource">azerbaijan French University</p>
+        <p class="r-table-row-date">Apr 20, 2020</p>
+        <p class="r-table-row-name">Sebastian Langkamp</p>
+        <p class="r-table-row-amount">1200,00</p>
+        <p class="r-table-row-currency">AZN</p>
+        <p class="r-table-row-status"><span
+                class="r-table-row-status-text r-table-row-status-text-not-paid fw-600 fs-xs">ÖDƏNİLMƏYİB</span></p>
+        <button class="r-table-row-button">
+            <img src="img/to-right-icon.svg" alt="">
+        </button>
+    </div>
+    <div class="r-table-row">
+        <p class="r-table-row-resource">Optimal Nərimanov</p>
+        <p class="r-table-row-date">Apr 20, 2020</p>
+        <p class="r-table-row-name">Sebastian Langkamp</p>
+        <p class="r-table-row-amount">1200,00</p>
+        <p class="r-table-row-currency">AZN</p>
+        <p class="r-table-row-status"><span
+                class="r-table-row-status-text r-table-row-status-text-cancelled fw-600 fs-xs">LƏĞV OLUNUB</span></p>
+        <button class="r-table-row-button">
+            <img src="img/to-right-icon.svg" alt="">
+        </button>
+    </div>
+    <div class="r-table-row">
+        <p class="r-table-row-resource">Optimal Nərimanov</p>
+        <p class="r-table-row-date">Apr 20, 2020</p>
+        <p class="r-table-row-name">Sebastian Langkamp</p>
+        <p class="r-table-row-amount">1200,00</p>
+        <p class="r-table-row-currency">AZN</p>
+        <p class="r-table-row-status"><span class="r-table-row-status-text r-table-row-status-text-paid fw-600 fs-xs">ÖDƏNİLİB</span>
+        </p>
+        <button class="r-table-row-button">
+            <img src="img/to-right-icon.svg" alt="">
+        </button>
+    </div>
+    <div class="r-table-row">
+        <p class="r-table-row-resource">azerbaijan French University</p>
+        <p class="r-table-row-date">Apr 20, 2020</p>
+        <p class="r-table-row-name">Sebastian Langkamp</p>
+        <p class="r-table-row-amount">1200,00</p>
+        <p class="r-table-row-currency">AZN</p>
+        <p class="r-table-row-status"><span
+                class="r-table-row-status-text r-table-row-status-text-not-paid fw-600 fs-xs">ÖDƏNİLMƏYİB</span></p>
+        <button class="r-table-row-button">
+            <img src="img/to-right-icon.svg" alt="">
+        </button>
+    </div>
+    <div class="r-table-row">
+        <p class="r-table-row-resource">Optimal Nərimanov</p>
+        <p class="r-table-row-date">Apr 20, 2020</p>
+        <p class="r-table-row-name">Sebastian Langkamp</p>
+        <p class="r-table-row-amount">1200,00</p>
+        <p class="r-table-row-currency">AZN</p>
+        <p class="r-table-row-status"><span
+                class="r-table-row-status-text r-table-row-status-text-cancelled fw-600 fs-xs">LƏĞV OLUNUB</span></p>
+        <button class="r-table-row-button">
+            <img src="img/to-right-icon.svg" alt="">
+        </button>
+    </div>
+    <div class="r-table-row">
+        <p class="r-table-row-resource">Optimal Nərimanov</p>
+        <p class="r-table-row-date">Apr 20, 2020</p>
+        <p class="r-table-row-name">Sebastian Langkamp</p>
+        <p class="r-table-row-amount">1200,00</p>
+        <p class="r-table-row-currency">AZN</p>
+        <p class="r-table-row-status"><span class="r-table-row-status-text r-table-row-status-text-paid fw-600 fs-xs">ÖDƏNİLİB</span>
+        </p>
+        <button class="r-table-row-button">
+            <img src="img/to-right-icon.svg" alt="">
+        </button>
+    </div>
+    <div class="r-table-row">
+        <p class="r-table-row-resource">azerbaijan French University</p>
+        <p class="r-table-row-date">Apr 20, 2020</p>
+        <p class="r-table-row-name">Sebastian Langkamp</p>
+        <p class="r-table-row-amount">1200,00</p>
+        <p class="r-table-row-currency">AZN</p>
+        <p class="r-table-row-status"><span
+                class="r-table-row-status-text r-table-row-status-text-not-paid fw-600 fs-xs">ÖDƏNİLMƏYİB</span></p>
+        <button class="r-table-row-button">
+            <img src="img/to-right-icon.svg" alt="">
+        </button>
+    </div>
+    <div class="r-table-row">
+        <p class="r-table-row-resource">Optimal Nərimanov</p>
+        <p class="r-table-row-date">Apr 20, 2020</p>
+        <p class="r-table-row-name">Sebastian Langkamp</p>
+        <p class="r-table-row-amount">1200,00</p>
+        <p class="r-table-row-currency">AZN</p>
+        <p class="r-table-row-status"><span
+                class="r-table-row-status-text r-table-row-status-text-cancelled fw-600 fs-xs">LƏĞV OLUNUB</span></p>
+        <button class="r-table-row-button">
+            <img src="img/to-right-icon.svg" alt="">
+        </button>
+    </div>
+    <div class="r-table-row">
+        <p class="r-table-row-resource">Optimal Nərimanov</p>
+        <p class="r-table-row-date">Apr 20, 2020</p>
+        <p class="r-table-row-name">Sebastian Langkamp</p>
+        <p class="r-table-row-amount">1200,00</p>
+        <p class="r-table-row-currency">AZN</p>
+        <p class="r-table-row-status"><span class="r-table-row-status-text r-table-row-status-text-paid fw-600 fs-xs">ÖDƏNİLİB</span>
+        </p>
+        <button class="r-table-row-button">
+            <img src="img/to-right-icon.svg" alt="">
+        </button>
+    </div>
+    <div class="r-table-row">
+        <p class="r-table-row-resource">azerbaijan French University</p>
+        <p class="r-table-row-date">Apr 20, 2020</p>
+        <p class="r-table-row-name">Sebastian Langkamp</p>
+        <p class="r-table-row-amount">1200,00</p>
+        <p class="r-table-row-currency">AZN</p>
+        <p class="r-table-row-status"><span
+                class="r-table-row-status-text r-table-row-status-text-not-paid fw-600 fs-xs">ÖDƏNİLMƏYİB</span></p>
+        <button class="r-table-row-button">
+            <img src="img/to-right-icon.svg" alt="">
+        </button>
+    </div>
+    <div class="r-table-row">
+        <p class="r-table-row-resource">Optimal Nərimanov</p>
+        <p class="r-table-row-date">Apr 20, 2020</p>
+        <p class="r-table-row-name">Sebastian Langkamp</p>
+        <p class="r-table-row-amount">1200,00</p>
+        <p class="r-table-row-currency">AZN</p>
+        <p class="r-table-row-status"><span
+                class="r-table-row-status-text r-table-row-status-text-cancelled fw-600 fs-xs">LƏĞV OLUNUB</span></p>
+        <button class="r-table-row-button">
+            <img src="img/to-right-icon.svg" alt="">
+        </button>
+    </div>
+    <div class="r-table-loader">
+        <div class="loadingio-spinner-rolling-eeejfrxccwm">
+            <div class="ldio-1hd1w1g391p">
+                <div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--If table is empty-->
+<section class="r-table-empty-container container d-none">
+    <div class="r-table-empty">
+        <img src="img/emptyHistory.svg" class="r-table-empty-icon" alt="">
+        <h2 class="r-table-empty-header fw-500 fs-xl">Your list is empty</h2>
+    </div>
+</section>
+
+<!--Modals-->
+<section class="modal-container modal-right-container d-none">
+    <section class="modal modal-right r-modal-detail">
+        <!--        to change the background color use (r-modal-detail-header-paid, r-modal-detail-header-not-paid, r-modal-detail-header-cancelled) accordingly-->
+        <div class="modal-header modal-right-header r-modal-detail-header r-modal-detail-header-paid">
+            <span class="modal-header-text modal-right-header-text r-modal-detail-header-text fw-600 fs-lg">280 ₼</span>
+            <!--            to change the color use same technique as above (r-modal-detail-header-status-paid ...) accordingly-->
+            <span class="r-modal-detail-header-status r-modal-detail-header-status-paid fw-600 fs-xs">ÖDƏNİLİB</span>
+            <button class="modal-header-close modal-right-header-close r-modal-detail-header-close"
+                    onclick="closeModal()">
+                <img src="img/closeBtn.svg" alt="">
+            </button>
+        </div>
+        <div class="modal-content b-modal-bonus-content r-modal-detail-content">
+            <div class="r-modal-detail-content-text">
+                <h3 class="r-modal-detail-content-text-header fw-500 fs-lg">Optimal Nərimanov</h3>
+                <div class="r-modal-detail-content-text-item">
+                    <h5 class="r-modal-detail-content-text-item-header fs-sm">E-poçt</h5>
+                    <p class="r-modal-detail-content-text-item-description">narimanov@optimal.az</p>
+                </div>
+                <div class="r-modal-detail-content-text-item">
+                    <h5 class="r-modal-detail-content-text-item-header fs-sm">Tarix</h5>
+                    <p class="r-modal-detail-content-text-item-description">Apr 20, 2020</p>
+                </div>
+                <div class="r-modal-detail-content-text-item">
+                    <h5 class="r-modal-detail-content-text-item-header fs-sm">Şifariş nömrəsi</h5>
+                    <p class="r-modal-detail-content-text-item-description">90838877663</p>
+                </div>
+                <div class="r-modal-detail-content-text-item">
+                    <h5 class="r-modal-detail-content-text-item-header fs-sm">RRN nömrəsi</h5>
+                    <p class="r-modal-detail-content-text-item-description">90838877663</p>
+                </div>
+                <div class="r-modal-detail-content-text-item">
+                    <h5 class="r-modal-detail-content-text-item-header fs-sm">Təsdiq kodu</h5>
+                    <p class="r-modal-detail-content-text-item-description">1233487</p>
+                </div>
+                <div class="r-modal-detail-content-text-item">
+                    <h5 class="r-modal-detail-content-text-item-header fs-sm">Adı/Soyadı</h5>
+                    <p class="r-modal-detail-content-text-item-description">Maximillian Eggestein</p>
+                </div>
+                <div class="r-modal-detail-content-text-item">
+                    <h5 class="r-modal-detail-content-text-item-header fs-sm">Mobil nömrə</h5>
+                    <p class="r-modal-detail-content-text-item-description">050 555 55 55</p>
+                </div>
+            </div>
+            <!--            add d-none if button is not required-->
+            <div class="r-modal-detail-content-button-container">
+                <button class="r-modal-detail-content-button fw-600">LƏĞV ET</button>
+            </div>
+        </div>
+    </section>
+</section>
+
+<section class="modal-container modal-right-container d-none">
+    <section class="modal modal-right">
+        <div class="modal-header modal-right-header">
+            <!--            <span class="modal-header-text modal-right-header-text fs-lg fw-500">Tarixçə</span>-->
+            <button class="modal-header-close modal-right-header-close" onclick="closeModal()">
+                <img src="img/closeBtn.svg" alt="">
+            </button>
+        </div>
+        <div class="modal-content r-modal-cancel">
+            <div class="r-modal-cancel-centered">
+                <h4 class="r-modal-cancel-centered-header fw-500 fs-lg">Ləğv etmək istədiyiniz məbləği qeyd edin</h4>
+                <form action="#" class="r-modal-cancel-centered-form">
+                    <div class="input-container">
+                        <input type="number" class="input-animated" placeholder=" ">
+                        <label>Məbləğ</label>
+                    </div>
+                    <div class="r-modal-cancel-centered-form-submit-container">
+                        <input type="submit" class="r-modal-cancel-centered-form-submit" value="GENERASİYA ET" required>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</section>
+
+<section class="modal-container modal-right-container d-none">
+    <section class="modal modal-right">
+        <div class="modal-header modal-right-header">
+            <!--            <span class="modal-header-text modal-right-header-text fs-lg fw-500">Tarixçə</span>-->
+            <button class="modal-header-close modal-right-header-close" onclick="closeModal()">
+                <img src="img/closeBtn.svg" alt="">
+            </button>
+        </div>
+        <div class="modal-content r-modal-cancel">
+            <div class="r-modal-cancel-centered">
+                <h4 class="r-modal-cancel-centered-header fw-500 fs-lg">Ödənişi ləğv etmək istədiyinizə əminsiniz?</h4>
+                <div class="r-modal-cancel-centered-controls">
+                    <a href="#" class="r-modal-cancel-centered-controls-delete fw-600">LƏĞV ET</a>
+                    <button class="r-modal-cancel-centered-controls-cancel fw-600" onclick="closeModal()">CANCEL
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+<section class="modal-container modal-right-container d-none">
+    <section class="modal modal-right">
+        <div class="modal-header modal-right-header">
+            <!--            <span class="modal-header-text modal-right-header-text fs-lg fw-500">Tarixçə</span>-->
+            <button class="modal-header-close modal-right-header-close" onclick="closeModal()">
+                <img src="img/closeBtn.svg" alt="">
+            </button>
+        </div>
+        <div class="modal-content r-modal-cancel">
+            <div class="r-modal-cancel-centered">
+                <div class="r-modal-cancel-centered-icon">
+                    <img src="img/cancelled.svg" alt="">
+                </div>
+                <h4 class="r-modal-cancel-centered-header fw-500 fs-lg">Bonus dəyişdirildi</h4>
+                <p class="r-modal-cancel-centered-text">Ödəniş ləğv olundu. Ləğv olunan vəsait gün ərzində müştərinin
+                    hesabına yüklənəcək</p>
+            </div>
+        </div>
+    </section>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>

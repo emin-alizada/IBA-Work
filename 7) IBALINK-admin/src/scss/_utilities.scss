@@ -39,6 +39,25 @@ $telegram:              #039BE5;
     display: none !important;
 }
 
+.button-standard {
+    width: 100%;
+    background: #1B68FF;
+    border-radius: 2px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+
+    &:hover {
+        background: #185EE7;
+    }
+}
+
 /****************************************************/
  /*Font Sizes*/
 /****************************************************/
@@ -131,6 +150,7 @@ input[type=submit] {
     transition: background-color 400ms ease-in-out;
     border: none;
     -webkit-appearance: none;
+    text-transform: uppercase;
 }
 
 input[type=submit]:hover {
@@ -227,6 +247,73 @@ label {
     background: white;
 }
 
+
+/****************************************************/
+/*Input Checkbox*/
+/****************************************************/
+
+/* The container */
+.checkbox-label {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    user-select: none;
+    pointer-events: auto;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-label .input-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    padding: 0;
+}
+
+/* Create a custom checkbox */
+.checkbox-checkmark {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 1.7px solid #D6D9DE;
+    border-radius: 2px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-label .input-checkbox:checked ~ .checkbox-checkmark {
+    background-color: #1B68FF;
+    border-color: #1B68FF;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkbox-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-label .input-checkbox:checked ~ .checkbox-checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-label .checkbox-checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 4px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
 /****************************************************/
 /*Error Message*/
 /****************************************************/
@@ -261,3 +348,42 @@ label {
 .input-error-border {
     border-color: #EB5757;
 }
+
+/****************************************************/
+/*Ajax Loader*/
+/****************************************************/
+
+
+@keyframes ldio-1hd1w1g391p {
+    0% { transform: translate(-50%,-50%) rotate(0deg); }
+    100% { transform: translate(-50%,-50%) rotate(360deg); }
+}
+.ldio-1hd1w1g391p div {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border: 5px solid #1b68ff;
+    border-top-color: transparent;
+    border-radius: 50%;
+}
+.ldio-1hd1w1g391p div {
+    animation: ldio-1hd1w1g391p 1s linear infinite;
+    top: 30px;
+    left: 30px
+}
+.loadingio-spinner-rolling-eeejfrxccwm {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    overflow: hidden;
+    background: none;
+}
+.ldio-1hd1w1g391p {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0;
+}
+.ldio-1hd1w1g391p div { box-sizing: content-box; }

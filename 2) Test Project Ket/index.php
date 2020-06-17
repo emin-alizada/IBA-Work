@@ -545,7 +545,7 @@ include 'connection.php'
     <p>&copy;2014 - <span class="blue-text">Kat</span> All Right Reserved</p>
 </footer>
 
-<script src="js/jquery.js"></script>
+<script src="js/1_jquery.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

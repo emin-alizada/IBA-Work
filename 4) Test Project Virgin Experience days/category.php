@@ -541,7 +541,7 @@
 <?php include "includes/footer.php"; ?>
 
 
-<script src="js/jquery.js"></script>
+<script src="js/1_jquery.js"></script>
 <script src="slick/slick.js"></script>
 <script src="js/script.js"></script>
 </body>

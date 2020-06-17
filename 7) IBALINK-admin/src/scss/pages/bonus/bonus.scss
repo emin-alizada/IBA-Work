@@ -222,6 +222,11 @@
             background: #185EE7;
           }
 
+          &:disabled {
+            background: #D6D9DE;
+            color: #99A0AC;
+          }
+
           &-container {
             width: 100%;
             margin-top: 18px;

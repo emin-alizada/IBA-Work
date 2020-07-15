@@ -37,12 +37,13 @@ function countdown(seconds, element) {
         } else {
             clearInterval(this);
             // do the work here (end of timer)
+            $("#otpSumbit").attr('disabled', true);
         }
     }
 }
 
-if ($("#otpTimer")) {
-    countdown(120, $("#otpTimer"));
+if ($("#otpTimer").length) {
+    countdown(10, $("#otpTimer"));
 }
 
 function openModal(e, modalId) {
@@ -369,3 +370,5 @@ $('#filterFormReset').on('click', function () {
     resetPriceRange();
     showActiveFilters();
 })
+
+const desc = obj.find('#description').text();

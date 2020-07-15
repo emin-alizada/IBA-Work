@@ -157,6 +157,12 @@ input[type=submit]:hover {
     background: #185EE7;
 }
 
+input[type=submit]:disabled {
+    background: #D6D9DE;
+    color: #99A0AC;
+    cursor: not-allowed;
+}
+
 label {
     pointer-events: none;
     position: absolute;

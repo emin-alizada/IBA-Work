@@ -210,6 +210,10 @@
           //}
         }
 
+        &-wrapper-active &-header > img {
+          transform: rotate(180deg);
+        }
+
         &-header {
           font-weight: 500;
           line-height: 24px;
@@ -217,12 +221,19 @@
           cursor: pointer;
           display: flex;
           align-items: center;
+
+          & > img {
+            transition: transform 400ms ease-in-out;
+            margin-left: 4px;
+          }
         }
       }
 
       &-container {
         display: flex;
         align-items: start;
+        margin-left: auto;
+        margin-right: 100px;
       }
 
       &-close {

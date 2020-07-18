@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="az" class="overflowx-h overflow-lg-v">
+<head>
+    <meta http-equiv="pragma" content="no-cache" />
+
+    <link rel='icon' href='img/favicon.png' type='image/x-icon'/ >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IBAR</title>
+    <link rel="stylesheet" href="css/vendor/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/vendor/rangeslider.css">
+    <link rel="stylesheet" href="css/vendor/swiper.min.css">
+    <link rel="stylesheet" href="css/vendor/selectric.css">
+    <link rel="stylesheet" href="css/vendor/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/vendor/fonts.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="overflowx-h">
+
+
+<header class="bg-white pos-sticky top-0 hover-node header-shortened">
+    <div class="header-s bg-white d-lg-block">
+        <section class="border-bottom border-f6f7f8 py-2 py-lg-4">
+            <div class="container-fluid">
+                <div class="header-s2 row align-items-center">
+                    <div class="col-6 d-flex align-items-center">
+                        <a href="index.php" class="d-block">
+                            <figure>
+                                <img src="img/logo.svg" class="h-35 d-block w-100-max" alt="">
+                            </figure>
+                        </a>
+                    </div>
+
+                    <div class="col-6 d-flex align-items-center justify-content-end">
+                        <span>
+                        <select name="" class="selectric-tooltip label-fs-14" id="js-selectric-lang">
+                            <!-- don't change value. it's for flag icons -->
+                            <option value="az" data-url="https://ibar.az/az" class="d-none">AZ</option>
+                            <option value="uk" data-url="https://ibar.az/en">English</option>
+                            <option value="ru" data-url="https://ibar.az/ru">Русский</option>
+                        </select>
+                    </span>
+
+                        <a href="tel:937" class="d-flex align-items-center color-666 ml-3">
+                            <span class="icon icon-phone square-12 icon-color"></span>
+                            <span class="fs-14 ml-1 fw-600">937</span>
+                        </a>
+                        <a href="#" class="d-none d-md-flex bg-1885d3 radius-3 color-white py-2 px-4 ml-md-5">
+                            <span class="fw-500">Statusu yoxla</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</header>
+
+
+
+<section class="d-none d-md-block">
+    <div class="container-fluid px-0">
+        <!--if we want fixed height for the photo add this classes to the next div h-250 h-lg-370-->
+        <div class="row overflow-h">
+            <figure class="col-12">
+                <img src="img/internship.png" class="w-100 obj-cover h-100p" alt="">
+            </figure>
+        </div>
+    </div>
+</section>
+
+<section class="pt-lg-5 pb-md-5 icon-lg-ibar-right bg-right-top bg-no-repeat bg-top-n200 h-600-min internship">
+    <div class="container-lg p-0 px-md-4 px-lg-0">
+        <div class="row d-md-none">
+            <label class="col-12">
+                <button type="button" id="signUpButton" class="w-100 h-50 fs-18 px-3 border-0 bg-2e55a6 d-flex justify-content-between align-items-center cursor-p">
+                    <span class="color-white fw-600 fs-16 fs-lg-17">Qeydiyyatdan keç</span>
+                    <span class="d-inline-block icon square-30 icon-arrow-long icon-color-white mr-2"></span>
+                </button>
+            </label>
+            <label class="col-12">
+                <a href="#" id="checkStatus" class="w-100 h-50 fs-18 px-3 border-0 bg-1885d3 d-flex justify-content-between align-items-center cursor-p">
+                    <span class="color-white fw-600 fs-16 fs-lg-17">Statusu yoxla</span>
+                    <span class="d-inline-block icon square-30 icon-arrow-long icon-color-white mr-2"></span>
+                </a>
+            </label>
+            <label class="col-12 d-none">
+                <button type="button" id="faqButton" class="w-100 h-50 fs-18 px-3 border-0 bg-2e55a6 d-flex justify-content-between align-items-center cursor-p">
+                    <span class="d-inline-block icon square-30 icon-arrow-long rotate-180 icon-color-white"></span>
+                    <span class="color-white fw-600 fs-16 fs-lg-17 mr-2">Layihə haqqında</span>
+                </button>
+            </label>
+        </div>
+
+        <div class="row pt-md-4 ">
+            <!-- FAQ -->
+            <section id="faq" class="col-12 col-md-6">
+                <div class="bg-white bs-bottom-right radius-3">
+                    <div class="row no-gutters mt-2 mt-lg-0">
+                        <div class="row col-12 no-gutters border-bottom border-2 border-f4f4f4">
+                            <div class="col-11 col-lg-10 mx-auto">
+                                <h3 class="fs-24 fw-600 color-1885d3 my-0 py-4 d-lg-block">IBA Təcrübə proqramı nədir?</h3>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div id="js-accordion">
+                                <div class="ac">
+                                    <h4 class="ac-q col-11 col-lg-10 mx-auto lh-25 fw-500 fs-18 fs-lg-20 m-0 py-4 px-0 my-lg-2">Layihə haqqında</h4>
+
+                                    <div class="ac-a col-11 col-lg-10 px-0 mx-auto">
+                                        <p class="color-666 fs-16 fw-400 m-0 mb-3">Layihənin adı: IBA Internship program</p>
+                                        <p class="color-666 fs-16 fw-400 m-0 mb-3">Təcrübə müddəti: 4 ay </p>
+                                        <p class="color-666 fs-16 fw-400 m-0 mb-3">Layihənin məqsədi:</p>
+                                        <ul class="list-reset list-dotted color-666">
+                                            <li>Bacarıqlı gənclərin bank sektoruna marağını artırmaq</li>
+                                            <li>Bankın kadr təminatına dəstək vermək</li>
+                                            <li>Bacarıqlı, lakin təcrübəsi olmayan gəncləri işlə təmin etmək</li>
+                                            <li>İşəgötürən brendinə dəstək vermək</li>
+                                        </ul>
+                                        <p class="color-666 fs-16 fw-400 m-0 mb-3">Aylıq olaraq 250 AZN təqaüd</p>
+                                    </div>
+                                </div>
+                                <div class="ac">
+                                    <h4 class="ac-q col-11 col-lg-10 mx-auto lh-25 fw-500 fs-18 fs-lg-20 m-0 py-4 px-0 my-lg-2">Layihənin üstünlükləri</h4>
+
+                                    <div class="ac-a col-11 col-lg-10 px-0 mx-auto">
+                                        <ul class="list-reset list-dotted color-666">
+                                            <li>Hər ay 1 fərqli departamentdə təcrübə keçmək</li>
+                                            <li>Təcrübə müddətində peşəkar təlimlərdən, bank əməkdaşlarının iştirakı ilə master klasslardan faydalanma</li>
+                                            <li>Bankın bütün daxili və onlayn təlimlərindən yararlanmaq şansı</li>
+                                            <li>Təcrübə müddətində peşəkar bank əməkdaşlarından ibarət təcrübə rəhbərlərindən birbaşa öyrənmə imkanı</li>
+                                            <li>Hər ayın sonunda İdarə Heyətinin üzvləri/baş direktorlar ilə görüşlərdə iştirak etmə şansı</li>
+                                            <li>Təcrübənin sonunda ABB-də daimi işlə təmin edilmə imkanı</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="ac">
+                                    <h4 class="ac-q col-11 col-lg-10 mx-auto lh-25 fw-500 fs-18 fs-lg-20 m-0 py-4 px-0 my-lg-2">Namizədə qoyulan tələblər</h4>
+
+                                    <div class="ac-a col-11 col-lg-10 px-0 mx-auto">
+                                        <ul class="list-reset list-dotted color-666">
+                                            <li>Azərbaycan Respublikasının vətəndaşı olmalı</li>
+                                            <li>Bakalavr 4-cü kurs, magistratura tələbəsi olmalı, universiteti
+                                                2018 və ya 2019-cu ildə bitirməli</li>
+                                            <li>İngilis dili orta səviyyədə (intermediate level) olmalıdır</li>
+                                            <li>Təhsil aldığı dövr ərzində CumGPA göstəricisi 3-dən yuxarı, digər qiymətləndirmə sistemlərində isə 75 faizdən yuxarı olmalı</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Form-->
+            <section id="signUp" class="d-none d-md-block col-12 col-md-6">
+                <div class="bg-white bs-bottom-right radius-3 pb-4">
+                    <div class="row no-gutters mt-2 mt-lg-0">
+                        <div class="row col-12 no-gutters border-bottom border-2 border-f4f4f4">
+                            <div class="col-11 col-lg-10 mx-auto">
+                                <h3 class="fs-24 fw-600 color-1885d3 my-0 py-4 d-lg-block">Qeydiyyatdan keç</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-11 col-lg-10 mx-auto ">
+                            <form class="js-parsley-validate" id="internshipForm" method="post" data-parsley-trigger="change input">
+                                <div id="stepOne">
+
+                                    <h4 class="fs-16 fs-lg-18 color-0D182C mb-5">1. Şəxsi məlumat</h4>
+
+                                    <div class="row mb-lg-4 pb-lg-2">
+                                        <div class="col-12 mb-4 mb-lg-0 pb-2 pb-lg-0">
+                                            <div class="input-container js-input-check">
+                                                <input type="text" class="form-input px-3 px-lg-4 input-animated" placeholder=" " data-parsley-group="first" minlength="3" pattern="/^[a-zA-ZİÇÖÜçöüĞ-ğıŞ-şƏə\s]*$/" required>
+                                                <label class="input-animated-label">Ad, soyad, ata adı</label>
+                                                <span class='input-error-text px-3 px-lg-4 mt-2 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-lg-4 pb-lg-2 d-flex align-items-start">
+                                        <span class="col-12 fs-16 fw-500 mb-3 d-block">Doğum tarixi</span>
+                                        <div class="col-4 mb-4 mb-lg-0 pb-2 pb-lg-0">
+                                            <div class="input-container js-input-check">
+                                                <input type="text" class="form-input px-3 px-lg-4 input-animated" placeholder=" " data-parsley-group="first" minlength="1" pattern="/^(0?[1-9]|[12][0-9]|3[01])$/" required>
+                                                <label class="input-animated-label">Gün</label>
+                                                <span class='input-error-text px-3 px-lg-4 mt-2 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 mb-4 mb-lg-0 pb-2 pb-lg-0">
+                                            <div class="input-container js-input-check">
+                                                <input type="text" class="form-input px-3 px-lg-4 input-animated" placeholder=" " data-parsley-group="first" minlength="1" pattern="/^(0?[1-9]|1[012])$/" required>
+                                                <label class="input-animated-label">Ay</label>
+                                                <span class='input-error-text px-3 px-lg-4 mt-2 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 mb-4 mb-lg-0 pb-2 pb-lg-0">
+                                            <div class="input-container js-input-check">
+                                                <input type="text" class="form-input px-3 px-lg-4 input-animated" placeholder=" " data-parsley-group="first" minlength="1" pattern="/^(194[5-9]|19[5-9]\d|200\d|201[0-3])$/" required>
+                                                <label class="input-animated-label">İl</label>
+                                                <span class='input-error-text px-3 px-lg-4 mt-2 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-lg-4 pb-lg-3">
+                                        <div class="col-12 mb-4 mb-lg-0 pb-2 pb-lg-0">
+                                            <div class="input-container js-input-check">
+                                                <input type="text" class="form-input px-3 px-lg-4 input-animated" placeholder=" " data-parsley-group="first" data-parsley-length="[12, 13]" id="js-mob-phone" required>
+                                                <label class="input-animated-label">Mobil telefon nömrəniz</label>
+                                                <span class='input-error-text px-3 px-lg-4 mt-2 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-lg-4 pb-lg-3">
+                                        <div class="col-12 mb-4 mb-lg-0 pb-2 pb-lg-0">
+                                            <div class="input-container js-input-check">
+                                                <input type="email" class="form-input px-3 px-lg-4 input-animated" placeholder=" " data-parsley-group="first" required>
+                                                <label class="input-animated-label">Email</label>
+                                                <span class='input-error-text px-3 px-lg-4 mt-2 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-lg-4 pb-lg-2">
+                                        <div class="col-12 mb-4 mb-lg-0 pb-2 pb-lg-0">
+                                            <div class="input-container js-input-check">
+                                                <input type="text" class="form-input px-3 px-lg-4 input-animated" placeholder=" " data-parsley-group="first"  minlength="3" required>
+                                                <label class="input-animated-label">Şəxsiyyət vəsiqəsinin seriya nömrəsi</label>
+                                                <span class='input-error-text px-3 px-lg-4 mt-2 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-lg-4 pb-lg-2">
+                                        <div class="col-12 mb-4 mb-lg-0 pb-2 pb-lg-0">
+                                            <div class="input-container js-input-check">
+                                                <input type="text" class="form-input px-3 px-lg-4 input-animated" placeholder=" " data-parsley-group="first" minlength="3" required>
+                                                <label class="input-animated-label">Qeydiyyat ünvanınızı qeyd edin</label>
+                                                <span class='input-error-text px-3 px-lg-4 mt-2 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-lg-4 pb-lg-3">
+                                        <div class="col-12 mb-4 pb-2 pb-lg-0 js-input-check">
+                                            <span class="fs-14 fs-lg-16 fw-500 mb-3 d-block">Şəxsiyyət vəsiqəsinin ön hissəsinin şəkli</span>
+                                            <label class="form-input px-3 px-lg-4 border-dashed cursor-p">
+                                                <span class="color-666 text-dots">Faylı seç</span>
+                                                <input type="file" name="photo-front" class="d-none" required data-default-text="Faylı seç" data-parsley-group="first" data-parsley-extension-check="jpg, jpeg" data-parsley-size-check="2000">
+                                            </label>
+                                            <span class="fs-12 fs-lg-14 fw-500 color-666 d-block mt-3">Şəkil jpg formatı olmaqla 2mb ölçüsünü aşmamalıdır</span>
+                                        </div>
+
+                                        <div class="col-12 pb-2 pb-lg-0 js-input-check">
+                                            <span class="fs-14 fs-lg-16 fw-500 mb-3 d-block">Şəxsiyyət vəsiqəsinin arxa hissəsinin şəkli</span>
+                                            <label class="form-input px-3 px-lg-4 border-dashed cursor-p">
+                                                <span class="color-666 text-dots">Faylı seç</span>
+                                                <input type="file" name="photo-back" class="d-none" required data-default-text="Faylı seç" data-parsley-group="first" data-parsley-extension-check="jpg, jpeg" data-parsley-size-check="2000">
+                                            </label>
+                                            <span class="fs-12 fs-lg-14 fw-500 color-666 d-block mt-3">Şəkil jpg formatı olmaqla 2mb ölçüsünü aşmamalıdır</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-4 mt-lg-0 mb-lg-4 pb-lg-2">
+                                        <label class="col-12">
+                                            <button type="button" id="goToStepTwo" class="w-100 h-50 h-lg-75 fs-18 px-4 border-0 bg-1885d3 d-flex justify-content-between align-items-center cursor-p">
+                                                <span class="color-white fw-600 fs-16 fs-lg-17 ml-2">Növbəti</span>
+                                                <span class="d-inline-block icon square-30 icon-arrow-long icon-color-white mr-2"></span>
+                                            </button>
+                                        </label>
+                                    </div>
+
+                                </div>
+
+                                <div id="stepTwo" style="display: none">
+                                    <h4 class="fs-16 fs-lg-18 color-0D182C mb-5">2. Təhsil haqqında</h4>
+
+                                    <div class="row mb-lg-4 pb-lg-2">
+                                        <span class="col-12 mb-4 mb-lg-0 pb-2 pb-lg-0">
+                                            <select name="" class="selectric-select w-100 bg-transparent" required>
+                                                <option value="" class="d-none">Təhsil aldığınız univeristeti seçin</option>
+                                                <option value="1">BMU</option>
+                                                <option value="2">BDU</option>
+                                            </select>
+                                        </span>
+                                    </div>
+
+                                    <div class="row mb-lg-4 pb-lg-2">
+                                        <div class="col-12 mb-4 mb-lg-0 pb-2 pb-lg-0">
+                                            <div class="input-container">
+                                                <input type="text" class="form-input px-3 px-lg-4 input-animated" placeholder=" " minlength="3" required>
+                                                <label class="input-animated-label">İxtisasınızı qeyd edin</label>
+                                                <span class='input-error-text px-3 px-lg-4 mt-2 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-lg-4 pb-lg-2">
+                                        <div class="col-12 mb-4 mb-lg-0 pb-2 pb-lg-0">
+                                            <div class="input-container">
+                                                <input type="number" class="form-input px-3 px-lg-4 input-animated" placeholder=" " minlength="3" required>
+                                                <label class="input-animated-label">Qəbul balınızı qeyd edin</label>
+                                                <span class='input-error-text px-3 px-lg-4 mt-2 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-12 mb-5 d-flex flex-column justify-content-between">
+                                            <p class="fs-18 fw-500 color-0D182C mb-4">Təhsil pillənizi seçin</p>
+                                            <ul class="list-reset d-flex flex-md-column">
+                                                <li class="mr-5 mr-md-0 mb-md-3">
+                                                    <label class="radio-label">
+                                                        <span class="lh-20 fs-16">Bakalavr</span>
+                                                        <input type="radio" class="input-radio" name="educationLevel" required>
+                                                        <span class="radio-checkmark"></span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="radio-label">
+                                                        <span class="lh-20 fs-16">Magistr</span>
+                                                        <input type="radio" class="input-radio" name="educationLevel" required>
+                                                        <span class="radio-checkmark"></span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                            <span class='input-error-text mt-3 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
+                                        </div>
+                                        <div class="col-12 mb-5 d-flex flex-column justify-content-between">
+                                            <p class="fs-18 fw-500 color-0D182C mb-4">Təhsil formanızı seçin</p>
+                                            <ul class="list-reset d-flex flex-md-column">
+                                                <li class="mr-5 mr-md-0 mb-md-3">
+                                                    <label class="radio-label">
+                                                        <span class="lh-20 fs-16">Əyani</span>
+                                                        <input type="radio" class="input-radio" name="educationForm" required>
+                                                        <span class="radio-checkmark"></span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="radio-label">
+                                                        <span class="lh-20 fs-16">Qiyabi</span>
+                                                        <input type="radio" class="input-radio" name="educationForm" required>
+                                                        <span class="radio-checkmark"></span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                            <span class='input-error-text mt-3 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-lg-4 pb-lg-2">
+                                        <div class="col-12 mb-5">
+                                            <p class="fs-18 fw-500 color-0D182C mb-4">Təhsil dilinizi seçin</p>
+                                            <ul class="list-reset">
+                                                <li class="mb-3">
+                                                    <label class="radio-label">
+                                                        <span class="lh-20 fs-16">Azərbaycan dili</span>
+                                                        <input type="radio" class="input-radio" name="educationLanguage" required>
+                                                        <span class="radio-checkmark"></span>
+                                                    </label>
+                                                </li>
+                                                <li class="mb-3">
+                                                    <label class="radio-label">
+                                                        <span class="lh-20 fs-16">İngisil dili</span>
+                                                        <input type="radio" class="input-radio" name="educationLanguage" required>
+                                                        <span class="radio-checkmark"></span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="radio-label">
+                                                        <span class="lh-20 fs-16">Rus dili</span>
+                                                        <input type="radio" class="input-radio" name="educationLanguage" required>
+                                                        <span class="radio-checkmark"></span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                            <span class='input-error-text mt-3 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-lg-4 pb-lg-2">
+                                        <label class="col-lg-12 mb-4 mb-lg-0 pb-2 pb-lg-0">
+                                            <textarea name="" class="form-input px-3 py-3 px-lg-4 h-175 resize-none" placeholder="Təcrübə proqramına qoşulmaqda sizi nə motivasiya edir? (max. söz sayı 200)" minlength="4" required></textarea>
+                                            <span class='input-error-text px-3 px-lg-4 mt-2 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="row mb-lg-4 pb-lg-3">
+                                        <div class="col-12 mb-4 pb-2 pb-lg-0">
+                                            <span class="fs-14 fs-lg-16 fw-500 mb-3 d-block">Transkriptinizi buraya yükləyin</span>
+                                            <label class="form-input px-3 px-lg-4 border-dashed cursor-p">
+                                                <span class="color-666 text-dots">Faylı seç</span>
+                                                <input type="file" name="transcript" class="d-none" required data-default-text="Faylı seç">
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-4 mt-lg-0 mb-lg-4 pb-lg-2">
+                                        <label class="col-12">
+                                            <button type="submit" id="internSubmit" class="w-100 h-50 h-lg-75 fs-18 px-4 border-0 bg-1885d3 d-flex justify-content-between align-items-center cursor-p">
+                                                <span class="color-white fw-600 fs-16 fs-lg-17 ml-2">Növbəti</span>
+                                                <span class="d-inline-block icon square-30 icon-arrow-long icon-color-white mr-2"></span>
+                                            </button>
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+
+
+<script src="js/vendor/jquery-3.4.1.min.js"></script>
+<script src="js/vendor/jquery.selectric.min.js"></script>
+<script src="js/vendor/swiper.min.js"></script>
+<script src="js/vendor/accordion.min.js"></script>
+<script src="js/vendor/vanilla.filterizr.min.js"></script>
+
+<script src="js/vendor/parsley.min.js"></script>
+<script src="js/validation.js"></script>
+
+<script src="js/functions.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="az" class="overflowx-h overflow-lg-v">
+<head>
+    <meta http-equiv="pragma" content="no-cache" />
+
+    <link rel='icon' href='img/favicon.png' type='image/x-icon'/ >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IBAR</title>
+    <link rel="stylesheet" href="css/vendor/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/vendor/rangeslider.css">
+    <link rel="stylesheet" href="css/vendor/swiper.min.css">
+    <link rel="stylesheet" href="css/vendor/selectric.css">
+    <link rel="stylesheet" href="css/vendor/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/vendor/fonts.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="overflowx-h">
+
+
+<header class="bg-white pos-sticky top-0 hover-node header-shortened">
+    <div class="header-s bg-white d-lg-block">
+        <section class="border-bottom border-f6f7f8 py-2 py-lg-4">
+            <div class="container-fluid">
+                <div class="header-s2 row align-items-center">
+                    <div class="col-6 d-flex align-items-center">
+                        <a href="index.php" class="d-block">
+                            <figure>
+                                <img src="img/logo.svg" class="h-35 d-block w-100-max" alt="">
+                            </figure>
+                        </a>
+                    </div>
+
+                    <div class="col-6 d-flex align-items-center justify-content-end">
+                        <span>
+                        <select name="" class="selectric-tooltip label-fs-14" id="js-selectric-lang">
+                            <!-- don't change value. it's for flag icons -->
+                            <option value="az" data-url="https://ibar.az/az" class="d-none">AZ</option>
+                            <option value="uk" data-url="https://ibar.az/en">English</option>
+                            <option value="ru" data-url="https://ibar.az/ru">Русский</option>
+                        </select>
+                    </span>
+
+                        <a href="tel:937" class="d-flex align-items-center color-666 ml-3">
+                            <span class="icon icon-phone square-12 icon-color"></span>
+                            <span class="fs-14 ml-1 fw-600">937</span>
+                        </a>
+
+                        <a href="#" class="d-none d-md-flex bg-2e55a6 radius-3 color-white py-2 px-4 ml-md-5">
+                            <span class="fw-500">Qeydiyyatdan keç</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</header>
+
+
+<section class="d-none d-md-block">
+    <div class="container-fluid px-0">
+        <!--if we want fixed height for the photo add this classes to the next div h-250 h-lg-370-->
+        <div class="row overflow-h">
+            <figure class="col-12">
+                <img src="img/internship.png" class="w-100 obj-cover h-100p" alt="">
+            </figure>
+        </div>
+    </div>
+</section>
+
+<section class="pt-lg-5 icon-lg-ibar-right bg-right-top bg-no-repeat bg-top-n200 h-600-min">
+    <div class="row d-md-none">
+        <label class="col-12">
+            <a class="w-100 h-50 fs-18 px-3 border-0 bg-2e55a6 d-flex justify-content-between align-items-center cursor-p">
+                <span class="d-inline-block icon square-30 icon-arrow-long rotate-180 icon-color-white"></span>
+                <span class="color-white fw-600 fs-16 fs-lg-17 mr-2">Layihə haqqında</span>
+            </a>
+        </label>
+    </div>
+
+    <div class="container pt-5">
+        <div class="row">
+            <!--                if it's error message add color-error class-->
+            <h1 class="col-lg-10 color-1885d3  fw-600 fs-18 fs-lg-24 fs-xl-36 mt-0 mb-4 mb-lg-5 pb-2">Statusu yoxla</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-lg-5">
+                <form class="js-parsley-validate" method="post" data-parsley-trigger="change input">
+                    <div class="row mb-lg-4 pb-lg-3">
+                        <label class="col-12 mb-4 mb-lg-0 pb-2 pb-lg-0">
+                            <input type="text" class="form-input px-3 px-lg-4" placeholder="Kodu daxil edin" minlength="4" required>
+                        </label>
+                    </div>
+
+
+                    <div class="row mb-lg-4 pb-lg-3">
+                        <label class="col-12 mb-4 mb-lg-0 pb-2 pb-lg-0">
+                            <button type="submit" class="w-100 h-50 h-lg-75 fs-18 px-4 border-0 bg-1885d3 d-flex justify-content-center align-items-center cursor-p">
+                                <span class="color-white fw-600 fs-16 fs-lg-17 ml-2">Göndər</span>
+                            </button>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row mb-lg-4 pb-lg-3">
+            <div class="col-12">
+                <p class="pl-3 pl-lg-4 fs-12 fs-lg-16 fs-xl-20 fw-500 mt-0 mb-2 mb-md-3 color-0D182C">Sizin müraciətiniz qəbul olunmadı</p>
+            </div>
+            <div class="col-12">
+                <p class="pl-3 pl-lg-4 fs-12 fs-lg-16 fs-xl-20 m-0 fs-italic color-666">Qeyd: Sizin ixtisasınız müvafiq müraciətə uyğun deyil</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/vendor/jquery-3.4.1.min.js"></script>
+<script src="js/vendor/jquery.selectric.min.js"></script>
+<script src="js/vendor/swiper.min.js"></script>
+<script src="js/vendor/accordion.min.js"></script>
+<script src="js/vendor/vanilla.filterizr.min.js"></script>
+
+<script src="js/vendor/parsley.min.js"></script>
+<script src="js/validation.js"></script>
+
+<script src="js/functions.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

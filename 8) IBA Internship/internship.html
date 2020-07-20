@@ -3,13 +3,11 @@
 <head>
     <meta http-equiv="pragma" content="no-cache" />
 
-    <link rel='icon' href='img/favicon.png' type='image/x-icon'/ >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>IBAR</title>
     <link rel="stylesheet" href="css/vendor/bootstrap-grid.css">
-    <link rel="stylesheet" href="css/vendor/rangeslider.css">
     <link rel="stylesheet" href="css/vendor/swiper.min.css">
     <link rel="stylesheet" href="css/vendor/selectric.css">
     <link rel="stylesheet" href="css/vendor/normalize.css">
@@ -165,9 +163,9 @@
                             </div>
                         </div>
 
-                        <div class="col-11 col-lg-10 mx-auto ">
+                        <div class="w-100">
                             <form class="js-parsley-validate" id="internshipForm" method="post" data-parsley-trigger="change input">
-                                <div id="stepOne">
+                                <div id="stepOne" class="col-11 col-lg-10 mx-auto p-0">
 
                                     <h4 class="fs-16 fs-lg-18 color-0D182C mb-5">1. Şəxsi məlumat</h4>
 
@@ -268,7 +266,7 @@
 
                                     <div class="row mt-4 mt-lg-0 mb-lg-4 pb-lg-2">
                                         <label class="col-12">
-                                            <button type="button" id="goToStepTwo" class="w-100 h-50 h-lg-75 fs-18 px-4 border-0 bg-1885d3 d-flex justify-content-between align-items-center cursor-p">
+                                            <button type="button" id="goToStepTwo" class="btn-i w-100 h-50 h-lg-75 fs-18 px-4 border-0 bg-1885d3 d-flex justify-content-between align-items-center cursor-p">
                                                 <span class="color-white fw-600 fs-16 fs-lg-17 ml-2">Növbəti</span>
                                                 <span class="d-inline-block icon square-30 icon-arrow-long icon-color-white mr-2"></span>
                                             </button>
@@ -278,135 +276,147 @@
                                 </div>
 
                                 <div id="stepTwo" style="display: none">
-                                    <h4 class="fs-16 fs-lg-18 color-0D182C mb-5">2. Təhsil haqqında</h4>
 
-                                    <div class="row mb-lg-4 pb-lg-2">
+                                    <div class="row">
+                                        <label class="col-12">
+                                            <button type="button" id="goBackToStepOne" class="btn-i w-100 py-3 fs-18 px-3 border-0 bg-eeeeee d-flex justify-content-center align-items-center cursor-p">
+                                                <span class="d-inline-block icon square-30 icon-arrow-long rotate-180 icon-color-666666"></span>
+                                                <span class="color-666666 fw-600 fs-16 fs-lg-17 ml-2">Geri qayıtmaq</span>
+                                            </button>
+                                        </label>
+                                    </div>
+
+                                    <div class="col-11 col-lg-10 mx-auto p-0">
+                                        <h4 class="fs-16 fs-lg-18 color-0D182C mb-5">2. Təhsil haqqında</h4>
+
+                                        <div class="row mb-lg-4 pb-lg-2">
                                         <span class="col-12 mb-4 mb-lg-0 pb-2 pb-lg-0">
-                                            <select name="" class="selectric-select w-100 bg-transparent" required>
+                                            <select name="" class="selectric-select w-100 label-fs-16 bg-transparent" required>
                                                 <option value="" class="d-none">Təhsil aldığınız univeristeti seçin</option>
                                                 <option value="1">BMU</option>
                                                 <option value="2">BDU</option>
                                             </select>
                                         </span>
-                                    </div>
+                                        </div>
 
-                                    <div class="row mb-lg-4 pb-lg-2">
-                                        <div class="col-12 mb-4 mb-lg-0 pb-2 pb-lg-0">
-                                            <div class="input-container">
-                                                <input type="text" class="form-input px-3 px-lg-4 input-animated" placeholder=" " minlength="3" required>
-                                                <label class="input-animated-label">İxtisasınızı qeyd edin</label>
-                                                <span class='input-error-text px-3 px-lg-4 mt-2 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
+                                        <div class="row mb-lg-4 pb-lg-2">
+                                            <div class="col-12 mb-4 mb-lg-0 pb-2 pb-lg-0">
+                                                <div class="input-container">
+                                                    <input type="text" class="form-input px-3 px-lg-4 input-animated" placeholder=" " minlength="3" required>
+                                                    <label class="input-animated-label">İxtisasınızı qeyd edin</label>
+                                                    <span class='input-error-text px-3 px-lg-4 mt-2 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
 
-                                    <div class="row mb-lg-4 pb-lg-2">
-                                        <div class="col-12 mb-4 mb-lg-0 pb-2 pb-lg-0">
-                                            <div class="input-container">
-                                                <input type="number" class="form-input px-3 px-lg-4 input-animated" placeholder=" " minlength="3" required>
-                                                <label class="input-animated-label">Qəbul balınızı qeyd edin</label>
-                                                <span class='input-error-text px-3 px-lg-4 mt-2 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
+                                        <div class="row mb-lg-4 pb-lg-2">
+                                            <div class="col-12 mb-4 mb-lg-0 pb-2 pb-lg-0">
+                                                <div class="input-container">
+                                                    <input type="number" class="form-input px-3 px-lg-4 input-animated" placeholder=" " minlength="3" required>
+                                                    <label class="input-animated-label">Qəbul balınızı qeyd edin</label>
+                                                    <span class='input-error-text px-3 px-lg-4 mt-2 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
 
-                                    <div class="row">
-                                        <div class="col-12 mb-5 d-flex flex-column justify-content-between">
-                                            <p class="fs-18 fw-500 color-0D182C mb-4">Təhsil pillənizi seçin</p>
-                                            <ul class="list-reset d-flex flex-md-column">
-                                                <li class="mr-5 mr-md-0 mb-md-3">
-                                                    <label class="radio-label">
-                                                        <span class="lh-20 fs-16">Bakalavr</span>
-                                                        <input type="radio" class="input-radio" name="educationLevel" required>
-                                                        <span class="radio-checkmark"></span>
-                                                    </label>
-                                                </li>
-                                                <li>
-                                                    <label class="radio-label">
-                                                        <span class="lh-20 fs-16">Magistr</span>
-                                                        <input type="radio" class="input-radio" name="educationLevel" required>
-                                                        <span class="radio-checkmark"></span>
-                                                    </label>
-                                                </li>
-                                            </ul>
-                                            <span class='input-error-text mt-3 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
+                                        <div class="row">
+                                            <div class="col-12 mb-5 d-flex flex-column justify-content-between">
+                                                <p class="fs-18 fw-500 color-0D182C mb-4">Təhsil pillənizi seçin</p>
+                                                <ul class="list-reset d-flex flex-md-column">
+                                                    <li class="mr-5 mr-md-0 mb-md-3">
+                                                        <label class="radio-label">
+                                                            <span class="lh-20 fs-16">Bakalavr</span>
+                                                            <input type="radio" class="input-radio" name="educationLevel" required>
+                                                            <span class="radio-checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="radio-label">
+                                                            <span class="lh-20 fs-16">Magistr</span>
+                                                            <input type="radio" class="input-radio" name="educationLevel" required>
+                                                            <span class="radio-checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                                <span class='input-error-text mt-3 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
+                                            </div>
+                                            <div class="col-12 mb-5 d-flex flex-column justify-content-between">
+                                                <p class="fs-18 fw-500 color-0D182C mb-4">Təhsil formanızı seçin</p>
+                                                <ul class="list-reset d-flex flex-md-column">
+                                                    <li class="mr-5 mr-md-0 mb-md-3">
+                                                        <label class="radio-label">
+                                                            <span class="lh-20 fs-16">Əyani</span>
+                                                            <input type="radio" class="input-radio" name="educationForm" required>
+                                                            <span class="radio-checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="radio-label">
+                                                            <span class="lh-20 fs-16">Qiyabi</span>
+                                                            <input type="radio" class="input-radio" name="educationForm" required>
+                                                            <span class="radio-checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                                <span class='input-error-text mt-3 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
+                                            </div>
                                         </div>
-                                        <div class="col-12 mb-5 d-flex flex-column justify-content-between">
-                                            <p class="fs-18 fw-500 color-0D182C mb-4">Təhsil formanızı seçin</p>
-                                            <ul class="list-reset d-flex flex-md-column">
-                                                <li class="mr-5 mr-md-0 mb-md-3">
-                                                    <label class="radio-label">
-                                                        <span class="lh-20 fs-16">Əyani</span>
-                                                        <input type="radio" class="input-radio" name="educationForm" required>
-                                                        <span class="radio-checkmark"></span>
-                                                    </label>
-                                                </li>
-                                                <li>
-                                                    <label class="radio-label">
-                                                        <span class="lh-20 fs-16">Qiyabi</span>
-                                                        <input type="radio" class="input-radio" name="educationForm" required>
-                                                        <span class="radio-checkmark"></span>
-                                                    </label>
-                                                </li>
-                                            </ul>
-                                            <span class='input-error-text mt-3 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
+
+                                        <div class="row mb-lg-4 pb-lg-2">
+                                            <div class="col-12 mb-5">
+                                                <p class="fs-18 fw-500 color-0D182C mb-4">Təhsil dilinizi seçin</p>
+                                                <ul class="list-reset">
+                                                    <li class="mb-3">
+                                                        <label class="radio-label">
+                                                            <span class="lh-20 fs-16">Azərbaycan dili</span>
+                                                            <input type="radio" class="input-radio" name="educationLanguage" required>
+                                                            <span class="radio-checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="mb-3">
+                                                        <label class="radio-label">
+                                                            <span class="lh-20 fs-16">İngisil dili</span>
+                                                            <input type="radio" class="input-radio" name="educationLanguage" required>
+                                                            <span class="radio-checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="radio-label">
+                                                            <span class="lh-20 fs-16">Rus dili</span>
+                                                            <input type="radio" class="input-radio" name="educationLanguage" required>
+                                                            <span class="radio-checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                                <span class='input-error-text mt-3 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="row mb-lg-4 pb-lg-2">
-                                        <div class="col-12 mb-5">
-                                            <p class="fs-18 fw-500 color-0D182C mb-4">Təhsil dilinizi seçin</p>
-                                            <ul class="list-reset">
-                                                <li class="mb-3">
-                                                    <label class="radio-label">
-                                                        <span class="lh-20 fs-16">Azərbaycan dili</span>
-                                                        <input type="radio" class="input-radio" name="educationLanguage" required>
-                                                        <span class="radio-checkmark"></span>
-                                                    </label>
-                                                </li>
-                                                <li class="mb-3">
-                                                    <label class="radio-label">
-                                                        <span class="lh-20 fs-16">İngisil dili</span>
-                                                        <input type="radio" class="input-radio" name="educationLanguage" required>
-                                                        <span class="radio-checkmark"></span>
-                                                    </label>
-                                                </li>
-                                                <li>
-                                                    <label class="radio-label">
-                                                        <span class="lh-20 fs-16">Rus dili</span>
-                                                        <input type="radio" class="input-radio" name="educationLanguage" required>
-                                                        <span class="radio-checkmark"></span>
-                                                    </label>
-                                                </li>
-                                            </ul>
-                                            <span class='input-error-text mt-3 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="row mb-lg-4 pb-lg-2">
-                                        <label class="col-lg-12 mb-4 mb-lg-0 pb-2 pb-lg-0">
-                                            <textarea name="" class="form-input px-3 py-3 px-lg-4 h-175 resize-none" placeholder="Təcrübə proqramına qoşulmaqda sizi nə motivasiya edir? (max. söz sayı 200)" minlength="4" required></textarea>
-                                            <span class='input-error-text px-3 px-lg-4 mt-2 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
-                                        </label>
-                                    </div>
-
-                                    <div class="row mb-lg-4 pb-lg-3">
-                                        <div class="col-12 mb-4 pb-2 pb-lg-0">
-                                            <span class="fs-14 fs-lg-16 fw-500 mb-3 d-block">Transkriptinizi buraya yükləyin</span>
-                                            <label class="form-input px-3 px-lg-4 border-dashed cursor-p">
-                                                <span class="color-666 text-dots">Faylı seç</span>
-                                                <input type="file" name="transcript" class="d-none" required data-default-text="Faylı seç">
+                                        <div class="row mb-lg-4 pb-lg-2">
+                                            <label class="col-lg-12 mb-4 mb-lg-0 pb-2 pb-lg-0">
+                                                <textarea name="" class="form-input px-3 py-3 px-lg-4 h-175 resize-none" placeholder="Təcrübə proqramına qoşulmaqda sizi nə motivasiya edir? (max. söz sayı 200)" minlength="4" required></textarea>
+                                                <span class='input-error-text px-3 px-lg-4 mt-2 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
                                             </label>
                                         </div>
-                                    </div>
 
-                                    <div class="row mt-4 mt-lg-0 mb-lg-4 pb-lg-2">
-                                        <label class="col-12">
-                                            <button type="submit" id="internSubmit" class="w-100 h-50 h-lg-75 fs-18 px-4 border-0 bg-1885d3 d-flex justify-content-between align-items-center cursor-p">
-                                                <span class="color-white fw-600 fs-16 fs-lg-17 ml-2">Növbəti</span>
-                                                <span class="d-inline-block icon square-30 icon-arrow-long icon-color-white mr-2"></span>
-                                            </button>
-                                        </label>
+                                        <div class="row mb-lg-4 pb-lg-3">
+                                            <div class="col-12 mb-4 pb-2 pb-lg-0">
+                                                <span class="fs-14 fs-lg-16 fw-500 mb-3 d-block">Transkriptinizi buraya yükləyin</span>
+                                                <label class="form-input px-3 px-lg-4 border-dashed cursor-p">
+                                                    <span class="color-666 text-dots">Faylı seç</span>
+                                                    <input type="file" name="transcript" class="d-none" required data-default-text="Faylı seç">
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-4 mt-lg-0 mb-lg-4 pb-lg-2">
+                                            <label class="col-12">
+                                                <button type="submit" id="internSubmit" class="w-100 h-50 h-lg-75 fs-18 px-4 border-0 bg-1885d3 d-flex justify-content-between align-items-center cursor-p">
+                                                    <span class="color-white fw-600 fs-16 fs-lg-17 ml-2">Növbəti</span>
+                                                    <span class="d-inline-block icon square-30 icon-arrow-long icon-color-white mr-2"></span>
+                                                </button>
+                                            </label>
+                                        </div>
                                     </div>
 
                                 </div>

@@ -213,8 +213,10 @@
 
 /*=== Selectric select ===*/
 .selectric-selectric-select .selectric .label {
-    line-height: 70px;
-    height: 70px;
+    /*line-height: 70px;*/
+    /*height: 70px;*/
+    line-height: 56px;
+    height: 56px;
 }
 
 .selectric-items ul,

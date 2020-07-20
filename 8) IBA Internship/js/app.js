@@ -268,6 +268,12 @@ $('#goToStepTwo').on('click', function (e) {
     // }
 })
 
+$('#goBackToStepOne').on('click', function () {
+    $('#stepTwo').fadeOut(200, function () {
+        $('#stepOne').fadeIn(200);
+    });
+})
+
 const $internRadios = $("#stepTwo input[type=radio]");
 $internRadios.on('change', addRequiredTextToRadio);
 $('#internSubmit').on('click', addRequiredTextToRadio);

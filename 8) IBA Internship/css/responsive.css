@@ -155,10 +155,10 @@
     .hover-border-lg-e4e4e4:hover { border: 1px solid #e4e4e4 }
     .list-dotted li { font-size: 16px }
 
-    .form-input {
-        font-size: 18px;
-        height: 75px;
-    }
+    /*.form-input {*/
+    /*    font-size: 18px;*/
+    /*    height: 75px;*/
+    /*}*/
 
     .input-card {
         background-position: 25px center;
@@ -215,17 +215,17 @@
     /****************************************************/
 
     .input-animated + .input-animated-label {
-        top: 12px;
+        /*top: 12px;*/
         left: 24px;
-        font-size: 13px;
-        line-height: 16px;
+        /*font-size: 13px;*/
+        /*line-height: 16px;*/
     }
 
     .input-animated:placeholder-shown + .input-animated-label {
-        top: 28px;
+        /*top: 28px;*/
         left: 24px;
-        font-size: 18px;
-        line-height: 20px;
+        /*font-size: 18px;*/
+        /*line-height: 20px;*/
     }
 
     .input-animated:not(:placeholder-shown), .input-animated:focus {
@@ -234,10 +234,10 @@
     }
 
     .input-animated:focus + .input-animated-label {
-        top: 12px;
+        /*top: 12px;*/
         left: 24px;
-        font-size: 13px;
-        line-height: 16px;
+        /*font-size: 13px;*/
+        /*line-height: 16px;*/
     }
 }
 

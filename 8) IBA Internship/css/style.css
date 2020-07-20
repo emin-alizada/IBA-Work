@@ -1079,7 +1079,7 @@ header + section { padding-top: 125px }
 .accordion-menu-mob .ac.js-enabled { border-bottom: 1px solid #e4e4e4 }
 
 /* Parsley JS */
-.parsley-errors-list { display: none }
+/*.parsley-errors-list { display: none }*/
 
 .parsley-error input.d-none[type=radio] + label,
 .parsley-error { border-color: red; outline-color: red }

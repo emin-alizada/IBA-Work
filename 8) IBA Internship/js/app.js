@@ -222,6 +222,11 @@ searchBar();
 
 /* Internship page Delete this js snippet when internship is passive */
 
+const phoneNumberMask = $('#mob-phone').inputmask({
+    mask: '+\\9\\94 99 999-99-99',
+    showMaskOnHover: false,
+});
+
 $('#signUpButton').on('click', function (e) {
     $('#faqButton').parent().removeClass('d-none');
     $('#checkStatus').parent().addClass('d-none');

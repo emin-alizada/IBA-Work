@@ -6,6 +6,25 @@ const validationDefaults = {
 
 const formValidation = (selector, options = {}) => {
     const $formParsley = $(selector);
+
+    const parsleyDefaults = {
+        errorsContainer: (field) => {
+            // console.log($(field.element).closest(".js-input-container"));
+            if (field.element.type === 'file' || field.element.type === 'radio') {
+                setTimeout(function () {
+                    $(field.element).closest(".js-input-container").find('.parsley-error-li').removeClass('px-3 px-lg-4');
+                }, 10);
+                return $(field.element).closest(".js-input-container");
+            }
+            else {
+                return $(field.element).closest(".js-input-container");
+
+            }
+        },
+        errorsWrapper: '<ul class="list-reset parsley-errors-list"></ul>',
+        errorTemplate: '<li class="parsley-error-li px-3 px-lg-4 mt-2 color-red fw-500 fs-14"></li>'
+    };
+
     if($formParsley.length) {
 
         if('init' in options && options.init instanceof Function) {
@@ -14,7 +33,7 @@ const formValidation = (selector, options = {}) => {
 
         let isSubmitted = false;
         let lastInputObj;
-        $formParsley.parsley({ errorsWrapper: false }).on('form:validated', e => {
+        $formParsley.parsley(parsleyDefaults).on('form:validated', e => {
             isSubmitted = true;
             lastInputObj = e.fieldsMappedById[Object.keys(e.fieldsMappedById)[Object.keys(e.fieldsMappedById).length - 1]];
 
@@ -23,7 +42,7 @@ const formValidation = (selector, options = {}) => {
             __selectValidation(e.element);
         });
 
-        $formParsley.parsley({ errorsWrapper: false }).on('field:validated', (e) => {
+        $formParsley.parsley(parsleyDefaults).on('field:validated', (e) => {
             if(isSubmitted) {
                 if(e === lastInputObj) {
                     isSubmitted = false;
@@ -148,7 +167,9 @@ window.Parsley.addValidator('extensionCheck', {
                 gif: 'image/gif',
                 doc: 'application/msword',
                 docx: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-                pdf: 'application/pdf'
+                pdf: 'application/pdf',
+                ppt: 'application/vnd.ms-powerpoint',
+                pptx: 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
             };
 
             isValid = ((extensions.indexOf(ext) !== -1) && (mimeTypes[ext] === fileList[0].type));

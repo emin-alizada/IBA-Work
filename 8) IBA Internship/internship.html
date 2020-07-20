@@ -173,10 +173,9 @@
 
                                     <div class="row mb-lg-4 pb-lg-2">
                                         <div class="col-12 mb-4 mb-lg-0 pb-2 pb-lg-0">
-                                            <div class="input-container js-input-check">
-                                                <input type="text" class="form-input px-3 px-lg-4 input-animated" placeholder=" " data-parsley-group="first" minlength="3" pattern="/^[a-zA-ZİÇÖÜçöüĞ-ğıŞ-şƏə\s]*$/" required>
-                                                <label class="input-animated-label">Ad, soyad, ata adı</label>
-                                                <span class='input-error-text px-3 px-lg-4 mt-2 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
+                                            <div class="input-container js-input-container js-input-check">
+                                                <input type="text" class="form-input px-3 px-lg-4 input-animated" placeholder=" " data-parsley-group="first" minlength="3" pattern="/^[a-zA-ZİÇÖÜçöüĞ-ğıŞ-şƏə\s]*$/" data-parsley-error-message="Bu bölmə  doldurulmalıdır" required>
+                                                <label class="input-animated-label">Soyad, ad və ata adı</label>
                                             </div>
                                         </div>
                                     </div>
@@ -184,85 +183,87 @@
                                     <div class="row mb-lg-4 pb-lg-2 d-flex align-items-start">
                                         <span class="col-12 fs-16 fw-500 mb-3 d-block">Doğum tarixi</span>
                                         <div class="col-4 mb-4 mb-lg-0 pb-2 pb-lg-0">
-                                            <div class="input-container js-input-check">
-                                                <input type="text" class="form-input px-3 px-lg-4 input-animated" placeholder=" " data-parsley-group="first" minlength="1" pattern="/^(0?[1-9]|[12][0-9]|3[01])$/" required>
+                                            <div class="input-container js-input-container js-input-check">
+                                                <input type="text" class="form-input px-3 px-lg-4 input-animated" placeholder=" " data-parsley-group="first" minlength="1" pattern="/^(0?[1-9]|[12][0-9]|3[01])$/" data-parsley-error-message="Bu bölmə  doldurulmalıdır" required>
                                                 <label class="input-animated-label">Gün</label>
-                                                <span class='input-error-text px-3 px-lg-4 mt-2 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
-                                            </div>
+                                        </div>
                                         </div>
                                         <div class="col-4 mb-4 mb-lg-0 pb-2 pb-lg-0">
-                                            <div class="input-container js-input-check">
-                                                <input type="text" class="form-input px-3 px-lg-4 input-animated" placeholder=" " data-parsley-group="first" minlength="1" pattern="/^(0?[1-9]|1[012])$/" required>
+                                            <div class="input-container js-input-container js-input-check">
+                                                <input type="text" class="form-input px-3 px-lg-4 input-animated" placeholder=" " data-parsley-group="first" minlength="1" pattern="/^(0?[1-9]|1[012])$/" data-parsley-error-message="Bu bölmə  doldurulmalıdır" required>
                                                 <label class="input-animated-label">Ay</label>
-                                                <span class='input-error-text px-3 px-lg-4 mt-2 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
                                             </div>
                                         </div>
-                                        <div class="col-4 mb-4 mb-lg-0 pb-2 pb-lg-0">
-                                            <div class="input-container js-input-check">
-                                                <input type="text" class="form-input px-3 px-lg-4 input-animated" placeholder=" " data-parsley-group="first" minlength="1" pattern="/^(194[5-9]|19[5-9]\d|200\d|201[0-3])$/" required>
+                                        <div class="col-4 pl-0 pl-sm-3 mb-4 mb-lg-0 pb-2 pb-lg-0">
+                                            <div class="input-container js-input-container js-input-check">
+                                                <input type="text" class="form-input px-3 px-lg-4 input-animated" placeholder=" " data-parsley-group="first" minlength="1" pattern="/^(194[5-9]|19[5-9]\d|200\d|201[0-3])$/" data-parsley-error-message="Bu bölmə  doldurulmalıdır" required>
                                                 <label class="input-animated-label">İl</label>
-                                                <span class='input-error-text px-3 px-lg-4 mt-2 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="row mb-lg-4 pb-lg-3">
                                         <div class="col-12 mb-4 mb-lg-0 pb-2 pb-lg-0">
-                                            <div class="input-container js-input-check">
-                                                <input type="text" class="form-input px-3 px-lg-4 input-animated" placeholder=" " data-parsley-group="first" data-parsley-length="[12, 13]" id="js-mob-phone" required>
+                                            <div class="input-container js-input-container js-input-check">
+                                                <input type="text" class="form-input px-3 px-lg-4 input-animated" placeholder=" " data-parsley-group="first" pattern="^\+994 [0-9]{2} [0-9]{3}-[0-9]{2}-[0-9]{2}$" data-parsley-required-message="Bu bölmə  doldurulmalıdır" data-parsley-pattern-message="Mobil telefonu düzgün formada doldurulmalıdı" id="mob-phone" required>
                                                 <label class="input-animated-label">Mobil telefon nömrəniz</label>
-                                                <span class='input-error-text px-3 px-lg-4 mt-2 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="row mb-lg-4 pb-lg-3">
                                         <div class="col-12 mb-4 mb-lg-0 pb-2 pb-lg-0">
-                                            <div class="input-container js-input-check">
-                                                <input type="email" class="form-input px-3 px-lg-4 input-animated" placeholder=" " data-parsley-group="first" required>
+                                            <div class="input-container js-input-container js-input-check">
+                                                <input type="email" id="mail-address" class="form-input px-3 px-lg-4 input-animated" placeholder=" " data-parsley-group="first" data-parsley-required-message="Bu bölmə  doldurulmalıdır" data-parsley-type-message="Mail düzgün formada doldurulmalıdı" required>
                                                 <label class="input-animated-label">Email</label>
-                                                <span class='input-error-text px-3 px-lg-4 mt-2 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row mb-lg-4 pb-lg-2">
-                                        <div class="col-12 mb-4 mb-lg-0 pb-2 pb-lg-0">
-                                            <div class="input-container js-input-check">
-                                                <input type="text" class="form-input px-3 px-lg-4 input-animated" placeholder=" " data-parsley-group="first"  minlength="3" required>
-                                                <label class="input-animated-label">Şəxsiyyət vəsiqəsinin seriya nömrəsi</label>
-                                                <span class='input-error-text px-3 px-lg-4 mt-2 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row mb-lg-4 pb-lg-2">
-                                        <div class="col-12 mb-4 mb-lg-0 pb-2 pb-lg-0">
-                                            <div class="input-container js-input-check">
-                                                <input type="text" class="form-input px-3 px-lg-4 input-animated" placeholder=" " data-parsley-group="first" minlength="3" required>
-                                                <label class="input-animated-label">Qeydiyyat ünvanınızı qeyd edin</label>
-                                                <span class='input-error-text px-3 px-lg-4 mt-2 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="row mb-lg-4 pb-lg-3">
-                                        <div class="col-12 mb-4 pb-2 pb-lg-0 js-input-check">
+                                        <div class="col-12 mb-4 mb-lg-0 pb-2 pb-lg-0">
+                                            <div class="input-container js-input-container js-input-check">
+                                                <input type="email" class="form-input px-3 px-lg-4 input-animated" placeholder=" " data-parsley-equalto="#mail-address" data-parsley-equalto-message="Mail eyni olmalıdı" data-parsley-group="first" data-parsley-required-message="Bu bölmə  doldurulmalıdır" data-parsley-type-message="Mail düzgün formada doldurulmalıdı" required>
+                                                <label class="input-animated-label">Email Təsdiq edin</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-lg-4 pb-lg-2">
+                                        <div class="col-12 mb-4 mb-lg-0 pb-2 pb-lg-0">
+                                            <div class="input-container js-input-container js-input-check">
+                                                <input type="text" class="form-input px-3 px-lg-4 input-animated" placeholder=" " data-parsley-group="first"  minlength="3" data-parsley-error-message="Bu bölmə  doldurulmalıdır" required>
+                                                <label class="input-animated-label">Şəxsiyyət vəsiqəsinin seriya nömrəsi</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-lg-4 pb-lg-2">
+                                        <div class="col-12 mb-4 mb-lg-0 pb-2 pb-lg-0">
+                                            <div class="input-container js-input-container js-input-check">
+                                                <input type="text" class="form-input px-3 px-lg-4 input-animated" placeholder=" " data-parsley-group="first" minlength="3" data-parsley-error-message="Bu bölmə  doldurulmalıdır" required>
+                                                <label class="input-animated-label">Qeydiyyat ünvanınızı qeyd edin</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-lg-4 pb-lg-3">
+                                        <div class="col-12 mb-4 pb-2 pb-lg-0 js-input-check js-input-container">
                                             <span class="fs-14 fs-lg-16 fw-500 mb-3 d-block">Şəxsiyyət vəsiqəsinin ön hissəsinin şəkli</span>
                                             <label class="form-input px-3 px-lg-4 border-dashed cursor-p">
                                                 <span class="color-666 text-dots">Faylı seç</span>
-                                                <input type="file" name="photo-front" class="d-none" required data-default-text="Faylı seç" data-parsley-group="first" data-parsley-extension-check="jpg, jpeg" data-parsley-size-check="2000">
+                                                <input type="file" name="photo-front" class="d-none" required data-default-text="Faylı seç" data-parsley-group="first" data-parsley-required-message="Bu bölmə  doldurulmalıdır" data-parsley-extension-check="jpg, jpeg, png" data-parsley-size-check-message="Şəkilin ölçüsü 2mb aşmamalıdır" data-parsley-extension-check-message="Şəkil jpg, jpeg və ya png formatı olmalıdır" data-parsley-size-check="2000">
                                             </label>
-                                            <span class="fs-12 fs-lg-14 fw-500 color-666 d-block mt-3">Şəkil jpg formatı olmaqla 2mb ölçüsünü aşmamalıdır</span>
+                                            <span class="fs-12 fs-lg-14 fw-500 color-666 d-block mt-3">Şəkil jpg, jpeg və ya png formatı olmaqla 2mb ölçüsünü aşmamalıdır</span>
                                         </div>
 
-                                        <div class="col-12 pb-2 pb-lg-0 js-input-check">
+                                        <div class="col-12 pb-2 pb-lg-0 js-input-check js-input-container">
                                             <span class="fs-14 fs-lg-16 fw-500 mb-3 d-block">Şəxsiyyət vəsiqəsinin arxa hissəsinin şəkli</span>
                                             <label class="form-input px-3 px-lg-4 border-dashed cursor-p">
                                                 <span class="color-666 text-dots">Faylı seç</span>
-                                                <input type="file" name="photo-back" class="d-none" required data-default-text="Faylı seç" data-parsley-group="first" data-parsley-extension-check="jpg, jpeg" data-parsley-size-check="2000">
+                                                <input type="file" name="photo-back" class="d-none" required data-default-text="Faylı seç" data-parsley-group="first" data-parsley-required-message="Bu bölmə  doldurulmalıdır" data-parsley-extension-check="jpg, jpeg, png" data-parsley-size-check-message="Şəkilin ölçüsü 2mb aşmamalıdır" data-parsley-extension-check-message="Şəkil jpg, jpeg və ya png formatı olmalıdır" data-parsley-size-check="2000">
                                             </label>
-                                            <span class="fs-12 fs-lg-14 fw-500 color-666 d-block mt-3">Şəkil jpg formatı olmaqla 2mb ölçüsünü aşmamalıdır</span>
+                                            <span class="fs-12 fs-lg-14 fw-500 color-666 d-block mt-3">Şəkil jpg, jpeg və ya png formatı olmaqla 2mb ölçüsünü aşmamalıdır</span>
                                         </div>
                                     </div>
 
@@ -292,32 +293,30 @@
 
                                     <div class="row mb-lg-4 pb-lg-2">
                                         <div class="col-12 mb-4 mb-lg-0 pb-2 pb-lg-0">
-                                            <div class="input-container">
-                                                <input type="text" class="form-input px-3 px-lg-4 input-animated" placeholder=" " minlength="3" required>
+                                            <div class="input-container js-input-container">
+                                                <input type="text" class="form-input px-3 px-lg-4 input-animated" placeholder=" " minlength="3" data-parsley-error-message="Bu bölmə  doldurulmalıdır" required>
                                                 <label class="input-animated-label">İxtisasınızı qeyd edin</label>
-                                                <span class='input-error-text px-3 px-lg-4 mt-2 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="row mb-lg-4 pb-lg-2">
                                         <div class="col-12 mb-4 mb-lg-0 pb-2 pb-lg-0">
-                                            <div class="input-container">
-                                                <input type="number" class="form-input px-3 px-lg-4 input-animated" placeholder=" " minlength="3" required>
+                                            <div class="input-container js-input-container">
+                                                <input type="number" class="form-input px-3 px-lg-4 input-animated" placeholder=" " minlength="3" data-parsley-error-message="Bu bölmə  doldurulmalıdır" required>
                                                 <label class="input-animated-label">Qəbul balınızı qeyd edin</label>
-                                                <span class='input-error-text px-3 px-lg-4 mt-2 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="row">
-                                        <div class="col-12 mb-5 d-flex flex-column justify-content-between">
+                                        <div class="col-12 mb-5 d-flex flex-column justify-content-between js-input-container">
                                             <p class="fs-18 fw-500 color-0D182C mb-4">Təhsil pillənizi seçin</p>
                                             <ul class="list-reset d-flex flex-md-column">
                                                 <li class="mr-5 mr-md-0 mb-md-3">
                                                     <label class="radio-label">
                                                         <span class="lh-20 fs-16">Bakalavr</span>
-                                                        <input type="radio" class="input-radio" name="educationLevel" required>
+                                                        <input type="radio" class="input-radio" name="educationLevel" data-parsley-error-message="Bu bölmə  doldurulmalıdır" required>
                                                         <span class="radio-checkmark"></span>
                                                     </label>
                                                 </li>
@@ -329,15 +328,14 @@
                                                     </label>
                                                 </li>
                                             </ul>
-                                            <span class='input-error-text mt-3 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
                                         </div>
-                                        <div class="col-12 mb-5 d-flex flex-column justify-content-between">
+                                        <div class="col-12 mb-5 d-flex flex-column justify-content-between js-input-container">
                                             <p class="fs-18 fw-500 color-0D182C mb-4">Təhsil formanızı seçin</p>
                                             <ul class="list-reset d-flex flex-md-column">
                                                 <li class="mr-5 mr-md-0 mb-md-3">
                                                     <label class="radio-label">
                                                         <span class="lh-20 fs-16">Əyani</span>
-                                                        <input type="radio" class="input-radio" name="educationForm" required>
+                                                        <input type="radio" class="input-radio" name="educationForm" data-parsley-error-message="Bu bölmə  doldurulmalıdır" required>
                                                         <span class="radio-checkmark"></span>
                                                     </label>
                                                 </li>
@@ -349,18 +347,17 @@
                                                     </label>
                                                 </li>
                                             </ul>
-                                            <span class='input-error-text mt-3 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
                                         </div>
                                     </div>
 
                                     <div class="row mb-lg-4 pb-lg-2">
-                                        <div class="col-12 mb-5">
+                                        <div class="col-12 mb-5 js-input-container">
                                             <p class="fs-18 fw-500 color-0D182C mb-4">Təhsil dilinizi seçin</p>
                                             <ul class="list-reset">
                                                 <li class="mb-3">
                                                     <label class="radio-label">
                                                         <span class="lh-20 fs-16">Azərbaycan dili</span>
-                                                        <input type="radio" class="input-radio" name="educationLanguage" required>
+                                                        <input type="radio" class="input-radio" name="educationLanguage" data-parsley-error-message="Bu bölmə  doldurulmalıdır" required>
                                                         <span class="radio-checkmark"></span>
                                                     </label>
                                                 </li>
@@ -379,31 +376,30 @@
                                                     </label>
                                                 </li>
                                             </ul>
-                                            <span class='input-error-text mt-3 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
                                         </div>
                                     </div>
 
                                     <div class="row mb-lg-4 pb-lg-2">
                                         <label class="col-lg-12 mb-4 mb-lg-0 pb-2 pb-lg-0">
-                                            <textarea name="" class="form-input px-3 py-3 px-lg-4 h-175 resize-none" placeholder="Təcrübə proqramına qoşulmaqda sizi nə motivasiya edir? (max. söz sayı 200)" minlength="4" required></textarea>
-                                            <span class='input-error-text px-3 px-lg-4 mt-2 color-red fw-500 fs-14'>Bu field doldurulmalıdır</span>
+                                            <textarea name="" class="form-input px-3 py-3 px-lg-4 h-175 resize-none" placeholder="Təcrübə proqramına qoşulmaqda sizi nə motivasiya edir? (max. söz sayı 200)" minlength="10" data-parsley-maxwords="200" data-parsley-required-message="Bu bölmə  doldurulmalıdır" data-parsley-maxwords-message="Söz sayı 200-dən az olmalıdı" data-parsley-minlength-message="Minimum 10 simvol" required></textarea>
                                         </label>
                                     </div>
 
                                     <div class="row mb-lg-4 pb-lg-3">
-                                        <div class="col-12 mb-4 pb-2 pb-lg-0">
-                                            <span class="fs-14 fs-lg-16 fw-500 mb-3 d-block">Transkriptinizi buraya yükləyin</span>
+                                        <div class="col-12 mb-4 pb-2 pb-lg-0 js-input-container">
+                                            <span class="fs-14 fs-lg-16 fw-500 mb-3 d-block">Qiymətlərin rəsmi çıxarışını (transkript) və ya diplomun qiymətlər olan içliyini buraya yükləyin</span>
                                             <label class="form-input px-3 px-lg-4 border-dashed cursor-p">
                                                 <span class="color-666 text-dots">Faylı seç</span>
-                                                <input type="file" name="transcript" class="d-none" required data-default-text="Faylı seç">
+                                                <input type="file" name="transcript" class="d-none" required data-default-text="Faylı seç" data-parsley-required-message="Bu bölmə  doldurulmalıdır" data-parsley-extension-check="doc, docx, pdf, ppt, pptx" data-parsley-size-check-message="Transkriptin ölçüsü 2mb aşmamalıdır" data-parsley-extension-check-message="Transkript doc, docx, pdf, ppt, pptx formatı olmalıdır" data-parsley-size-check="5000">
                                             </label>
+                                            <span class="fs-12 fs-lg-14 fw-500 color-666 d-block mt-3">Transkript doc, docx, pdf, ppt və ya pptx formatı olmaqla 5mb ölçüsünü aşmamalıdır</span>
                                         </div>
                                     </div>
 
                                     <div class="row mt-4 mt-lg-0 mb-lg-4 pb-lg-2">
                                         <label class="col-12">
                                             <button type="submit" id="internSubmit" class="w-100 h-50 h-lg-75 fs-18 px-4 border-0 bg-1885d3 d-flex justify-content-between align-items-center cursor-p">
-                                                <span class="color-white fw-600 fs-16 fs-lg-17 ml-2">Növbəti</span>
+                                                <span class="color-white fw-600 fs-16 fs-lg-17 ml-2">Müraciət göndər</span>
                                                 <span class="d-inline-block icon square-30 icon-arrow-long icon-color-white mr-2"></span>
                                             </button>
                                         </label>
@@ -422,6 +418,7 @@
 
 <script src="js/vendor/jquery-3.4.1.min.js"></script>
 <script src="js/vendor/jquery.selectric.min.js"></script>
+<script src="js/vendor/jquery.inputmask.min.js"></script>
 <script src="js/vendor/swiper.min.js"></script>
 <script src="js/vendor/accordion.min.js"></script>
 <script src="js/vendor/vanilla.filterizr.min.js"></script>

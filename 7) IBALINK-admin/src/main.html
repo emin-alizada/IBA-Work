@@ -130,8 +130,8 @@
 </div>
 
 <!--Modal of Link Generation-->
-<section id="mLgModal" class="modal-container m-lg-modal d-none">
-    <section class="modal">
+<section id="mLgModal" class="modal-container m-lg-modal">
+    <section class="modal" style="max-height: none">
         <div class="modal-header m-lg-modal-header">
             <span class="modal-header-text fs-xl fw-500">Linki paylaş</span>
             <button class="modal-header-close" onclick="closeModal()">
@@ -177,6 +177,7 @@
                     <div class="m-lg-form-input-container input-container">
                         <input type="number" class="m-lg-form-input input-animated" placeholder=" ">
                         <label>Mobil nömrə</label>
+                        <span id="whatsapp_error" class="input-error-text fs-sm">Zəhmət olmasa düzgün nömrə daxil edin</span>
                     </div>
                     <div class="m-lg-form-input-container">
                         <input type="submit" class="m-lg-form-input-submit" value="GÖNDƏR">

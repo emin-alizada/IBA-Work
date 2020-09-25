@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>IBALINK pay</title>
+</head>
+<body class="h-100">
+<div class="l-container">
+    <div class="l-brand">
+        <a href="https://www.ibar.az/" class="l-brand-link">
+            <img src="img/iba-logo.svg" alt="IBA" class="l-brand-link-logo">
+        </a>
+    </div>
+    <div class="l-right">
+        <div class="l-right-content l-right-content-otp w-max-470">
+            <div class="l-right-content-otp-back">
+                <select name="sources" id="sources" class="custom-select sources" placeholder="{{Str::upper(app()->getLocale())  }}">
+                    <option class="select-lang"  id = "az" value="{{ url('az/link',$data['link_id']) }}">AZ</option>
+                    <option class="select-lang"  id = "en" value="{{ url('en/link',$data['link_id']) }}">EN</option>
+                    <option class="select-lang"  id = "ru" value="{{ url('ru/link',$data['link_id']) }}">RU</option>
+                </select>
+            </div>
+            <div>
+                <h6 class="l-right-content-ibalink fw-600 fs-sm">IBALINK</h6>
+                <h2 class="l-right-content-header fw-500 fs-xl">@lang('messages.header')</h2>
+                <div class="form-container">
+                    <form action="" method="post" class="content-form" id="pay">
+                        <div class="l-right-content-form-input-container input-container">
+                            <input type="text" class="content-form-input input-animated" name="fullname"  placeholder=" " minlength="3" id="name">
+                            <label id="name_label" >@lang('messages.Ad, Soyad')</label>
+                        </div>
+                        <input type="hidden" name="insert_id" value="{{ $data['id'] }}" />
+                        <div class="l-right-content-form-input-container input-container">
+                            <input type="text" class="l-right-content-form-input input-animated opacity-half"   id="contractId" value="{{ $data['target_payment_id'] }}" readonly="readonly" placeholder=" ">
+                            <label>@lang('messages.Ödənişin məqsədi')</label>
+                        </div>
+                        <div class="l-right-content-form-input-container input-container">
+                            <input type="text" class="content-form-input input-animated"  name="phone" minlength="7" id="phoneNumber" placeholder=" ">
+                            <label>@lang('messages.Əlaqə nömrəsi')</label>
+                        </div>
+                        <div class="l-right-content-form-input-container input-container">
+                            <input type="email" class="content-form-input input-animated" name="email" id="mail" placeholder=" ">
+                            <label class="content-form-input-label">@lang('messages.E-poçt')</label>
+                        </div>
+                        <div class="l-right-content-form-input-container input-container">
+                            <input type="number" class="content-form-input content-form-input-number input-animated opacity-half" min="0.01" value="{{ $data['amount'] }}" readonly="readonly"  id="price" placeholder=" ">
+                            <label class="content-form-input-label">@lang('messages.Məbləğ')</label>
+                        </div>
+                        <input type="submit" value="@lang('messages.ÖDƏNİŞƏ KEÇ')" class="content-form-submit">
+                    </form>
+                    <br>
+                    <div id="error_div" class="error-message-container d-none">
+                        <img src="{{ asset('img/error-icon.svg') }}" alt="Error" class="error-message-icon">
+                        <p class="error-message-text">Xəta baş verdi!</p>
+                    </div>
+                </div>
+                <div class="hidden">
+                </div>
+            </div>
+            <div class="l-right-content-otp-resend" style="visibility: hidden; margin: 5px 0 0 0;">
+                a
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

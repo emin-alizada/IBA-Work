@@ -225,6 +225,7 @@ searchBar();
 const phoneNumberMask = $('#mob-phone').inputmask({
     mask: '+\\9\\94 99 999-99-99',
     showMaskOnHover: false,
+    removeMaskOnSubmit: true,
 });
 
 $('#signUpButton').on('click', function (e) {

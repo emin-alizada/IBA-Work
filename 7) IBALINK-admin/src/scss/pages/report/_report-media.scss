@@ -248,6 +248,10 @@
           padding-right: 18px;
         }
 
+        &-id {
+          width: 13%;
+        }
+
         &-date {
           display: none;
         }
@@ -365,8 +369,12 @@
           padding-right: 8px;
         }
 
-        &-resource {
+        &-id {
           width: 48%;
+        }
+
+        &-resource {
+          display: none;
         }
 
 

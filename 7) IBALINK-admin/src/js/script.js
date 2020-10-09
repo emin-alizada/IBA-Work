@@ -370,5 +370,3 @@ $('#filterFormReset').on('click', function () {
     resetPriceRange();
     showActiveFilters();
 })
-
-const desc = obj.find('#description').text();

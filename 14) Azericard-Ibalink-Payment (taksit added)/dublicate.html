@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>azericard payment dublicate</title>
+</head>
+<body>
+<div class="container">
+    <div class="main">
+        <div class="form">
+            <div class="logo-azericard">
+                <a href="https://azericard.com">
+                    <img class="iba-logo" src="img/azericard-logo.svg" alt="IBA Logo">
+                </a>
+            </div>
+            <div class="response-header">
+                <img class="response-img" src="img/dublicate.svg" alt="">
+                <h2 class="response-header-text">Duplicate copy of previous
+                    obtained approval</h2>
+            </div>
+            <div class="response-input-container">
+                <p class="response-text">If due to any reason you have submitted the same information twice - it is Ok.
+                    Otherwise we suggest that you clarify the problem with our webmaster. This is the transaction
+                    summary for your information.</p>
+            </div>
+            <div class="response-nav">
+                <a href="#" class="response-buttons print">QAYITMAQ</a>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="sidebar-content p-absolute">
+            <img src="img/abb-logo.svg" alt="">
+        </div>
+        <div class="sidebar-content pt-150">
+            <h3 class="sidebar-content-header">Məbləğ</h3>
+            <p class="sidebar-content-text">100.00</p>
+        </div>
+        <div class="sidebar-content">
+            <h3 class="sidebar-content-header">Valyuta</h3>
+            <p class="sidebar-content-text">AZN</p>
+        </div>
+        <div class="sidebar-content">
+            <h3 class="sidebar-content-header">Şifarişin nömrəsi</h3>
+            <p class="sidebar-content-text">100017</p>
+        </div>
+        <div class="sidebar-content">
+            <h3 class="sidebar-content-header">Əməliyyatın təfsilatı</h3>
+            <p class="sidebar-content-text">Payment for Ibalink</p>
+        </div>
+        <div class="sidebar-content">
+            <h3 class="sidebar-content-header">Mağazanın adı</h3>
+            <p class="sidebar-content-text">Ibalink</p>
+        </div>
+        <div class="sidebar-content sidebar-content-margin">
+            <h3 class="sidebar-content-header">Mağazanın URL-i</h3>
+            <a href="https://ibalink.az" class="sidebar-content-url">https://ibalink.az</a>
+        </div>
+        <div class="sidebar-content">
+            <p class="sidebar-content-info">- Azərbaycan Beynəlxalq Bankı Sizə pulsuz və 3 illik Contactless Ring ödəniş
+                üzüyü qazanmaq imkanı yaradır.</p>
+            <p class="sidebar-content-info">- Ödəniş üzüyü sahiblərinə eyni hesaba bağlı 1 ədəd VİSA Platinum kartı da
+                hədiyyə olunacaq. Kampaniyadan faydalanmağa tələsin!</p>
+            <p class="sidebar-content-info">- Azərbaycan Beynəlxalq Bankı Sizə pulsuz və 3 illik Contactless Ring ödəniş
+                üzüyü qazanmaq imkanı yaradır.</p>
+        </div>
+        <div class="sidebar-cards">
+            <img src="img/mc.svg" alt="">
+            <img src="img/ms.svg" alt="">
+            <img src="img/sc.svg" alt="">
+            <img src="img/vv.svg" alt="">
+            <img src="img/vb.svg" alt="">
+        </div>
+    </div>
+
+    <!----------------------------- overlay --------------->
+    <div id="menu" class="overlay">
+        <div class="overlay-content">
+            <div class="overlay-content-close">
+                <span class="overlay-content-close-text">Ödəniş məlumatları</span>
+                <button class="closebtn" onclick="closeMenu()"><img src="img/close-icon.svg" alt=""></button>
+            </div>
+            <div class="overlay-sidebar-cards">
+                <div class="overlay-sidebar-cards-rows">
+                    <img src="img/mc.svg" alt="">
+                    <img src="img/ms.svg" alt="">
+                    <img src="img/sc.svg" alt="">
+
+                </div>
+                <div class="overlay-sidebar-cards-rows">
+                    <img src="img/vv.svg" alt="">
+                    <img src="img/vb.svg" alt="">
+                </div>
+            </div>
+            <div class="sidebar-content">
+                <h3 class="sidebar-content-header">Məbləğ</h3>
+                <p class="sidebar-content-text">100.00</p>
+            </div>
+            <div class="sidebar-content">
+                <h3 class="sidebar-content-header">Valyuta</h3>
+                <p class="sidebar-content-text">AZN</p>
+            </div>
+            <div class="sidebar-content">
+                <h3 class="sidebar-content-header">Şifarişin nömrəsi</h3>
+                <p class="sidebar-content-text">100017</p>
+            </div>
+            <div class="sidebar-content">
+                <h3 class="sidebar-content-header">Əməliyyatın təfsilatı</h3>
+                <p class="sidebar-content-text">Payment for Ibalink</p>
+            </div>
+            <div class="sidebar-content">
+                <h3 class="sidebar-content-header">Mağazanın adı</h3>
+                <p class="sidebar-content-text">Ibalink</p>
+            </div>
+            <div class="sidebar-content sidebar-content-margin">
+                <h3 class="sidebar-content-header">Mağazanın URL-i</h3>
+                <a href="https://ibalink.az" class="sidebar-content-url">https://ibalink.az</a>
+            </div>
+            <div class="sidebar-content">
+                <p class="sidebar-content-info">- Azərbaycan Beynəlxalq Bankı Sizə pulsuz və 3 illik Contactless Ring ödəniş
+                    üzüyü qazanmaq imkanı yaradır.</p>
+                <p class="sidebar-content-info">- Ödəniş üzüyü sahiblərinə eyni hesaba bağlı 1 ədəd VİSA Platinum kartı da
+                    hədiyyə olunacaq. Kampaniyadan faydalanmağa tələsin!</p>
+                <p class="sidebar-content-info">- Azərbaycan Beynəlxalq Bankı Sizə pulsuz və 3 illik Contactless Ring ödəniş
+                    üzüyü qazanmaq imkanı yaradır.</p>
+            </div>
+            <div class="sidebar-content">
+                <img src="img/overlay-ibar-logo.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <span class="openMenu" onclick="openMenu()">ÖDƏNİŞ MƏLUMATLARI<img src="img/arrow.svg" alt=""> </span>
+
+    <!----------------------------- overlay ended--------------->
+    <!-- sidebar ended -->
+</div>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

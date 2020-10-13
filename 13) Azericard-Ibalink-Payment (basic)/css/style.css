@@ -1,0 +1,547 @@
+@import url("font.css");
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: "San Francisco", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+.container{
+    display: flex;
+    position: relative;
+    overflow-y: scroll;
+}
+h2{
+    margin: 0;
+}
+.main,
+.sidebar{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.main{
+    align-items: center;
+    min-width: 67%;
+    padding: 1.5em;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+}
+.sidebar{
+    background: #02307A;
+    color: white;
+    min-width: 33%;
+    padding-bottom: 80px;
+}
+.form{
+    /*display: grid;*/
+    /*grid-template-columns: repeat(6, auto);*/
+    /*grid-row-gap: 20px;*/
+    /*grid-column-gap: 5px;*/
+    max-width: 440px;
+    width: 90vw;
+    margin-bottom: 60px;
+}
+.form-input{
+    width: 100%;
+}
+
+.logo-azericard {
+    margin-bottom: 60px;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+input,
+.button-with-icon{
+    border: 1px solid #eaeaea;
+    border-radius: 2px;
+    color: #3f3f3f;
+    background-color: #fff;
+}
+input{
+    padding: 1.25em 1em;
+    max-width: 440px;
+}
+input:focus{
+    outline: none;
+    border: 1px solid black;
+}
+.button-with-icon{
+    max-width: 140px;
+    min-width: 120px;
+    width: 45vw;
+    cursor: pointer;
+    position: relative;
+    height: 74px;
+    margin-right: 10px;
+}
+.button-with-icon:focus{
+    outline: none;
+}
+#mastercard{
+    background: url(../img/mastercard.svg)no-repeat  12px 12px;
+    background-size: 39px 24px;
+}
+#visa{
+    background: url(../img/visa.svg)no-repeat  12px 12px;
+    background-size: 58px 18px;
+}
+#other-card{
+    background: url(../img/other.svg)no-repeat  12px 12px;
+    background-size: 30px 20px;
+}
+#mastercard.active{
+    background: url(../img/mc-click.svg) no-repeat  12px 12px ,linear-gradient(to right,#1B68FF, #003AAD);
+}
+#mastercard.passive{
+    background: url(../img/mc-disable.svg) no-repeat  12px 12px;
+}
+#visa.active{
+    background: url(../img/visa-click.svg)no-repeat  12px 12px,linear-gradient(to right,#1B68FF, #003AAD);
+}
+#visa.passive{
+    background: url(../img/visa-disable.svg)no-repeat  12px 12px;
+}
+#other-card.active{
+    background: url(../img/other-click.svg)no-repeat  12px 12px,linear-gradient(to right,#1B68FF, #003AAD);
+}
+#other-card.passive{
+    background: url(../img/other-disable.svg)no-repeat  12px 12px;
+}
+#mastercard.active,
+#visa.active,
+#other-card.active{
+    background-repeat: no-repeat;
+    color: #fff;
+}
+#mastercard:hover,
+#visa:hover,
+#other-card:hover{
+    background-color: #F5F5F5;
+    border: 1px solid #E4E4E4;
+}
+.card-title{
+    position: absolute;
+    top: 46px;
+    left: 12px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.label-cvv {
+    display: flex;
+    justify-content: space-between;
+}
+
+label{
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+/**/
+.tooltip label img{
+    position: absolute;
+    right: 0;
+}
+
+.input-container:nth-child(2)
+{
+    grid-column: 1/span 2;
+    align-self: end;
+}
+.input-container:nth-child(3){
+    grid-column: 3/span 2;
+    justify-self: flex-start;
+    align-self: end;
+}
+.input-container:nth-child(4){
+    grid-column: 5/span 2;
+    justify-self: flex-end;
+    align-self: end;
+
+}
+.input-container:nth-child(6){
+    grid-column: 1/span 3;
+    max-width: 205px;
+    justify-self: flex-start;
+}
+.input-container:nth-child(7){
+    grid-column: 4/span 3;
+    max-width: 205px;
+    justify-self: flex-end;
+}
+.input-container:nth-child(5),
+.input-container:last-child{
+    grid-column: 1/span 6;
+    max-width: 440px;
+}
+
+.input-buttons {
+    display: flex;
+    overflow-x: auto;
+}
+
+.input-expiry-cvv {
+    display: flex;
+}
+
+.input-expiry-container-label {
+    min-height: 23px;
+}
+
+.input-expiry-container {
+    margin-right: 30px;
+    width: 50%;
+    margin-bottom: 0;
+}
+
+.input-cvv-container {
+    width: 50%;
+    margin-bottom: 0;
+}
+
+.input-submit-container {
+    margin-top: 30px;
+}
+
+.sidebar-content-header{
+    opacity: 0.5;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 5px;
+}
+.sidebar-content-text{
+    opacity: 0.8;
+    font-size: 16px;
+    line-height: 20px;
+}
+.sidebar-content-info{
+    font-size: 14px;
+    line-height: 18px;
+    opacity: 0.5;
+}
+.sidebar-content-url{
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+}
+
+.sidebar-content{
+     padding-left: 4.17vw;
+     padding-right:4.17vw ;
+     margin-bottom: 20px;
+ }
+
+.sidebar-content-margin {
+    margin-bottom: 40px;
+}
+
+.sidebar-cards{
+    background-color: #F6F6F9;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 30vw;
+    height: auto;
+}
+
+.sidebar-cards img{
+    max-width: 100%;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    border: 2px solid #d6d9de;
+    border-radius: 6px;
+    padding: 16px;
+
+    position: absolute;
+    z-index: 1;
+    bottom: 30px;
+    left: -104px;
+    width: 210px;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+.tooltiptext p{
+    margin: 0 14px 14px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+.tooltip:active .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+.submit{
+    background-color: #1B68FF;
+    color: white;
+    border: none;
+}
+
+.response-buttons{
+    background-color: white;
+    color: black;
+    border: 1.5px solid rgba(0, 18, 48, 0.2);
+    margin-right: 14px;
+}
+
+.submit,
+.response-buttons{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    padding: 19px 0;
+    cursor: pointer;
+    text-align: center;
+}
+.submit:hover,
+.response-buttons:hover{
+    color: white;
+    transition:  0.2s ease-in-out;
+    background-color: #185EE7;
+}
+.response-text{
+    margin: 0;
+}
+.submit:focus{
+    border: none;
+}
+.errors {
+    color: red;
+    font-size: 14px;
+    font-weight: normal;
+    display: block;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+input.error {
+    border-color: red;
+}
+
+
+/* -----------------response ------------------------*/
+.response-input-container{
+    /*display: grid;*/
+    /*column-gap: 14px;*/
+    /*grid-template-columns: auto auto;*/
+    /*grid-template-rows: auto auto auto;*/
+}
+
+.response-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.response-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.response-img{
+    margin-right: 14px;
+}
+.response-header-text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.response-nav {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.print{
+    width: 130px;
+}
+/* --------------overlay---------------------- */
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    transition: 0.5s;
+    display: none;
+    padding-bottom: 20px;
+}
+
+.overlay-content {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    overflow-y: auto;
+    padding-bottom: 30px;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.overlay h3 {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: rgba(0, 18, 48, 0.5);
+}
+.overlay p{
+    font-weight: normal;
+    /*font-size: 14px;*/
+    line-height: 20px;
+    color: #001230;
+}
+
+.overlay-content-close {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+    padding: 12px 16px;
+}
+
+.overlay .closebtn {
+    cursor: pointer;
+    /*padding: 10px 0 20px;*/
+}
+
+.overlay-content-close-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.openMenu{
+    font-weight: 600;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    color: #99A0AC;
+    cursor:pointer;
+    text-align: center;
+    display: none;
+    /*margin: 30px auto 0;*/
+    padding: 18px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: #FFFFFF;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.04);
+}
+
+.openMenu-icon {
+    margin-left: 8px;
+}
+
+.overlay-sidebar-cards {
+    width: 90%;
+    margin: 0 auto 30px;
+    background-color: #F6F6F9;
+    padding: 14px 20px;
+}
+
+.overlay-sidebar-cards-rows {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.overlay-sidebar-cards-rows:last-of-type {
+    margin-bottom: 0;
+}
+
+/*--------------------- media-query ---------------------------*/
+@media screen and (max-width: 1200px){
+    .sidebar-cards{
+        left: 24px;
+        width: 62vw;
+    }
+    .sidebar-cards img{
+        padding: 5px;
+    }
+    .sidebar-content-margin {
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 700px){
+    .container{
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .main{
+        padding: 1em;
+    }
+    .sidebar{
+        display: none;
+    }
+    .openMenu{
+        display: block;
+    }
+    .main,
+    .sidebar{
+        min-height: 95vh;
+    }
+    .sidebar-cards{
+        width: 90vw;
+        top: 0;
+        bottom: auto;
+        left: calc(50% - 45vw);
+    }
+    .sidebar-content-url{
+        color: #001230;
+    }
+    .tooltip .tooltiptext {
+        bottom: -80px;
+        left: -224px;
+    }
+    .logo-azericard {
+        margin-bottom: 40px;
+    }
+    .input-expiry-container {
+        margin-right: 16px;
+    }
+
+}
+@media screen and (max-width: 500px){
+    .container{
+        overflow: hidden;
+    }
+}

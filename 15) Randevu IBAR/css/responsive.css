@@ -1,0 +1,326 @@
+/* Special for iPhone 5/SE */
+@media (max-width: 359px) {
+    .tab-trio .tab {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+
+    footer .mob-social a { margin-right: 5px !important; }
+    .col-xs-12{
+        flex-basis: 100% !important;
+        max-width: 100% !important;
+    }
+    .justify-content-xs-center{ justify-content: center !important; }
+    .text-xs-center{ text-align: center !important; }
+    .pt-xs-15{ padding-top: 15px; }
+    .bg-lines-card-juve { display: none !important; }
+}
+
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+        /* iOS map close button issue */
+        .ios .close-ios-map { bottom: 120px !important; }
+
+        /* macOS, iOS ₼ (AZN) symbol issue */
+        .ff-azn { font-family: -apple-system; }
+
+        .ios .ios-intro { height: 265px; }
+        .ios .ios-h-335 { height: 335px; }
+
+        .w-140 { height: 100%; }
+
+        .ios input[type=text] {
+            -webkit-appearance: none;
+            border-radius: 0;
+        }
+
+        /* safari horizontal scroll fix */
+        .overflowx-h { overflow-x: hidden !important; }
+    }
+}
+
+/* Small */
+@media (min-width: 576px) {
+    .pos-md-absolute { position: absolute }
+
+    .filter-container { width: 101% !important; }
+    .filtr-item { width: 100% !important; float: left; }
+    .separator-calc { right: -25px }
+}
+
+.filter-container.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 768px) {
+    .header-intro {
+        background-image: none!important;
+    }
+}
+
+/* Medium */
+@media (min-width: 768px) {
+    .w-md-100{ width: 100%; }
+    .bg-lines-card-md-juve { top: 60%; }
+    .text-md-center {
+        text-align: center;
+    }
+}
+
+/* Large */
+@media (min-width: 992px) {
+    .team-img { height: 380px; }
+
+    .scroll-bar{ overflow: auto !important; }
+
+    .bg-land-header .container-fluid {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    header .container-fluid {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .text-lg-left { text-align: left }
+    .text-lg-center { text-align: center }
+    .text-lg-right { text-align: right }
+
+    .pos-lg-static { position: static !important; }
+    .pos-lg-absolute { position: absolute }
+    .pos-lg-fixed { position: fixed }
+
+    .fixed-lg {
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+    }
+
+    .border-lg-0 { border: none }
+    .border-md { border: 1px solid #262626; }
+    .border-lg-bottom { border-bottom: 1px solid #262626; }
+
+    .h-lg-65 { height: 65px; }
+    .h-lg-75 { height: 75px; }
+    .h-lg-140 { height: 140px; }
+    .h-lg-191 { height: 191px; }
+    .h-lg-250 { height: 250px; }
+    .h-lg-370 { height: 370px; }
+    .h-lg-500 { height: 500px; }
+    .h-lg-520 { height: 520px; }
+    .h-lg-550 { height: 550px; }
+    .h-lg-80-max { max-height: 80px }
+
+
+    .w-lg-100 { width: 100% }
+    .w-lg-80-max { max-width: 80px }
+
+    .link-arrow { font-size: 16px }
+    .link-arrow:after { background-position: right 4px }
+
+    .overflow-lg-v { overflow: visible }
+    .btn { padding: 15px 35px }
+
+    .icon-lg-ibar-right { background-image: url('../img/icons/logo-ibar-right-bg.svg'); }
+
+    /* Special styles */
+    .separator-calc {
+        height: 38px;
+        right: 15px
+    }
+
+    .breadcrumb a:after,
+    .breadcrumb li a:after { padding: 0 15px }
+
+    .square-lg-16 {
+        height: 16px;
+        width: 16px;
+    }
+
+    .square-lg-30 {
+        height: 30px;
+        width: 30px;
+    }
+
+    .square-lg-145 {
+        height: 145px;
+        width: 145px;
+    }
+
+    .header-lg-animate { height: 191px }
+    .header-lg-animate .header-s { top: 50px }
+    .header-lg-animate .header-s2 { height: 65px }
+    .header-lg-animate .header-s3 { height: 75px }
+
+    .header-lg-animated { height: 96px }
+    .header-lg-animated .header-s { top: 0 }
+    .header-lg-animated .header-s2 { height: 50px }
+    .header-lg-animated .header-s3 { height: 45px }
+
+    header ~ section:first-of-type { padding-top: 0;}
+    .header ~ section:first-of-type { margin-top: 191px !important; }
+    #map-section { margin-top: 0!important; }
+
+    .header-intro { background-size: auto auto; }
+    .header-dynamic { background-size: contain; }
+
+    .hover-block-lg-f8f8f8:hover {
+        background-color: #f8f8f8;
+        transition: 400ms ease all;
+        border-color: #f8f8f8 !important;
+    }
+
+    .hover-border-lg-e4e4e4:hover { border: 1px solid #e4e4e4 }
+    .list-dotted li { font-size: 16px }
+
+    .form-input {
+        font-size: 18px;
+        height: 75px;
+    }
+
+    .input-card {
+        background-position: calc(100% - 25px) center;
+        /*padding-left: 60px !important;*/
+    }
+
+    .gradient { display: none }
+    .border-scroll:after { content: none }
+
+    .ac > .ac-q::after {
+        width: 20px;
+        height: 20px;
+    }
+
+    .pagination-item,
+    .swiper-button-prev-my,
+    .swiper-button-next-my {
+        height: 52px;
+        width: 52px;
+    }
+
+    .accordion-lg-info .ac.js-enabled.is-active .ac-a {
+        overflow: initial !important;
+        margin-bottom: -50px;
+    }
+    .accordion-lg-info .ac-a article { opacity: 0 }
+    .accordion-lg-info .ac.js-enabled.is-active .ac-a article {
+        position: relative;
+        margin-top: -65px;
+        opacity: 1;
+        transition: all 600ms ease 200ms !important;
+    }
+
+    .team-img { max-width: 286px; }
+
+    #js-map-block,
+    .map-canvas { height: 100vh }
+
+    .qaygicash-map-modal #js-map-block,
+    .qaygicash-map-modal .map-canvas { height: 90vh }
+
+    .map-close {
+        left: auto;
+        bottom: auto;
+        right: 60px;
+        top: 50px;
+        transform: none;
+        padding: 13px 17px;
+    }
+
+    .ladder-lg-block .col-lg-4:nth-child(1) { margin-top: 100px; }
+    .ladder-lg-block .col-lg-4:nth-child(3) { margin-top: 200px; }
+    .bg-lg-juve-card { margin-top: -430px }
+
+    /****************************************************/
+    /*Input styling of animated label*/
+    /****************************************************/
+
+    .input-animated + .input-animated-label {
+        top: 12px;
+        left: 24px;
+        font-size: 15px;
+        line-height: 16px;
+    }
+
+    .input-animated:placeholder-shown + .input-animated-label {
+        top: 28px;
+        left: 24px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .input-animated:not(:placeholder-shown), .input-animated:focus {
+        padding-top: 29px;
+        padding-bottom: 9px;
+    }
+
+    .input-animated:focus + .input-animated-label {
+        top: 12px;
+        left: 24px;
+        font-size: 15px;
+        line-height: 16px;
+    }
+
+    /* Qaygicash input animation */
+
+    .input-animated.qaygicash-input + .input-animated-label {
+        top: 8px;
+    }
+
+    .input-animated.qaygicash-input:placeholder-shown + .input-animated-label {
+        top: 23px;
+    }
+
+    .input-animated.qaygicash-input:not(:placeholder-shown), .input-animated.qaygicash-input:focus {
+        padding-top: 29px;
+        padding-bottom: 9px;
+    }
+
+    .input-animated.qaygicash-input:focus + .input-animated-label {
+        top: 8px;
+    }
+
+    .deposits-header {
+        background-color: #1885d3;
+        background-image: url('../img/header-intro-depozit.png');
+    }
+
+    .cards-header {
+        background-color: #838d91;
+        background-image: url('../img/header-intro-cards.png');
+    }
+    .credits-header {
+        background-color: #1885d3;
+        background-image: url('../img/header-intro-credit.png');
+    }
+
+    .modal {
+        max-height: 90%;
+        width: 90%;
+        max-width: 1260px;
+    }
+}
+
+/* Extra Large */
+@media (min-width: 1200px) {
+    .pos-xl-absolute { position: absolute }
+    .separator-calc { right: 0 }
+    .bg-lines-card-xl-juve { top: 790px; }
+    /* plugin bug fix */
+    .filter-container { width: calc(100% + 10px) !important; }
+}
+
+
+
+
+/* Internship page Delete this css when internship is passive */
+
+.internship .ac-q:after {
+    width: 15px;
+    height: 15px;
+}
+
+/* End of Internship page Delete this css when internship is passive */

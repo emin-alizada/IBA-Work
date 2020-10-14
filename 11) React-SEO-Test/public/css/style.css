@@ -1,0 +1,199 @@
+/***************Common classes of scss***************/
+/***************************************************/
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    background-image: url("../img/bgc.png");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    background-color: #fff;
+    border-radius: 30px;
+    padding-bottom: 25px;
+    /*max-width: 90vh;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+
+.content-icon{
+    /*width: 50%;*/
+    transform: scale(0.5);
+}
+
+.content-links{
+    display: flex;
+    justify-content: center;
+}
+
+.content-links-item-link{
+    text-decoration: none;
+    color: #0539c5;
+    padding: 25px 50px;
+    border: 1px solid #002896;
+    border-radius: 15px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.content-links-item{
+    margin-right: 15px;
+}
+
+.content-links-item-link:hover{
+    color: #fff;
+    background-color: #0539c6;
+}
+
+/*===========   Second page   =========*/
+
+.content-second{
+    background-color: #fff;
+    border-radius: 0 0 30px 30px;
+    /*padding-bottom: 15px;*/
+}
+
+.form-container{
+    padding: 40px 60px;
+}
+
+.buttons{
+    display: flex;
+}
+
+.buttons-item-button{
+    padding: 20px 160px;
+    color: #fff;
+    background-color: #e6e6e6;
+    font-weight: 500;
+    font-size: 25px;
+    /*outline: none;*/
+    border: none;
+}
+
+.form{
+    display: grid;
+    grid-auto-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.form-input-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-dropdown-container{
+    grid-column: 1/span 2;
+}
+
+.form-input-container:last-child{
+    grid-column: 1/span 2;
+}
+
+.form-label{
+    margin-left: 20px;
+    font-weight: 500;
+    color: rgba(5, 57, 198, 255);
+    margin-bottom: 10px;
+}
+
+.form-input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 0 20px 20px;
+    border-radius: 15px;
+    border: 1px solid #0539c6;
+    color: rgba(77, 77, 77, 255);
+}
+
+.form-input::placeholder{
+    color: rgba(77, 77, 77, 255);
+}
+
+.form-dropdown-input{
+    color: rgba(77, 77, 77, 255);
+    padding: 20px 0 20px 20px;
+    /*width: 100%;*/
+    /*max-width: 100%;*/
+    /*box-sizing: border-box;*/
+    /*margin: 0;*/
+    border: 1px solid #0539c6;
+    /*box-shadow: 0 1px 0 1px rgba(0,0,0,.04);*/
+    border-radius: 15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="svg-inline--fa fa-caret-down fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="%230539c6" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 17px;
+}
+
+.form-dropdown-input::-ms-expand {
+    display: none;
+}
+
+.form-dropdown-input:focus {
+    outline: none;
+}
+
+.video-container{
+    padding: 40px 58px 25px 58px;
+}
+
+.buttons-item-button-active{
+    background-color: #0539c6;
+    position: relative;
+}
+
+.buttons-item-button-active:after{
+    content: '';
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    background-color: #0539c6;
+    transform: rotate(-45deg);
+    bottom: -7px;
+    left: 48%;
+}
+
+.video-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-link{
+    text-decoration: none;
+    color: #0539c5;
+    padding: 15px 25px;
+    border: 1px solid #002896;
+    border-radius: 15px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.video-link:hover{
+    color: #fff;
+    background-color: #0539c6;
+}
+
+
+@media only screen and (max-width: 576px) {
+    .content{
+        transform: scale(0.6);
+    }
+}

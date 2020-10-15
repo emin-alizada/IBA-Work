@@ -1,5 +1,5 @@
-@import url('../fonts/fonts.css');
 @import url('reset.css');
+@import url('swiper.min.css');
 @import url('bootstrap-grid.css');
 @import url('fonts.css');
 
@@ -9,30 +9,36 @@ body {
     font-family: 'sf_pro_display', sans-serif;
     font-weight: 300;
     font-style: normal;
-    color: #fff;
-    height: 100vh;
+}
+
+.bg-blue-photo {
     background-image: url("../img/bg.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right bottom;
-    background-color: #000021;
 }
 
-.h-100-p {
-    height: 100%;
-}
+.letter-spacing-001 { letter-spacing: 0.01em; }
+.letter-spacing-002 { letter-spacing: 0.02em; }
+.letter-spacing-006 { letter-spacing: 0.06em; }
 
-.letter-spacing-001 {
-    letter-spacing: 0.01em;
-}
+.h-auto { height: auto; }
+.h-100p { height: 100%; }
 
-.letter-spacing-006 {
-    letter-spacing: 0.06em;
-}
+.radius-40 { border-radius: 40px; }
+.radius-8 { border-radius: 8px; }
 
-.radius-40{ border-radius: 40px; }
+.color-white { color: #fff }
+.color-010122 { color: #010122 }
 
 .bg-FF488A { background-color: #FF488A;}
+.bg-000021 { background-color: #000021;}
+.bg-448AEA { background-color: #448AEA;}
+.bg-5864DC { background-color: #5864DC;}
+.bg-774ECC { background-color: #774ECC;}
+.bg-3379B2 { background-color: #3379B2;}
+.bg-1E3E73 { background-color: #1E3E73;}
+.bg-294298 { background-color: #294298;}
 
 .w-max-715 {
     max-width: 715px;

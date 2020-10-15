@@ -23,7 +23,7 @@
             </div>
 
             <div class="col-lg-8">
-                <form class="js-parsley-validate mb-5" method="post" data-parsley-trigger="change input" data-parsley-focus="none">
+                <form class="js-parsley-validate" method="post" data-parsley-trigger="change input" data-parsley-focus="none">
                     <div class="row mb-lg-4 pb-lg-3">
                             <span class="col-lg-6 mb-4 mb-lg-0 pb-2 pb-lg-0">
                                 <select name="" class="selectric-select radius-5 w-100 bg-transparent" required>
@@ -42,22 +42,32 @@
                             </span>
                     </div>
 
-                    <div class="row mb-lg-4 pb-lg-3">
-                            <span class="col-lg-6 mb-4 mb-lg-0 pb-2 pb-lg-0">
-                                <select name="" class="selectric-select radius-5 w-100 bg-transparent" required>
-                                    <option value="" class="d-none">Tarix seçin</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                </select>
-                            </span>
+                    <div class="row mb-lg-4 pb-lg-3 align-items-end">
+                        <span class="col-lg-4 mb-4 mb-lg-0 pb-2 pb-lg-0">
+                            <select name="" class="selectric-select radius-5 w-100 bg-transparent" required>
+                                <option value="" class="d-none">Tarix seçin</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </span>
 
-                        <span class="col-lg-6 mb-4 mb-lg-0 pb-2 pb-lg-0">
-                                <select name="" class="selectric-select radius-5 w-100 bg-transparent" required>
-                                    <option value="" class="d-none">Görüş vaxtını seçin</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                </select>
-                            </span>
+                        <div class="col-lg-4 mb-4 mb-lg-0 pb-2 pb-lg-0">
+                            <span class="fs-14 fs-lg-16 fw-500 mb-3 d-block w-100">Hansı saatdan sonra</span>
+                            <select name="" class="selectric-select radius-5 w-100 bg-transparent" required>
+                                <option value="" class="d-none">Saatı seçin</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+
+                        <div class="col-lg-4 mb-4 mb-lg-0 pb-2 pb-lg-0">
+                            <span class="fs-14 fs-lg-16 fw-500 mb-3 d-block w-100">İstədiyiniz vaxtı seçin</span>
+                            <select name="" class="selectric-select radius-5 w-100 bg-transparent" required>
+                                <option value="" class="d-none">Görüş vaxtı</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
                     </div>
 
                     <div class="row mb-lg-4 pb-lg-3">
@@ -109,7 +119,7 @@
                 </form>
 
                 <div class="mb-5">
-                    <h6 class="fw-500 fs-16 lh-21 mb-3 mt-4 pt-2">Diqqət:</h6>
+                    <h6 class="fw-500 fs-16 lh-21 mb-3  mt-4 pt-2">Diqqət:</h6>
                     <p class="fw-400 fs-15 lh-21 color-666 mb-4">Nəzərinizə çatdırırıq ki, hər bir müştəri gün ərzində “R@ndevu” xidmətindən yalnız bir dəfə istifadə edə bilər. Müştəri xidmətdən istifadə üçün eyni gündə ardıcıl qeydiyyatdan keçdiyi halda, ilk müraciət əsas sayılır, digər müraciətlər avtomatik ləğv edilir.</p>
                 </div>
             </div>

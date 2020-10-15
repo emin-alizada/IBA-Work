@@ -36,7 +36,7 @@
                     <div class="row mb-lg-4 pb-lg-3">
                             <div class="col-lg-6 mb-4 mb-lg-0 pb-2 pb-lg-0">
                                 <div class="input-container">
-                                    <input type="text" class="form-input input-animated px-3 px-lg-4" placeholder=" " minlength="4" maxlength="4" required>
+                                    <input type="text" class="form-input input-animated px-3 px-lg-4" placeholder=" " minlength="10" maxlength="10" required>
                                     <label class="input-animated-label">Rdv code</label>
                                 </div>
                             </div>

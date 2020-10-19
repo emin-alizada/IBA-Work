@@ -15,27 +15,9 @@ $('button').click(function () {
             case "other-card":
                 $("#cardType").val(3);
                 break;
-            case "2":
-                $("#taksit-term").val(1);
-                break;
-            case "3":
-                $("#taksit-term").val(2);
-                break;
-            case "6":
-                $("#taksit-term").val(3);
-                break;
-            case "9":
-                $("#taksit-term").val(4);
-                break;
-            case "12":
-                $("#taksit-term").val(5);
-                break;
-            case "18":
-                $("#taksit-term").val(6);
-                break;
-            case "24":
-                $("#taksit-term").val(7);
-                break;
+        }
+        if (this.dataset.taksit) {
+            $("#taksit-term").val(this.dataset.taksit);
         }
         $("#cardTypeButtons").next('span').remove();
         $("#taksitPeriod").next('span').remove();
@@ -162,3 +144,8 @@ $("#menu").on("click", function (event) {
     }
 });
 
+$('#direct-p').on('click', function (e) {
+    e.preventDefault();
+    $("#taksit-term").remove();
+    $("form").submit();
+})

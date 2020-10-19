@@ -11,7 +11,7 @@
 <div class="container">
     <div class="main">
 
-        <form action="" class="form">
+        <form method="post" action="" id="form" class="form">
             <div class="logo-azericard">
                 <a href="https://azericard.com">
                     <object data="img/azericard-logo.svg" class="iba-logo" type="image/svg+xml"></object>
@@ -20,37 +20,37 @@
             <div class="input-container overflow-h">
                 <label>Taksiti seçin</label>
                 <div class="taksit-buttons-wrapper" id="taksitPeriod">
-                    <button type="button" class="form-input taksit-button" id="2">
+                    <button type="button" class="form-input taksit-button" data-taksit="2">
                         <p class="">2</p>
                     </button>
-                    <button type="button" class="form-input taksit-button" id="3">
+                    <button type="button" class="form-input taksit-button" data-taksit="3">
                         <p class="">3</p>
                     </button>
-                    <button type="button" class="form-input taksit-button" id="6">
+                    <button type="button" class="form-input taksit-button" data-taksit="6">
                         <p class="">6</p>
                     </button>   
-                    <button type="button" class="form-input taksit-button" id="9">
+                    <button type="button" class="form-input taksit-button" data-taksit="9">
                         <p class="">9</p>
                     </button>
-                    <button type="button" class="form-input taksit-button" id="12">
+                    <button type="button" class="form-input taksit-button" data-taksit="12">
                         <p class="">12</p>
                     </button>
-                    <button type="button" class="form-input taksit-button" id="18" disabled>
+                    <button type="button" class="form-input taksit-button" data-taksit="18" disabled>
                         <p class="">18</p>
                     </button>
-                    <button type="button" class="form-input taksit-button" id="24" disabled>
+                    <button type="button" class="form-input taksit-button" data-taksit="24" disabled>
                         <p class="">24</p>
                     </button>
-                    <input type="hidden" id="taksit-term" required>
+                    <input type="hidden" name="taksit" id="taksit-term" required>
                 </div>
             </div>
         
             <div class="input-container input-submit-container">
-                <input type="button" value="TAKSİTLƏ ÖDƏ" class="pay-with-taksit" id="pay-w-t">
+                <input type="submit" value="TAKSİTLƏ ÖDƏ" class="pay-with-taksit" id="pay-w-t">
             </div>
             <p class="fancy-lines"><span>və ya</span></p>
             <div class="input-container input-submit-container">
-                <input type="button" value="BİRBAŞA ÖDƏ" class="direct-pay-button" id="direct-p">
+                <input type="submit" value="BİRBAŞA ÖDƏ" class="direct-pay-button" id="direct-p">
             </div>
             <div class="monthly-amount"><p>₼ 14.00 / hər ay</p></div>
 

@@ -6,6 +6,26 @@ const validationDefaults = {
 
 const formValidation = (selector, options = {}) => {
     const $formParsley = $(selector);
+
+    const parsleyDefaults = {
+        errorsContainer: (field) => {
+            // console.log(field.element.type);
+            if (field.element.type === 'file' || field.element.type === 'radio') {
+                return $(field.element).closest("label").parent();
+            }
+            else if (field.element.type.includes('select')) {
+                // console.log($(field.element).closest("span"));
+                return $(field.element).closest(".selectric-wrapper").parent();
+            }
+            else {
+                return $(field.element).closest(".input-container");
+
+            }
+        },
+        errorsWrapper: '<ul class="list-reset parsley-errors-list"></ul>',
+        errorTemplate: '<li class="parsley-error-li mt-2 color-error fw-500 fs-14"></li>'
+    };
+
     if($formParsley.length) {
 
         if('init' in options && options.init instanceof Function) {
@@ -14,7 +34,7 @@ const formValidation = (selector, options = {}) => {
 
         let isSubmitted = false;
         let lastInputObj;
-        $formParsley.parsley({ errorsWrapper: false }).on('form:validated', e => {
+        $formParsley.parsley(parsleyDefaults).on('form:validated', e => {
             isSubmitted = true;
             lastInputObj = e.fieldsMappedById[Object.keys(e.fieldsMappedById)[Object.keys(e.fieldsMappedById).length - 1]];
 
@@ -23,7 +43,7 @@ const formValidation = (selector, options = {}) => {
             __selectValidation(e.element);
         });
 
-        $formParsley.parsley({ errorsWrapper: false }).on('field:validated', (e) => {
+        $formParsley.parsley(parsleyDefaults).on('field:validated', (e) => {
             if(isSubmitted) {
                 if(e === lastInputObj) {
                     isSubmitted = false;
@@ -129,6 +149,8 @@ const __selectChange = element => {
     if($(element).find('option:checked').val() === '') {
         borderColor = validationDefaults.errorColor;
         parsleyClasses.reverse();
+    } else {
+        $(element).closest('.selectric-wrapper').parent().find('.parsley-error-li').remove();
     }
     $(element).parents('.selectric-wrapper').first().find('.selectric').css('border-color', borderColor).end().find('select').addClass(parsleyClasses[0]).removeClass(parsleyClasses[1]);
 };

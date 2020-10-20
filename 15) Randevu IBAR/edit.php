@@ -27,7 +27,12 @@
                     <div class="row mb-lg-4 pb-lg-3">
                             <div class="col-lg-6 mb-4 mb-lg-0 pb-2 pb-lg-0">
                                 <div class="input-container">
-                                    <input type="text" class="form-input input-animated js-mob-number px-3 px-lg-4" placeholder=" " pattern="^\+994 [0-9]{2} [0-9]{3}-[0-9]{2}-[0-9]{2}$" required>
+                                    <input type="text" class="form-input input-animated js-mob-number px-3 px-lg-4" placeholder=" "
+                                           pattern="^\+994 [0-9]{2} [0-9]{3}-[0-9]{2}-[0-9]{2}$"
+                                           data-parsley-required-message="Bu bolme doldurulmalidir"
+                                           data-parsley-pattern-message="Duzgun shekilde doldurun"
+                                           required
+                                    >
                                     <label class="input-animated-label">Mobil telefon nömrəniz</label>
                                 </div>
                             </div>
@@ -36,7 +41,12 @@
                     <div class="row mb-lg-4 pb-lg-3">
                             <div class="col-lg-6 mb-4 mb-lg-0 pb-2 pb-lg-0">
                                 <div class="input-container">
-                                    <input type="text" class="form-input input-animated px-3 px-lg-4" placeholder=" " minlength="4" maxlength="4" required>
+                                    <input type="text" class="form-input input-animated px-3 px-lg-4" placeholder=" "
+                                           data-parsley-length="[4, 4]"
+                                           data-parsley-length-message="4 simvol olmalidi"
+                                           data-parsley-required-message="Bu bolme doldurulmalidir"
+                                           required
+                                    >
                                     <label class="input-animated-label">Rdv code</label>
                                 </div>
                             </div>

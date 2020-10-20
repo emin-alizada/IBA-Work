@@ -1,4 +1,4 @@
-<header class="bg-white pos-sticky top-0 hover-node header-shortened">
+<header class="bg-white pos-sticky top-0 z-111 hover-node header-shortened">
     <div class="header-s bg-white d-lg-block">
         <section class="border-bottom border-f6f7f8 py-2 py-lg-4">
             <div class="container-fluid">

@@ -26,7 +26,9 @@
                 <form class="js-parsley-validate" method="post" data-parsley-trigger="change input" data-parsley-focus="none">
                     <div class="row mb-lg-4 pb-lg-3">
                             <span class="col-lg-6 mb-4 mb-lg-0 pb-2 pb-lg-0">
-                                <select name="" class="selectric-select radius-5 w-100 bg-transparent" required>
+                                <select name="" class="selectric-select radius-5 w-100 bg-transparent"
+                                        data-parsley-error-message="Error mesaji"
+                                        required>
                                     <option value="" class="d-none">Filial seçin</option>
                                     <option value="1">Filial 1</option>
                                     <option value="2">Filial 2</option>
@@ -34,7 +36,9 @@
                             </span>
 
                         <span class="col-lg-6 mb-4 mb-lg-0 pb-2 pb-lg-0">
-                                <select name="" class="selectric-select radius-5 w-100 bg-transparent" required>
+                                <select name="" class="selectric-select radius-5 w-100 bg-transparent"
+                                        data-parsley-error-message="Error mesaji"
+                                        required>
                                     <option value="" class="d-none">Xidmət növünü seçin</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -42,9 +46,16 @@
                             </span>
                     </div>
 
-                    <div class="row mb-lg-4 pb-lg-3 align-items-end">
+                    <div class="row">
+                        <span class="offset-lg-4 col-lg-4 fs-14 fs-lg-16 fw-500 mb-3 d-none d-lg-block w-100">Hansı saatdan sonra</span>
+                        <span class="col-lg-4 fs-14 fs-lg-16 fw-500 mb-3 d-none d-lg-block w-100">İstədiyiniz vaxtı seçin</span>
+                    </div>
+
+                    <div class="row mb-lg-4 pb-lg-3">
                         <span class="col-lg-4 mb-4 mb-lg-0 pb-2 pb-lg-0">
-                            <select name="" class="selectric-select radius-5 w-100 bg-transparent" required>
+                            <select name="" class="selectric-select radius-5 w-100 bg-transparent"
+                                    data-parsley-error-message="Error mesaji"
+                                    required>
                                 <option value="" class="d-none">Tarix seçin</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -52,8 +63,10 @@
                         </span>
 
                         <div class="col-lg-4 mb-4 mb-lg-0 pb-2 pb-lg-0">
-                            <span class="fs-14 fs-lg-16 fw-500 mb-3 d-block w-100">Hansı saatdan sonra</span>
-                            <select name="" class="selectric-select radius-5 w-100 bg-transparent" required>
+                            <span class="fs-14 fs-lg-16 fw-500 mb-3 d-block d-lg-none w-100">Hansı saatdan sonra</span>
+                            <select name="" class="selectric-select radius-5 w-100 bg-transparent"
+                                    data-parsley-error-message="Error mesaji"
+                                    required>
                                 <option value="" class="d-none">Saatı seçin</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -61,8 +74,10 @@
                         </div>
 
                         <div class="col-lg-4 mb-4 mb-lg-0 pb-2 pb-lg-0">
-                            <span class="fs-14 fs-lg-16 fw-500 mb-3 d-block w-100">İstədiyiniz vaxtı seçin</span>
-                            <select name="" class="selectric-select radius-5 w-100 bg-transparent" required>
+                            <span class="fs-14 fs-lg-16 fw-500 mb-3 d-block d-lg-none w-100">İstədiyiniz vaxtı seçin</span>
+                            <select name="" class="selectric-select radius-5 w-100 bg-transparent"
+                                    data-parsley-error-message="Error mesaji"
+                                    required>
                                 <option value="" class="d-none">Görüş vaxtı</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -73,14 +88,22 @@
                     <div class="row mb-lg-4 pb-lg-3">
                         <div class="col-lg-6 mb-4 mb-lg-0 pb-2 pb-lg-0">
                             <div class="input-container">
-                                <input type="text" class="form-input input-animated px-3 px-lg-4" placeholder=" " minlength="3" pattern="/^[a-zA-ZİÇÖÜçöüĞ-ğıŞ-şƏə\s]*$/" required>
+                                <input type="text" class="form-input input-animated px-3 px-lg-4" placeholder=" " minlength="3" pattern="/^[a-zA-ZİÇÖÜçöüĞ-ğıŞ-şƏə\s]*$/"
+                                       data-parsley-required-message="Bu bolme doldurulmalidir"
+                                       data-parsley-minlength-message="En azi 3 simvol"
+                                       data-parsley-pattern-message="Duzgun shekilde doldurun"
+                                       required>
                                 <label class="input-animated-label">Adınız</label>
                             </div>
                         </div>
 
                         <div class="col-lg-6 mb-4 mb-lg-0 pb-2 pb-lg-0">
                             <div class="input-container">
-                                <input type="text" class="form-input input-animated px-3 px-lg-4" placeholder=" " minlength="3" pattern="/^[a-zA-ZİÇÖÜçöüĞ-ğıŞ-şƏə\s]*$/" required>
+                                <input type="text" class="form-input input-animated px-3 px-lg-4" placeholder=" " minlength="3" pattern="/^[a-zA-ZİÇÖÜçöüĞ-ğıŞ-şƏə\s]*$/"
+                                       data-parsley-required-message="Bu bolme doldurulmalidir"
+                                       data-parsley-minlength-message="En azi 3 simvol"
+                                       data-parsley-pattern-message="Duzgun shekilde doldurun"
+                                       required>
                                 <label class="input-animated-label">Soyadınız</label>
                             </div>
                         </div>
@@ -89,14 +112,21 @@
                     <div class="row mb-lg-4 pb-lg-3">
                         <div class="col-lg-6 mb-4 mb-lg-0 pb-2 pb-lg-0">
                             <div class="input-container">
-                                <input type="text" class="form-input input-animated js-mob-number px-3 px-lg-4" placeholder=" " pattern="^\+994 [0-9]{2} [0-9]{3}-[0-9]{2}-[0-9]{2}$" required>
+                                <input type="text" class="form-input input-animated js-mob-number px-3 px-lg-4" placeholder=" " pattern="^\+994 [0-9]{2} [0-9]{3}-[0-9]{2}-[0-9]{2}$"
+                                       data-parsley-required-message="Bu bolme doldurulmalidir"
+                                       data-parsley-pattern-message="Duzgun shekilde doldurun"
+                                       required>
                                 <label class="input-animated-label">Mobil telefon nömrəniz</label>
                             </div>
                         </div>
 
                         <div class="col-lg-6 mb-4 mb-lg-0 pb-2 pb-lg-0">
                             <div class="input-container">
-                                <input type="email" class="form-input input-animated px-3 px-lg-4" placeholder=" " required>
+                                <input type="email" class="form-input input-animated px-3 px-lg-4" placeholder=" "
+                                       data-parsley-required-message="Bu bolme doldurulmalidir"
+                                       data-parsley-minlength-message="En azi 3 simvol"
+                                       data-parsley-type-message="Duzgun mail addressi doldurun"
+                                       required>
                                 <label class="input-animated-label">E-mail </label>
                             </div>
                         </div>

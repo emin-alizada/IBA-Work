@@ -34,7 +34,9 @@
                 <form class="js-parsley-validate" method="post" data-parsley-trigger="change input" data-parsley-focus="none">
                     <div class="row mb-lg-4 pb-lg-3">
                             <span class="col-lg-6 mb-4 mb-lg-0 pb-2 pb-lg-0">
-                                <select name="" class="selectric-select radius-5 w-100 bg-transparent" required>
+                                <select name="" class="selectric-select radius-5 w-100 bg-transparent"
+                                        data-parsley-error-message="Error mesaji"
+                                        required>
                                     <option value="" class="d-none">Kredit üzrə müraciət</option>
                                     <option value="1">Filial 1</option>
                                     <option value="2">Filial 2</option>
@@ -42,7 +44,9 @@
                             </span>
 
                         <span class="col-lg-6 mb-4 mb-lg-0 pb-2 pb-lg-0">
-                                <select name="" class="selectric-select radius-5 w-100 bg-transparent" required>
+                                <select name="" class="selectric-select radius-5 w-100 bg-transparent"
+                                        data-parsley-error-message="Error mesaji"
+                                        required>
                                     <option value="" class="d-none">20/05/2020</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -52,7 +56,9 @@
 
                     <div class="row mb-lg-4 pb-lg-3">
                         <span class="col-lg-6 mb-4 mb-lg-0 pb-2 pb-lg-0">
-                            <select name="" class="selectric-select radius-5 w-100 bg-transparent" required>
+                            <select name="" class="selectric-select radius-5 w-100 bg-transparent"
+                                    data-parsley-error-message="Error mesaji"
+                                    required>
                                 <option value="" class="d-none">14:00</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>

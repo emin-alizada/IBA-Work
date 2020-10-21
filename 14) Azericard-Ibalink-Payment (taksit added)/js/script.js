@@ -1,28 +1,34 @@
 let errors = false;
-$('button').click(function () {
-        $('button').removeClass('active');
-        $('button').removeClass('passive');
-        $('button').removeClass('error');
-        $(this).addClass('active');
-        $('button').not(this).addClass('passive');
-        switch (this.id) {
-            case "mastercard":
-                $("#cardType").val(1);
-                break;
-            case "visa":
-                $("#cardType").val(2);
-                break;
-            case "other-card":
-                $("#cardType").val(3);
-                break;
+
+function buttonClickAddListener() {
+    $('button').click(function () {
+            $('button').removeClass('active');
+            $('button').removeClass('passive');
+            $('button').removeClass('error');
+            $(this).addClass('active');
+            $('button').not(this).addClass('passive');
+            switch (this.id) {
+                case "mastercard":
+                    $("#cardType").val(1);
+                    break;
+                case "visa":
+                    $("#cardType").val(2);
+                    break;
+                case "other-card":
+                    $("#cardType").val(3);
+                    break;
+            }
+            if (this.dataset.taksit) {
+                $("#taksit-term").val(this.dataset.taksit);
+                OnChangeInstallment(this.dataset.taksit);
+            }
+            $("#cardTypeButtons").next('span').remove();
+            $("#taksitPeriod").next('span').remove();
         }
-        if (this.dataset.taksit) {
-            $("#taksit-term").val(this.dataset.taksit);
-        }
-        $("#cardTypeButtons").next('span').remove();
-        $("#taksitPeriod").next('span').remove();
-    }
-);
+    );
+}
+
+buttonClickAddListener();
 
 $('#card-number').mask('0000 0000 0000 0000');
 $('#cvc-cvv').mask('000');
@@ -112,6 +118,7 @@ $('#pay-w-t').click(function () {
 
     validateTaksit();
     if (errors === false) {
+        clickPayHandler()
         // console.log("your data has successfully been  inserted");
     } else {
         return false;
@@ -147,5 +154,6 @@ $("#menu").on("click", function (event) {
 $('#direct-p').on('click', function (e) {
     e.preventDefault();
     $("#taksit-term").remove();
-    $("form").submit();
+    clickCancelHandler()
+    $("#cform").submit();
 })

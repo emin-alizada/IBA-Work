@@ -6,139 +6,12 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>azericard payment taksit page</title>
-
-    <script type="text/javascript">
-
-        var jsonObj;
-
-        //updated, so now backward compatible
-        function init() {
-            // i did not understand this part, so i just skipped it
-            var inst = "%491";
-            if ("%62".length < 1) document.getElementById("f62row").style.display = "none";
-            if ("%53".length < 1) document.getElementById("f53row").style.display = "none";
-            if ("%55".length < 1) document.getElementById("f55row").style.display = "none";
-            if ("%157".length < 1) document.getElementById("f157row").style.display = "none";
-
-            if (inst.length > 0) {
-                jsonObj = eval(b64DecodeUnicode(inst));
-                // prev version
-                // var sel_el = document.getElementById('selectInstId');
-                var taksitContainer = document.getElementById('taksitPeriod');
-
-                for (let i = 0; i < jsonObj.length; i += 1) {
-                    // prev version
-
-                    // option = document.createElement('option');
-                    // option.value = jsonObj[i].INST_ID;
-                    // option.text = jsonObj[i].INST_NAME;
-                    // sel_el.add(option);
-
-                    const button = document.createElement('button');
-                    button.type = 'button'
-                    button.classList.add('form-input', 'taksit-button');
-                    button.dataset.taksit = jsonObj[i].INST_ID;
-                    button.innerText = jsonObj[i].INST_NAME;
-                    taksitContainer.append(button);
-                }
-
-                buttonClickAddListener();
-            }
-        }
-
-        // backward compatible
-        function clickCancelHandler(submit) {
-            addInputValue("ACQ_INST_PAYIN", "NONE");
-        }
-
-        //updated, so now backward compatible
-        function clickPayHandler(submit) {
-            var e = document.getElementById("taksit-term");
-            var instType = e.value;
-            addInputValue("ACQ_INST_PAYIN", instType);
-        }
-
-        // backward compatible
-        function submitHandler(form) {
-            return true;
-        }
-
-        //backward compatible
-        function b64DecodeUnicode(str) {
-            return decodeURIComponent(atob(str).split('').map(function (c) {
-                return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
-            }).join(''));
-        }
-
-        // couldnt understand what it should do in our design, so  no changes
-        function createInstTableCell(name, val) {
-            var table = document.getElementById("instTable")
-            var tr = document.createElement('tr');
-            var td = document.createElement('td');
-            td.appendChild(document.createTextNode(name));
-            tr.appendChild(td);
-            td = document.createElement('td');
-            td.appendChild(document.createTextNode(val));
-            td.setAttribute("id", name);
-            tr.appendChild(td);
-            table.appendChild(tr);
-        }
-
-        // couldnt understand what it should do in our design, but i provide it with chosen option, you can see as log works
-        function OnChangeInstallment(chosen) {
-            console.log(chosen)
-            for (i = 0; i <= jsonObj.length; i += 1) {
-
-                if (jsonObj[i].INST_ID == chosen) {
-                    document.getElementById("btnPayInst").disabled = false;
-                    var el = document.getElementById("INST_ID")
-
-                    if (typeof (el) != 'undefined' && el != null) {
-                        document.getElementById("INST_ID").innerHTML = jsonObj[i].INST_ID;
-                        document.getElementById("INST_CODE").innerHTML = jsonObj[i].INST_CODE;
-                        document.getElementById("INST_NUM").innerHTML = jsonObj[i].INST_NUM;
-                        document.getElementById("INST_AMNT").innerHTML = jsonObj[i].INST_AMNT;
-                        document.getElementById("INST_FREE_PERIOD").innerHTML = jsonObj[i].INST_FREE_PERIOD;
-                        document.getElementById("SHIFT_NUM").innerHTML = jsonObj[i].SHIFT_NUM;
-                        document.getElementById("INST_FTOTAL").innerHTML = jsonObj[i].INST_FTOTAL;
-                        document.getElementById("INST_FRATE").innerHTML = jsonObj[i].INST_FRATE;
-                        document.getElementById("INST_IRATE").innerHTML = jsonObj[i].INST_FRATE;
-                    } else {
-                        createInstTableCell("INST_ID", jsonObj[i].INST_ID);
-                        createInstTableCell("INST_CODE", jsonObj[i].INST_CODE);
-                        createInstTableCell("INST_NUM", jsonObj[i].INST_NUM);
-                        createInstTableCell("INST_AMNT", jsonObj[i].INST_AMNT);
-                        createInstTableCell("INST_FREE_PERIOD", jsonObj[i].INST_FREE_PERIOD);
-                        createInstTableCell("SHIFT_NUM", jsonObj[i].SHIFT_NUM);
-                        createInstTableCell("INST_FTOTAL", jsonObj[i].INST_FTOTAL);
-                        createInstTableCell("INST_FRATE", jsonObj[i].INST_FRATE);
-                        createInstTableCell("INST_FRATE", jsonObj[i].INST_FRATE);
-                        document.getElementById("instTable").style.visibility = "visible";
-                    }
-
-                    break;
-                }
-            }
-        }
-
-        // backward compatible
-        function addInputValue(n, v) {
-            var el = document.createElement('input');
-            el.setAttribute('type', 'hidden');
-            el.setAttribute('name', n);
-            el.setAttribute('value', v);
-            const form = document.getElementById("cform");
-            console.log(form)
-            form.appendChild(el);
-        }
-
-    </script>
 </head>
-<body onload="init()">
+<body>
 <div class="container">
     <div class="main">
 
-        <form method="post" action="" id="cform" class="form" onsubmit="return submitHandler(this);">
+        <form method="post" action="" id="form" class="form">
             <div class="logo-azericard">
                 <a href="https://azericard.com">
                     <object data="img/azericard-logo.svg" class="iba-logo" type="image/svg+xml"></object>
@@ -148,30 +21,30 @@
                 <label>Taksiti seçin</label>
                 <div class="taksit-buttons-wrapper" id="taksitPeriod">
                     <button type="button" class="form-input taksit-button" data-taksit="2">
-                        2
+                        <p class="">2</p>
                     </button>
                     <button type="button" class="form-input taksit-button" data-taksit="3">
-                        3
+                        <p class="">3</p>
                     </button>
                     <button type="button" class="form-input taksit-button" data-taksit="6">
-                        6
-                    </button>
+                        <p class="">6</p>
+                    </button>   
                     <button type="button" class="form-input taksit-button" data-taksit="9">
-                        9
+                        <p class="">9</p>
                     </button>
                     <button type="button" class="form-input taksit-button" data-taksit="12">
-                        12
+                        <p class="">12</p>
                     </button>
                     <button type="button" class="form-input taksit-button" data-taksit="18" disabled>
-                        18
+                        <p class="">18</p>
                     </button>
                     <button type="button" class="form-input taksit-button" data-taksit="24" disabled>
-                        24
+                        <p class="">24</p>
                     </button>
                     <input type="hidden" name="taksit" id="taksit-term" required>
                 </div>
             </div>
-
+        
             <div class="input-container input-submit-container">
                 <input type="submit" value="TAKSİTLƏ ÖDƏ" class="pay-with-taksit" id="pay-w-t">
             </div>
@@ -211,7 +84,7 @@
             <h3 class="sidebar-content-header">Mağazanın URL-i</h3>
             <a href="https://ibalink.az" class="sidebar-content-url">https://ibalink.az</a>
         </div>
-
+       
         <div class="sidebar-cards">
             <img src="img/mc.svg" alt="">
             <img src="img/ms.svg" alt="">

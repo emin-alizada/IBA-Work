@@ -9,8 +9,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>IBAR</title>
     <link rel="stylesheet" href="css/vendor/bootstrap-grid.css">
-    <link rel="stylesheet" href="css/vendor/rangeslider.css">
-    <link rel="stylesheet" href="css/vendor/swiper.min.css">
     <link rel="stylesheet" href="css/vendor/selectric.css">
     <link rel="stylesheet" href="css/vendor/normalize.css">
     <link rel="stylesheet" href="css/style.css?v=<?= time() ?>">

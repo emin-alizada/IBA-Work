@@ -85,7 +85,7 @@
                             </label>
 
                             <label class="col-lg-6 mb-4 mb-lg-0 pb-2 pb-lg-0">
-                                <button type="submit" class="w-100 h-50 h-lg-75 fs-18 px-4 border-0 bg-1885d3 d-flex justify-content-center justify-content-lg-between align-items-center cursor-p">
+                                <button type="submit" class="w-100 h-50 h-lg-75 fs-18 px-4 border-0 bg-1885d3 radius-5 d-flex justify-content-center justify-content-lg-between align-items-center cursor-p">
                                     <span class="color-white fw-600 fs-16 fs-lg-17 ml-2">Müraciəti göndər</span>
                                     <span class="d-none d-lg-inline-block icon square-30 icon-arrow-long icon-color-white mr-2"></span>
                                 </button>

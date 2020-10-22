@@ -28,7 +28,12 @@
                     <div class="row mb-lg-4 pb-lg-3">
                         <div class="col-lg-7 mb-4 mb-lg-0 pb-2 pb-lg-0">
                             <div class="input-container">
-                                <input type="number" class="form-input input-animated px-3 px-lg-4" placeholder=" " minlength="3" required>
+                                <input type="number" class="form-input input-animated px-3 px-lg-4" placeholder=" "
+                                       minlength="3"
+                                       required
+                                       data-parsley-required-message="Required error"
+                                       data-parsley-minlength-message="En azi 3 simvol error"
+                                >
                                 <label class="input-animated-label">Müraciət nömrəniz</label>
                             </div>
                         </div>

@@ -290,4 +290,4 @@ function addRequiredTextToRadio () {
 
 phoneNumberMask('.js-mob-number');
 dateMask('.js-date-mask');
-
+removeChosenFile('.js-file-reset');

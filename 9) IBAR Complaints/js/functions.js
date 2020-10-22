@@ -529,3 +529,15 @@ const dateMask = (selector) => {
         // removeMaskOnSubmit: true,
     });
 };
+
+const removeChosenFile = (selector) => {
+    $(selector).on('click', function (e) {
+        $(this).prev('input[type=file]').val(null).trigger('change').parent().css('border-color', "#dcdcdc");;
+    });
+
+    $(".js-file-label").on('click', function (e) {
+        if ($(e.target).hasClass('js-file-reset')){
+            e.preventDefault();
+        }
+    })
+};

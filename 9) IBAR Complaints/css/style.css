@@ -364,6 +364,7 @@ a { color: #2e55a6 }
 .icon-color-262626 { filter: invert(11%) sepia(1%) saturate(0%) hue-rotate(286deg) brightness(99%) contrast(90%); }
 .icon-color-9f9f9f { filter: invert(70%) sepia(0%) saturate(1055%) hue-rotate(176deg) brightness(91%) contrast(87%); }
 .icon-color-626262 { filter: invert(63%) sepia(11%) saturate(0%) hue-rotate(218deg) brightness(87%) contrast(100%); }
+.icon-color-666 { filter: brightness(0) saturate(100%) invert(44%) sepia(0%) saturate(376%) hue-rotate(180deg) brightness(90%) contrast(96%) }
 
 
 /* Borders */
@@ -1235,7 +1236,7 @@ header ~ section:first-of-type { padding-top: 125px }
 .accordion-menu-mob .ac.js-enabled { border-bottom: 1px solid #e4e4e4 }
 
 /* Parsley JS */
-.parsley-errors-list { display: none }
+/*.parsley-errors-list { display: none }*/
 
 .parsley-error input.d-none[type=radio] + label,
 .parsley-error { border-color: red; outline-color: red }

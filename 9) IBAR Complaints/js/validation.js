@@ -131,7 +131,14 @@ $('input[type=file]').on('change', e => {
 
 const __fileTextChange = (element) => {
     const text = (element.files.length) ? element.files[0].name : element.dataset.defaultText;
-    $(element).siblings('span').text(text);
+    $(element).prev('span').text(text);
+
+    if (element.files.length) {
+        $(element).next('span').removeClass("d-none");
+    }
+    else {
+        $(element).next('span').addClass("d-none");
+    }
 };
 
 

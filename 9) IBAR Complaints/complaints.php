@@ -19,7 +19,10 @@
                 <form class="js-parsley-validate" method="post" data-parsley-trigger="change input" data-parsley-focus="none">
                     <div class="row mb-lg-4 pb-lg-3">
                             <span class="col-lg-6 mb-4 mb-lg-0 pb-2 pb-lg-0">
-                                <select name="" class="selectric-select radius-5 w-100 bg-transparent" required>
+                                <select name="" class="selectric-select radius-5 w-100 bg-transparent"
+                                        data-parsley-error-message="Doldurulmalidir"
+                                        required
+                                >
                                     <option value="" class="d-none">Müraciətin növü</option>
                                     <option value="1">Teklif</option>
                                     <option value="2">Shikayet</option>
@@ -28,7 +31,14 @@
 
                             <div class="col-lg-6 mb-4 mb-lg-0 pb-2 pb-lg-0">
                                 <div class="input-container">
-                                    <input type="text" class="form-input input-animated px-3 px-lg-4" placeholder=" " minlength="3" pattern="/^[a-zA-ZİÇÖÜçöüĞ-ğıŞ-şƏə\s]*$/" required>
+                                    <input type="text" class="form-input input-animated px-3 px-lg-4" placeholder=" "
+                                           minlength="3"
+                                           pattern="/^[a-zA-ZİÇÖÜçöüĞ-ğıŞ-şƏə\s]*$/"
+                                           required
+                                           data-parsley-required-message="Required error"
+                                           data-parsley-minlength-message="En azi 3 simvol error"
+                                           data-parsley-pattern-message="Pattern error"
+                                    >
                                     <label class="input-animated-label">Ad, soyad, ata adı</label>
                                 </div>
                             </div>
@@ -37,14 +47,24 @@
                     <div class="row mb-lg-4 pb-lg-3">
                             <div class="col-lg-6 mb-4 mb-lg-0 pb-2 pb-lg-0">
                                 <div class="input-container">
-                                    <input type="text" class="form-input input-animated js-date-mask px-3 px-lg-4" placeholder=" " pattern="/^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|(([1][26]|[2468][048]|[3579][26])00))))$/g" required>
+                                    <input type="text" class="form-input input-animated js-date-mask px-3 px-lg-4" placeholder=" "
+                                           pattern="/^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|(([1][26]|[2468][048]|[3579][26])00))))$/g"
+                                           data-parsley-required-message="Required error"
+                                           data-parsley-pattern-message="Pattern error"
+                                           required
+                                    >
                                     <label class="input-animated-label">Doğum tarixiniz</label>
                                 </div>
                             </div>
 
                             <div class="col-lg-6 mb-4 mb-lg-0 pb-2 pb-lg-0">
                                 <div class="input-container">
-                                    <input type="text" class="form-input input-animated js-mob-number px-3 px-lg-4" placeholder=" " pattern="^\+994 [0-9]{2} [0-9]{3}-[0-9]{2}-[0-9]{2}$" required>
+                                    <input type="text" class="form-input input-animated js-mob-number px-3 px-lg-4" placeholder=" "
+                                           pattern="^\+994 [0-9]{2} [0-9]{3}-[0-9]{2}-[0-9]{2}$"
+                                           required
+                                           data-parsley-required-message="Required error"
+                                           data-parsley-pattern-message="Pattern error"
+                                    >
                                     <label class="input-animated-label">Mobil telefon nömrəniz</label>
                                 </div>
                             </div>
@@ -53,27 +73,37 @@
                     <div class="row mb-lg-4 pb-lg-3">
                             <div class="col-lg-6 mb-4 mb-lg-0 pb-2 pb-lg-0">
                                 <div class="input-container">
-                                    <input type="text" class="form-input input-animated px-3 px-lg-4" placeholder=" " required>
+                                    <input type="text" class="form-input input-animated px-3 px-lg-4" placeholder=" "
+                                           required
+                                           data-parsley-required-message="Required error"
+                                    >
                                     <label class="input-animated-label">Qeydiyyat və ya faktiki ünvan</label>
                                 </div>
                             </div>
 
                             <div class="col-lg-6 mb-4 mb-lg-0 pb-2 pb-lg-0">
-                                <label class="form-input px-3 px-lg-4 border-dashed cursor-p">
+                                <label class="form-input px-3 px-lg-4 border-dashed cursor-p js-file-label">
                                     <span class="color-666 text-dots">Faylı seç</span>
-<!--                                    changes-->
-                                    <input type="file" name="photo-front" class="d-none" data-default-text="Faylı seç">
-<!--                                    end changes-->
-<!--                                    Add this to input for validation-->
-<!--                                    data-parsley-extension-check="jpg, jpeg"-->
-<!--                                    data-parsley-size-check="2000"-->
+                                    <input type="file"name="file" class="d-none" data-default-text="Faylı seç"
+                                           data-parsley-extension-check="jpg, jpeg, doc, docx, pdf, png, xls, xlsx"
+                                           data-parsley-size-check="2000"
+                                           data-parsley-extension-check-message="file format error"
+                                           data-parsley-size-check-message="file size error"
+                                    >
+                                    <span class="d-none ml-2 icon icon-close-light icon-color-666 js-file-reset"></span>
+
                                 </label>
                             </div>
                         </div>
 
                     <div class="row mb-lg-4 pb-lg-2">
                             <label class="col-lg-12 mb-4 mb-lg-0 pb-2 pb-lg-0">
-                                <textarea name="" id="" class="form-input px-3 py-3 px-lg-4 h-140 resize-none" placeholder="Müraciətinizi qeyd edin" minlength="4" required></textarea>
+                                <textarea name="" id="" class="form-input px-3 py-3 px-lg-4 h-140 resize-none" placeholder="Müraciətinizi qeyd edin"
+                                          minlength="4"
+                                          required
+                                          data-parsley-required-message="Required error"
+                                          data-parsley-minlength-message="En azi 4 simvol error"
+                                ></textarea>
                             </label>
                     </div>
 

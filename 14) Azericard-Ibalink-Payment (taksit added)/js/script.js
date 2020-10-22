@@ -20,7 +20,7 @@ function buttonClickAddListener() {
             }
             if (this.dataset.taksit) {
                 $("#taksit-term").val(this.dataset.taksit);
-                OnChangeInstallment(this.dataset.taksit);
+                // OnChangeInstallment(this.dataset.taksit);
             }
             $("#cardTypeButtons").next('span').remove();
             $("#taksitPeriod").next('span').remove();

@@ -86,7 +86,8 @@
         var jsonObj;
 
         function init() {
-            var inst = "%491";
+            var inst = "W3siSU5TVF9JRCI6IklOU1RfQUxMMyIsIklOU1RfQ09ERSI6IklOU1RfQUxMIiwiSU5TVF9OVU0iOiIzIiwiSU5TVF9BTU5UIjoiIiwiSU5TVF9GUkVFX1BFUklPRCI6IiIsIlNISUZUX05VTSI6IiIsIklOU1RfRlRPVEFMIjoiIiwiSU5TVF9GUkFURSI6IiIsIklOU1RfSVJBVEUiOiIiLCJJTlNUX05BTUUiOiJNb250aHMgMyJ9LHsiSU5TVF9JRCI6IklOU1RfQUxMNiIsIklOU1RfQ09ERSI6IklOU1RfQUxMIiwiSU5TVF9OVU0iOiI2IiwiSU5TVF9BTU5UIjoiIiwiSU5TVF9GUkVFX1BFUklPRCI6IiIsIlNISUZUX05VTSI6IiIsIklOU1RfRlRPVEFMIjoiIiwiSU5TVF9GUkFURSI6IiIsIklOU1RfSVJBVEUiOiIiLCJJTlNUX05BTUUiOiJNb250aHMgNiJ9LHsiSU5TVF9JRCI6IklOU1RfQUxMOSIsIklOU1RfQ09ERSI6IklOU1RfQUxMIiwiSU5TVF9OVU0iOiI5IiwiSU5TVF9BTU5UIjoiIiwiSU5TVF9GUkVFX1BFUklPRCI6IiIsIlNISUZUX05VTSI6IiIsIklOU1RfRlRPVEFMIjoiIiwiSU5TVF9GUkFURSI6IiIsIklOU1RfSVJBVEUiOiIiLCJJTlNUX05BTUUiOiJNb250aHMgOSJ9LHsiSU5TVF9JRCI6IklOU1RfQUxMMTIiLCJJTlNUX0NPREUiOiJJTlNUX0FMTCIsIklOU1RfTlVNIjoiMTIiLCJJTlNUX0FNTlQiOiIiLCJJTlNUX0ZSRUVfUEVSSU9EIjoiIiwiU0hJRlRfTlVNIjoiIiwiSU5TVF9GVE9UQUwiOiIiLCJJTlNUX0ZSQVRFIjoiIiwiSU5TVF9JUkFURSI6IiIsIklOU1RfTkFNRSI6Ik1vbnRocyAxMiJ9LHsiSU5TVF9JRCI6IklOU1RfQUxMNjAiLCJJTlNUX0NPREUiOiJJTlNUX0FMTCIsIklOU1RfTlVNIjoiNjAiLCJJTlNUX0FNTlQiOiIiLCJJTlNUX0ZSRUVfUEVSSU9EIjoiIiwiU0hJRlRfTlVNIjoiIiwiSU5TVF9GVE9UQUwiOiIiLCJJTlNUX0ZSQVRFIjoiIiwiSU5TVF9JUkFURSI6IiIsIklOU1RfTkFNRSI6Ik1vbnRocyA2MCJ9XQ==";
+            // var inst = "%491";
             if ("%62".length < 1) document.getElementById("f62row").style.display = "none";
             if ("%53".length < 1) document.getElementById("f53row").style.display = "none";
             if ("%55".length < 1) document.getElementById("f55row").style.display = "none";
@@ -145,6 +146,8 @@
                 if (jsonObj[i].INST_ID == chosen) {
                     document.getElementById("btnPayInst").disabled = false;
                     var el = document.getElementById("INST_ID")
+
+                    console.log(el);
 
                     if (typeof (el) != 'undefined' && el != null) {
                     document.getElementById("INST_ID").innerHTML = jsonObj[i].INST_ID;

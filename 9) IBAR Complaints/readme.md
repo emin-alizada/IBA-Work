@@ -15,3 +15,4 @@ Complaints.php , complaints-check.php
 
 submit button-a `radius-5` class elave olunub
 
+validation js changed to add error messages

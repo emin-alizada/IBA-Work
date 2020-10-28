@@ -105,6 +105,11 @@ selectBox('.js-parsley-validate .selectric-select', {
     onChange: element => {
         __selectChange(element);
         __formStepping(element);
+    },
+    onChangeMobile: element => {
+        $(element).on('change', e => {
+            __selectChange(e.currentTarget);
+        })
     }
 });
 

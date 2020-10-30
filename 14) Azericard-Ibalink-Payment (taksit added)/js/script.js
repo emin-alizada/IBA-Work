@@ -20,6 +20,9 @@ function buttonClickAddListener() {
             }
             if (this.dataset.taksit) {
                 $("#taksit-term").val(this.dataset.taksit);
+                const price = Number($("#js-total-price").text());
+                const month = Number(this.innerText);
+                $('.monthly-amount').fadeIn().find('span').text((price/month).toFixed(2))
                 // OnChangeInstallment(this.dataset.taksit);
             }
             $("#cardTypeButtons").next('span').remove();

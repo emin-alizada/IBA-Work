@@ -16,6 +16,46 @@
     }
 }
 
+@media screen  and (min-width: 992px) {
+
+    .h-lg-75 { height: 75px }
+
+    /****************************************************/
+    /*Input styling of animated label*/
+    /****************************************************/
+
+    .form-input {
+        font-size: 18px;
+        height: 75px;
+    }
+
+    .input-animated + .input-animated-label {
+        top: 12px;
+        left: 24px;
+        font-size: 15px;
+        line-height: 16px;
+    }
+
+    .input-animated:placeholder-shown + .input-animated-label {
+        top: 28px;
+        left: 24px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .input-animated:not(:placeholder-shown), .input-animated:focus {
+        padding-top: 29px;
+        padding-bottom: 9px;
+    }
+
+    .input-animated:focus + .input-animated-label {
+        top: 12px;
+        left: 24px;
+        font-size: 15px;
+        line-height: 16px;
+    }
+}
+
 @media screen and (max-width: 767px) {
 
 }

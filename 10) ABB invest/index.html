@@ -14,7 +14,7 @@
 <main>
     <section class="pb-md-5 pb-lg-0 bg-blue-photo bg-img-none bg-000021">
         <div class="pb-4">
-            <header class="d-flex flex-column justify-content-between color-white pb-lg-3">
+            <header class="d-flex flex-column justify-content-between color-white pb-lg-4 mb-lg-2">
                 <nav class="bg-white py-3 mb-5">
                     <div class="container-lg py-md-2">
                         <a href="#">
@@ -23,7 +23,7 @@
                     </div>
                 </nav>
 
-                <section class="container-lg d-flex flex-column align-items-start mt-md-4 pt-lg-2">
+                <section class="container-lg d-flex flex-column align-items-start mt-md-1 pt-lg-2 mb-lg-1">
 <!--                    <span class="fs-13 fw-700 lh-16 letter-spacing-006 d-inline-block py-2 px-3 bg-FF488A radius-40">TEZLİKLƏ</span>-->
                     <h2 class="fw-700 fs-28 fs-lg-64 fs-xl-48 lh-120-p letter-spacing-001 mt-0 mb-4 mt-md-0 mb-md-4 col-lg-6 px-0">
                         ABB-İnvestin yenilənmiş saytı tezliklə xidmətinizdə olacaq</h2>
@@ -37,38 +37,43 @@
                               data-parsley-trigger="change input"
                         >
                             <div class="row mb-4 mb-lg-5">
-                                <div class="col-12 col-md-9 mb-4 mb-lg-0 pb-lg-2 mb-3">
+                                <div class="col-12 col-md-9 mb-4 mb-lg-0 pb-lg-2 pr-md-1 mb-3">
                                     <div class="input-container">
                                         <input type="text" name="account_number"
-                                               class="form-input bg-white input-animated px-3 px-lg-4" placeholder=" "
+                                               class="form-input bg-white input-animated px-3span.fw-600" placeholder=" "
                                                minlength="20" maxlength="20"
                                                required>
                                         <label class="input-animated-label">E-poçt</label>
                                     </div>
                                 </div>
-                                <label class="col-md-3">
+                                <label class="col-md-3 pl-md-1">
                                     <button type="submit"
-                                            class="w-100 h-60 fs-18 border-0 bg-1260FF d-flex justify-content-center align-items-center cursor-p radius-3">
-                                        <span class="color-white fw-600 fs-16 fs-lg-17">Abunə ol</span>
+                                            class="w-100 h-60 fs-18 border-0 bg-1260FF d-flex justify-content-center align-items-center cursor-p radius-2">
+                                        <span class="color-white fw-500 fs-15">Abunə ol</span>
                                     </button>
                                 </label>
                             </div>
                         </form>
-
+<!--                        Success message-->
+                        <div class="row mb-4 mb-lg-5 d-none">
+                            <div class="col-12 pb-lg-2">
+                                <span class="d-block fw-500 fs-16 py-3 lh-28 radius-2 bg-48C388 text-center">Müraciətiniz uğurla göndərildi !</span>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="d-lg-flex">
                         <div class="d-flex align-items-center mb-3 pb-2 mb-lg-0 pb-lg-0 mr-4 pr-3">
                             <img src="img/shield.svg" alt="">
-                            <span class="ml-3 fs-18 lh-25 fw-500 letter-spacing-001">Vəsaitinizi etibarlı tərəfdaşa əmanət edin</span>
+                            <span class="ml-3 fs-18 lh-25 fw-400 letter-spacing-001">Vəsaitinizi etibarlı tərəfdaşa əmanət edin</span>
                         </div>
                         <div class="d-flex align-items-center mb-3 pb-2 mb-lg-0 pb-lg-0 mr-4 pr-3">
                             <img src="img/graph.svg" alt="">
-                            <span class="ml-3 fs-18 lh-25 fw-500 letter-spacing-001">Düzgün yatırımlar edin</span>
+                            <span class="ml-3 fs-18 lh-25 fw-400 letter-spacing-001">Düzgün yatırımlar edin</span>
                         </div>
                         <div class="d-flex align-items-center mb-3 pb-2 mb-lg-0 pb-lg-0">
                             <img src="img/activity.svg" alt="">
-                            <span class="ml-3 fs-18 lh-25 fw-500 letter-spacing-001">Maliyyə Bazarlarında bizimlə addımlayın </span>
+                            <span class="ml-3 fs-18 lh-25 fw-400 letter-spacing-001">Maliyyə Bazarlarında bizimlə addımlayın </span>
                         </div>
                     </div>
                 </section>
@@ -215,10 +220,22 @@
 
     <footer class="container-lg py-4">
         <div class="d-flex flex-column flex-lg-row justify-content-lg-center py-3">
-            <span class="mr-lg-5 mb-3 mb-lg-0 fw-700 lh-21 letter-spacing-001">Ünvan: Nizami küç. 67, AZ1005 Bakı, Azərbaycan</span>
-            <span class="mr-lg-5 mb-3 mb-lg-0 fw-700 lh-21 letter-spacing-001">Tel.: +994 12 493 00 91</span>
-            <span class="mr-lg-5 mb-3 mb-lg-0 fw-700 lh-21 letter-spacing-001">Faks: +994 12 493 40 9</span>
-            <span class="fw-700 lh-21 letter-spacing-001">Email: info@investment.az</span>
+            <span class="mr-lg-5 mb-3 mb-lg-0 fw-700 lh-21 letter-spacing-001">
+                <span>Ünvan:</span>
+                <span class="fw-500">Nizami küç. 67, AZ1005 Bakı, Azərbaycan</span>
+            </span>
+            <a href="tel:+994124930091" class="mr-lg-5 mb-3 mb-lg-0 fw-700 lh-21 letter-spacing-001">
+                <span>Tel.:</span>
+                <span class="fw-500">+994 12 493 00 91</span>
+            </a>
+            <span class="mr-lg-5 mb-3 mb-lg-0 fw-700 lh-21 letter-spacing-001">
+                <span>Faks:</span>
+                <span class="fw-500">+994 12 493 40 9</span>
+            </span>
+            <a href="mailto:info@investment.az" class="fw-700 lh-21 letter-spacing-001">
+                <span>Email:</span>
+                <span class="fw-500">info@investment.az</span>
+            </a>
         </div>
     </footer>
 </main>

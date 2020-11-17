@@ -18,9 +18,9 @@ body {
 .form-input {
     width: 100%;
     height: 60px;
-    border-radius: 5px;
+    border-radius: 2px;
     font-size: 16px;
-    border: 2px solid #dcdcdc;
+    border: none;
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -97,6 +97,7 @@ body {
 .radius-40 { border-radius: 40px; }
 .radius-8 { border-radius: 8px; }
 .radius-3 { border-radius: 3px; }
+.radius-2 { border-radius: 2px; }
 
 .color-white { color: #fff }
 .color-010122 { color: #010122 }
@@ -119,9 +120,8 @@ body {
 .bg-1E3E73 { background-color: #1E3E73;}
 .bg-294298 { background-color: #294298;}
 .bg-1260FF { background-color: #1260FF;}
+.bg-48C388 { background-color: #48C388;}
 
-.w-max-715 {
-    max-width: 715px;
-}
+.text-center { text-align: center; }
 
 

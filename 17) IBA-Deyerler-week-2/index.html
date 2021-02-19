@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABB Dəyərlər</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+<main class="main">
+    <figure class="logo">
+        <img src="img/bu-bizik-logo.svg" alt="BU Bizik">
+    </figure>
+
+    <div>
+        <h1 class="main-header">ABB-nin yeni dəyərləri <br>
+            ilə tanış olun</h1>
+        <section class="cards-container">
+            <div class="card card-durustluk" data-modal-id="durustluk">
+                <figure class="card-logo">
+                    <img src="img/care-icon.png" alt="">
+                </figure>
+                <h2 class="card-header">qətiyyətli <br>
+                    dürüstlük</h2>
+                <p class="card-description">Nəyi nə zaman etməyəcəyimizi bilirik</p>
+            </div>
+
+            <div class="card card-mushteri" data-modal-id="mushteri">
+                <figure class="card-logo">
+                    <img src="img/community-icon.png" alt="">
+                </figure>
+                <h2 class="card-header">müştəriyönümlü <br>
+                    yanaşma</h2>
+                <p class="card-description">Müştərilərimizə rəğbət bəsləyirik</p>
+            </div>
+        </section>
+    </div>
+</main>
+
+<!--Successful sending-->
+<section class="modal-container" id="durustluk" style="display: none">
+    <section class="modal modal-durustluk">
+        <div class="modal-header">
+            <h4 class="modal-header-text">İşimizdə mükəmməllik</h4>
+            <button class="modal-header-close" onclick="closeModal()">
+                <img src="img/close-icon.svg" alt="">
+            </button>
+        </div>
+        <div class="modal-content">
+            <p class="modal-content-text">- Gördüyümüz bütün işlərdə şəffaflığa riayət edirik</p>
+            <p class="modal-content-text">- Öhdəliklərimizi ləyaqətlə yerinə yetiririk</p>
+            <p class="modal-content-text">- Fəaliyyətimizdə nüfüzumuzu və etik davranış normalarını öndə tuturuq</p>
+            <p class="modal-content-text">- Öhdəliklərimizi ləyaqətlə yerinə yetiririk</p>
+            <p class="modal-content-text">- Fəaliyyətimizdə nüfüzumuzu və etik davranış normalarını öndə tuturuq</p>
+        </div>
+    </section>
+</section>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

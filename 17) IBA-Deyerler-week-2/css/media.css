@@ -1,0 +1,127 @@
+@media screen and  (max-width: 1400px) {
+
+}
+
+@media screen and  (min-width: 1400px) {
+
+}
+
+@media screen  and (max-width: 1280px) {
+
+}
+
+@media screen  and (max-width: 1200px) {
+
+}
+
+@media screen  and (max-width: 992px) {
+    .main-header {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .modal {
+        padding: 24px;
+        height: 100%;
+        width: 100%;
+        max-height: none;
+        min-height: 0;
+    }
+    .modal-container {
+        height: -webkit-fill-available;
+        width: 100%;
+        background-color: #fff;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+    }
+    .modal-header {
+        display: flex;
+        align-items: center;
+        padding-top: 2px;
+        padding-bottom: 18px;
+    }
+    .modal-header-close {
+        margin-left: auto;
+        position: static;
+        filter: none;
+    }
+
+    .modal-content-text {
+        width: auto;
+    }
+}
+
+@media screen  and (min-width: 992px) {
+
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 639px) {
+    .main {
+        padding: 0 20px 50px;
+        height: auto;
+        display: block;
+    }
+
+    .main-header {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 16px;
+    }
+
+    .logo {
+        position: static;
+        margin-bottom: 24px;
+        transform: translateX(0);
+        margin-top: 16px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo > img {
+        width: 132px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .card:first-child {
+        margin-right: 0;
+    }
+
+    .card:last-child {
+        margin-bottom: 0;
+    }
+
+    .card-mushteri {
+        background-size: cover;
+    }
+
+    .modal {
+        padding: 16px;
+    }
+    .modal-header-text {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+
+}
+
+@media screen and (max-width: 374px) {
+
+}

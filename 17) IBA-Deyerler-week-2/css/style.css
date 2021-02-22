@@ -56,6 +56,10 @@ html, body {
   background: url("../img/bg-mushteri.png") no-repeat right, #1289FF;
 }
 
+.card-mukemmellik {
+  background: url("../img/bg-mukemmellik.png") no-repeat left bottom, #62E8B1;
+}
+
 .card-logo {
   margin-bottom: 16px;
 }
@@ -139,6 +143,13 @@ html, body {
 
 .modal-durustluk {
   background: url("../img/durustluk-modal-icon.svg") no-repeat bottom right ,#0055B8;
+  background-position-x: calc(100% - 40px);
+  background-position-y: calc(100% - 40px);
+
+}
+
+.modal-mukemmellik {
+  background: url("../img/mukemmellik-modal-icon.png") no-repeat bottom right , #62E8B1;
   background-position-x: calc(100% - 40px);
   background-position-y: calc(100% - 40px);
 

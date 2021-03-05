@@ -7,18 +7,14 @@ html, body {
 }
 
 .main {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+
 }
 
 .logo {
-  position: absolute;
-  top: 32px;
-  left: 50%;
-  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  padding-top: 32px;
+  margin-bottom: 212px;
 }
 
 .main-header {
@@ -32,9 +28,12 @@ html, body {
   margin-bottom: 80px;
 }
 
-.cards-container{
+.cards-container {
+  width: 580px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -42,10 +41,7 @@ html, body {
   width: 280px;
   height: 216px;
   cursor: pointer;
-}
-
-.card:first-child {
-  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .card-durustluk {
@@ -59,6 +55,20 @@ html, body {
 .card-mukemmellik {
   background: url("../img/bg-mukemmellik.png") no-repeat left bottom, #62E8B1;
 }
+
+.card-sahibkar {
+  background: url("../img/bg-sahibkarliq.png") no-repeat right, #EB028F;
+}
+
+.card-semeri {
+  background: url("../img/bg-semeri.png") no-repeat right, #8E94D1;
+}
+
+.card-lider {
+  background: url("../img/bg-lider.png") no-repeat right, #1CBDC4;
+}
+
+
 
 .card-logo {
   margin-bottom: 16px;
@@ -80,7 +90,9 @@ html, body {
   color: #FFFFFF;
 }
 
-
+.card-all {
+  display: none;
+}
 
 /* Modal */
 
@@ -145,12 +157,34 @@ html, body {
   background: url("../img/durustluk-modal-icon.svg") no-repeat bottom right ,#0055B8;
   background-position-x: calc(100% - 40px);
   background-position-y: calc(100% - 40px);
-
 }
 
 .modal-mukemmellik {
   background: url("../img/mukemmellik-modal-icon.svg") no-repeat bottom right , #62E8B1;
   background-position-x: calc(100% - 40px);
   background-position-y: calc(100% - 40px);
+}
 
+.modal-sahibkar {
+  background: url("../img/sahibkarlıq-modal-icon.svg") no-repeat bottom right , #EB028F;
+  background-position-x: calc(100% - 40px);
+  background-position-y: calc(100% - 40px);
+}
+
+.modal-mushteri {
+  background: url("../img/musteri-modal-icon.svg") no-repeat bottom right , #1289FF;
+  background-position-x: calc(100% - 40px);
+  background-position-y: calc(100% - 40px);
+}
+
+.modal-semeri {
+  background: url("../img/semeri-modal-icon.svg") no-repeat bottom right , #8E94D1;
+  background-position-x: calc(100% - 40px);
+  background-position-y: calc(100% - 40px);
+}
+
+.modal-lider {
+  background: url("../img/lider-modal-icon.svg") no-repeat bottom right , #1CBDC4;
+  background-position-x: calc(100% - 40px);
+  background-position-y: calc(100% - 40px);
 }

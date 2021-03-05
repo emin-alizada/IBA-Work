@@ -86,6 +86,7 @@
     }
 
     .cards-container {
+        width: auto;
         flex-direction: column;
     }
 
@@ -119,12 +120,28 @@
         margin-right: 0;
     }
 
-    .card:last-child {
-        margin-bottom: 0;
+    .card-old {
+        display: none;
     }
 
-    .card-mushteri {
-        background-size: cover;
+    .card-all {
+        display: inline-block;
+        position: fixed;
+        bottom: 24px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 15px 24px;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #021224;
+        border: none;
+
+        background: #FFFFFF;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+        border-radius: 80px;
     }
 
     .modal {

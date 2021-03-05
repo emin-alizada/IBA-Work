@@ -20,3 +20,9 @@ $('.card').on('click', openModal);
 $(document).ready(function (e) {
     $('.card').addClass('animated');
 });
+
+$(".card-all").on('click', function (e) {
+    $(".card-old").fadeIn();
+
+    $('.card-all').fadeOut();
+});

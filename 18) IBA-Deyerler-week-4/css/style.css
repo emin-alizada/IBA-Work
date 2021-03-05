@@ -1,0 +1,190 @@
+@import url('reset.css');
+/*@import url('fonts.css');*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+html, body {
+  font-family: 'Manrope', sans-serif;
+}
+
+.main {
+
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 32px;
+  margin-bottom: 212px;
+}
+
+.main-header {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 72px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #021224;
+  margin-bottom: 80px;
+}
+
+.cards-container {
+  width: 580px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 20px;
+  width: 280px;
+  height: 216px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.card-durustluk {
+  background: url("../img/bg-durustluk.png") no-repeat right, #0055B8;
+}
+
+.card-mushteri {
+  background: url("../img/bg-mushteri.png") no-repeat right, #1289FF;
+}
+
+.card-mukemmellik {
+  background: url("../img/bg-mukemmellik.png") no-repeat left bottom, #62E8B1;
+}
+
+.card-sahibkar {
+  background: url("../img/bg-sahibkarliq.png") no-repeat right, #EB028F;
+}
+
+.card-semeri {
+  background: url("../img/bg-semeri.png") no-repeat right, #8E94D1;
+}
+
+.card-lider {
+  background: url("../img/bg-lider.png") no-repeat right, #1CBDC4;
+}
+
+
+
+.card-logo {
+  margin-bottom: 16px;
+}
+
+.card-header {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+}
+
+.card-description {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.card-all {
+  display: none;
+}
+
+/* Modal */
+
+.modal {
+  padding: 40px;
+  /*min-height: 346px;*/
+  /*max-height: 514px;*/
+  width: 400px;
+  position: relative;
+}
+.modal-container {
+  height: 100vh;
+  height: 100%;
+  height: -webkit-fill-available;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.modal-header-text {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+}
+.modal-header-close {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.modal-content {
+
+}
+
+.modal-content-text {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+  width: 280px;
+}
+
+
+.modal-content-text:last-child {
+  margin-bottom: 40px;
+}
+
+
+.modal-durustluk {
+  background: url("../img/durustluk-modal-icon.svg") no-repeat bottom right ,#0055B8;
+  background-position-x: calc(100% - 40px);
+  background-position-y: calc(100% - 40px);
+}
+
+.modal-mukemmellik {
+  background: url("../img/mukemmellik-modal-icon.svg") no-repeat bottom right , #62E8B1;
+  background-position-x: calc(100% - 40px);
+  background-position-y: calc(100% - 40px);
+}
+
+.modal-sahibkar {
+  background: url("../img/sahibkarlıq-modal-icon.svg") no-repeat bottom right , #EB028F;
+  background-position-x: calc(100% - 40px);
+  background-position-y: calc(100% - 40px);
+}
+
+.modal-mushteri {
+  background: url("../img/musteri-modal-icon.svg") no-repeat bottom right , #1289FF;
+  background-position-x: calc(100% - 40px);
+  background-position-y: calc(100% - 40px);
+}
+
+.modal-semeri {
+  background: url("../img/semeri-modal-icon.svg") no-repeat bottom right , #8E94D1;
+  background-position-x: calc(100% - 40px);
+  background-position-y: calc(100% - 40px);
+}
+
+.modal-lider {
+  background: url("../img/lider-modal-icon.svg") no-repeat bottom right , #1CBDC4;
+  background-position-x: calc(100% - 40px);
+  background-position-y: calc(100% - 40px);
+}

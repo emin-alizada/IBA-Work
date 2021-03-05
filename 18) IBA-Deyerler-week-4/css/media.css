@@ -1,0 +1,163 @@
+@media screen and  (max-width: 1400px) {
+
+}
+
+@media screen and  (min-width: 1400px) {
+
+}
+
+@media screen  and (max-width: 1280px) {
+
+}
+
+@media screen  and (max-width: 1200px) {
+
+}
+
+@media screen  and (max-width: 992px) {
+    .main-header {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .modal {
+        padding: 24px;
+        height: 100%;
+        width: 100%;
+        max-height: none;
+        min-height: 0;
+    }
+    .modal-container {
+        height: -webkit-fill-available;
+        width: 100%;
+        background-color: #fff;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+    }
+    .modal-header {
+        display: flex;
+        align-items: center;
+    }
+    .modal-header-close {
+        margin-left: auto;
+        position: static;
+        filter: none;
+    }
+
+    .modal-content-text {
+        width: auto;
+    }
+}
+
+@media screen  and (min-width: 992px) {
+
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 639px) {
+    .main {
+        padding: 0 20px 50px;
+        height: auto;
+        display: block;
+    }
+
+    .main-header {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 16px;
+    }
+
+    .logo {
+        position: static;
+        margin-bottom: 24px;
+        transform: translateX(0);
+        margin-top: 16px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo > img {
+        width: 132px;
+    }
+
+    .cards-container {
+        width: auto;
+        flex-direction: column;
+    }
+
+    .card {
+        position: relative;
+        width: 100%;
+        margin-bottom: 16px;
+        transition: all 800ms;
+    }
+
+    .card:nth-child(even) {
+        left: -150%;
+        opacity: 0;
+    }
+
+    .card:nth-child(odd) {
+        right: -150%;
+        opacity: 0;
+    }
+
+    .animated:nth-child(even) {
+        left: 0;
+        opacity: 100%;
+    }
+
+    .animated:nth-child(odd) {
+        right: 0;
+        opacity: 100%;
+    }
+    .card:first-child {
+        margin-right: 0;
+    }
+
+    .card-old {
+        display: none;
+    }
+
+    .card-all {
+        display: inline-block;
+        position: fixed;
+        bottom: 24px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 15px 24px;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #021224;
+        border: none;
+
+        background: #FFFFFF;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+        border-radius: 80px;
+    }
+
+    .modal {
+        padding: 16px;
+    }
+    .modal-header-text {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+
+}
+
+@media screen and (max-width: 374px) {
+
+}

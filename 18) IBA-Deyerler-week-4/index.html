@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABB Dəyərlər</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+<main class="main">
+    <figure class="logo">
+        <img src="img/bu-bizik-logo.svg" alt="BU Bizik">
+    </figure>
+
+    <div>
+        <h1 class="main-header">ABB-nin yeni dəyərləri <br>
+            ilə tanış olun</h1>
+        <section class="cards-container">
+            <div class="card card-lider" data-modal-id="lider">
+                <figure class="card-logo">
+                    <img src="img/lider-icon.svg" alt="">
+                </figure>
+                <h2 class="card-header">liderlik<br>
+                    məkanı</h2>
+                <p class="card-description">Birlikdə cəmimizdən<br>
+                    daha böyüyük</p>
+            </div>
+
+            <div class="card card-semeri" data-modal-id="semeri">
+                <figure class="card-logo">
+                    <img src="img/semeri-icon.svg" alt="">
+                </figure>
+                <h2 class="card-header">ölçülmüş<br>
+                    səmərəlilik</h2>
+                <p class="card-description">Resurslarımızdan<br>
+                    maksimal faydalanırıq
+                </p>
+            </div>
+
+            <div class="card card-sahibkar card-old" data-modal-id="sahibkar">
+                <figure class="card-logo">
+                    <img src="img/sahibkarlıq-icon.svg" alt="">
+                </figure>
+                <h2 class="card-header">sahibkarlıq<br>
+                    ruhu</h2>
+                <p class="card-description">Sınanmamış yollarla <br>
+                    irəliləyirik</p>
+            </div>
+
+            <div class="card card-mushteri card-old" data-modal-id="mushteri">
+                <figure class="card-logo">
+                    <img src="img/musteri-icon.svg" alt="">
+                </figure>
+                <h2 class="card-header">müştəriyönümlü <br>
+                    yanaşma</h2>
+                <p class="card-description">Müştərilərimizə <br>
+                    rəğbət bəsləyirik</p>
+            </div>
+
+            <div class="card card-durustluk card-old" data-modal-id="durustluk">
+                <figure class="card-logo">
+                    <img src="img/care-icon.svg" alt="">
+                </figure>
+                <h2 class="card-header">qətiyyətli <br>
+                    dürüstlük</h2>
+                <p class="card-description">Nəyi nə zaman etməyəcəyimizi bilirik</p>
+            </div>
+
+            <div class="card card-mukemmellik card-old" data-modal-id="mukemmellik">
+                <figure class="card-logo">
+                    <img src="img/mukemmellik-icon.svg" alt="">
+                </figure>
+                <h2 class="card-header">işimizdə <br>
+                    mükəmməllik</h2>
+                <p class="card-description">Nəticə əldə edib, sonra <br> danışarıq</p>
+            </div>
+        </section>
+    </div>
+
+    <button class="card-all">
+        Bütün dəyərlər
+    </button>
+</main>
+
+<!--lider Modal-->
+<section class="modal-container" id="lider" style="display: none">
+    <section class="modal modal-lider">
+        <div class="modal-header">
+            <h4 class="modal-header-text">liderlik məkanı</h4>
+            <button class="modal-header-close" onclick="closeModal()">
+                <img src="img/close-icon.svg" alt="">
+            </button>
+        </div>
+        <div class="modal-content">
+            <p class="modal-content-text">- Potensialımızı üzə çıxarmaq üçün komanda işinə üstünlük veririk</p>
+            <p class="modal-content-text">- Fərdi nəticələri dəyərləndirir, nailiyyətləri alqışlayırıq</p>
+            <p class="modal-content-text">- Ruhlandırıcı və çevik iş mühiti yaradaraq istedadları cəlb edir və inkişaf etdiririk.</p>
+            <p class="modal-content-text">- Missiyamızın daha yaxşı icrası üçün iddialı liderlər yetişdiririk.</p>
+        </div>
+    </section>
+</section>
+
+<!--semeri Modal-->
+<section class="modal-container" id="semeri" style="display: none">
+    <section class="modal modal-semeri">
+        <div class="modal-header">
+            <h4 class="modal-header-text">ölçülmüş səmərəlilik</h4>
+            <button class="modal-header-close" onclick="closeModal()">
+                <img src="img/close-icon.svg" alt="">
+            </button>
+        </div>
+        <div class="modal-content">
+            <p class="modal-content-text">- Mövcud resurslardan səmərəli  istifadə edərək müştərilər üçün daha çox dəyər yaradırıq.</p>
+            <p class="modal-content-text">- Ölçülmüş risk götürərək yeni imkanlardan faydalanırıq</p>
+            <p class="modal-content-text">- Hər işimizdə effektivliyi və məhsuldarlığı təşviq edirik.</p>
+            <p class="modal-content-text">- Məhdudiyyətlərdən ilhamlanaraq onları imkanlara çeviririk.</p>
+        </div>
+    </section>
+</section>
+
+<!--sahibkar Modal-->
+<section class="modal-container" id="sahibkar" style="display: none">
+    <section class="modal modal-sahibkar">
+        <div class="modal-header">
+            <h4 class="modal-header-text">müştəriyönümlü yanaşma</h4>
+            <button class="modal-header-close" onclick="closeModal()">
+                <img src="img/close-icon.svg" alt="">
+            </button>
+        </div>
+        <div class="modal-content">
+            <p class="modal-content-text">- İnnovasiyaları tətbiq etməklə yeni imkanlar
+                yaradırıq
+            </p>
+            <p class="modal-content-text">- Ən yaxşı məhsullar yaratmaq üçün işimizə
+                kreativ yanaşırıq
+            </p>
+            <p class="modal-content-text">- Tərəfdaşlarla əlaqələr quraraq daha
+                yaxşı nəticələr əldə edirik
+            </p>
+            <p class="modal-content-text">- Çağırışlarla dəyişərək, bütün səviyyələrdə
+                sahibkarlıq ruhunu dəstəkləyirik
+            </p>
+        </div>
+    </section>
+</section>
+
+<!--mushteri Modal-->
+<section class="modal-container" id="mushteri" style="display: none">
+    <section class="modal modal-mushteri">
+        <div class="modal-header">
+            <h4 class="modal-header-text">qətiyyətli dürüstlük</h4>
+            <button class="modal-header-close" onclick="closeModal()">
+                <img src="img/close-icon.svg" alt="">
+            </button>
+        </div>
+        <div class="modal-content">
+            <p class="modal-content-text">- Daha yüksək səviyyəli xidmət üçün müştəri ehtiyaclarını qabaqlayırıq</p>
+            <p class="modal-content-text">- Müştərilərimizə dəyər ötürərək onların inkişafına dəstək oluruq</p>
+            <p class="modal-content-text">- Müştərilərimizlə qurduğumuz dərin münasibətlərlə onları daha yaxşı anlayırıq</p>
+            <p class="modal-content-text">- Daha yüksək xidmət üçün müştəri ehtiyaclarından öndəyik</p>
+        </div>
+    </section>
+</section>
+
+<!--Durustluk Modal-->
+<section class="modal-container" id="durustluk" style="display: none">
+    <section class="modal modal-durustluk">
+        <div class="modal-header">
+            <h4 class="modal-header-text">qətiyyətli dürüstlük</h4>
+            <button class="modal-header-close" onclick="closeModal()">
+                <img src="img/close-icon.svg" alt="">
+            </button>
+        </div>
+        <div class="modal-content">
+            <p class="modal-content-text">- Tərəfdaşlarımız qarşısında
+                cavabdehlik əsas məsuliyyətimizdir</p>
+            <p class="modal-content-text">- Gördüyümüz bütün işlərdə
+                şəffaflığa riayət edirik</p>
+            <p class="modal-content-text">- Öhdəliklərimizi ləyaqətlə yerinə yetiririk</p>
+            <p class="modal-content-text">- Fəaliyyətimizdə nüfuzumuzu və etik davranış normalarını öndə tuturuq</p>
+        </div>
+    </section>
+</section>
+
+<!--Mukemmellik Modal-->
+<section class="modal-container" id="mukemmellik" style="display: none">
+    <section class="modal modal-mukemmellik">
+        <div class="modal-header">
+            <h4 class="modal-header-text">işimizdə mükəmməllik</h4>
+            <button class="modal-header-close" onclick="closeModal()">
+                <img src="img/close-icon.svg" alt="">
+            </button>
+        </div>
+        <div class="modal-content">
+            <p class="modal-content-text">- Bank olaraq vədlərimizi mükəmməl yerinə yetiririk</p>
+            <p class="modal-content-text">- Yüksək standartlar üçün əzmkarlıqla inkişaf edirik</p>
+            <p class="modal-content-text">- Düşünülmüş qərarlar verərək vaxtında addım atırıq</p>
+            <p class="modal-content-text">- Hər işdə bütün təfərrüatları nəzərə alırıq</p>
+        </div>
+    </section>
+</section>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

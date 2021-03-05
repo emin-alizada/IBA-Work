@@ -20,7 +20,17 @@
         <h1 class="main-header">ABB-nin yeni dəyərləri <br>
             ilə tanış olun</h1>
         <section class="cards-container">
-            <div class="card card-lider" data-modal-id="lider">
+            <div class="card card-vetendas" data-modal-id="vetendas">
+                <figure class="card-logo">
+                    <img src="img/vetendas-icon.svg" alt="">
+                </figure>
+                <h2 class="card-header">vətəndaşlıq <br>
+                    məsuliyyəti</h2>
+                <p class="card-description">Cəmiyyətimizin gələcəyinə <br>
+                    töhfə veririk</p>
+            </div>
+
+            <div class="card card-lider card-old" data-modal-id="lider">
                 <figure class="card-logo">
                     <img src="img/lider-icon.svg" alt="">
                 </figure>
@@ -30,7 +40,7 @@
                     daha böyüyük</p>
             </div>
 
-            <div class="card card-semeri" data-modal-id="semeri">
+            <div class="card card-semeri card-old" data-modal-id="semeri">
                 <figure class="card-logo">
                     <img src="img/semeri-icon.svg" alt="">
                 </figure>
@@ -67,7 +77,7 @@
                 </figure>
                 <h2 class="card-header">qətiyyətli <br>
                     dürüstlük</h2>
-                <p class="card-description">Nəyi nə zaman etməyəcəyimizi bilirik</p>
+                <p class="card-description">Nəyi heç vaxt <br>etməyəcəyimizi bilirik</p>
             </div>
 
             <div class="card card-mukemmellik card-old" data-modal-id="mukemmellik">
@@ -85,6 +95,24 @@
         Bütün dəyərlər
     </button>
 </main>
+
+<!--vetendas Modal-->
+<section class="modal-container" id="vetendas" style="display: none">
+    <section class="modal modal-vetendas">
+        <div class="modal-header">
+            <h4 class="modal-header-text">Vətəndaşlıq məsuliyyəti</h4>
+            <button class="modal-header-close" onclick="closeModal()">
+                <img src="img/close-icon.svg" alt="">
+            </button>
+        </div>
+        <div class="modal-content">
+            <p class="modal-content-text">- İctimai maraqlar naminə fəaliyyətimizdə məsuliyyətli davranırıq.</p>
+            <p class="modal-content-text">- İctimaiyyətimizin inkişafına dəstək oluruq.</p>
+            <p class="modal-content-text">- Ölkəmiz üçün yüksək ixtisaslı kadrlar hazırlayır, onların inkişafını dəstəkləyirik</p>
+            <p class="modal-content-text">- Qısamüddətli çağırışlara rəğmən uzunmüddətli nəticələri düşünərək davranırıq.</p>
+        </div>
+    </section>
+</section>
 
 <!--lider Modal-->
 <section class="modal-container" id="lider" style="display: none">
@@ -126,7 +154,7 @@
 <section class="modal-container" id="sahibkar" style="display: none">
     <section class="modal modal-sahibkar">
         <div class="modal-header">
-            <h4 class="modal-header-text">müştəriyönümlü yanaşma</h4>
+            <h4 class="modal-header-text">sahibkarlıq ruhu</h4>
             <button class="modal-header-close" onclick="closeModal()">
                 <img src="img/close-icon.svg" alt="">
             </button>
@@ -152,16 +180,16 @@
 <section class="modal-container" id="mushteri" style="display: none">
     <section class="modal modal-mushteri">
         <div class="modal-header">
-            <h4 class="modal-header-text">qətiyyətli dürüstlük</h4>
+            <h4 class="modal-header-text">müştəriyönümlü yanaşma</h4>
             <button class="modal-header-close" onclick="closeModal()">
                 <img src="img/close-icon.svg" alt="">
             </button>
         </div>
         <div class="modal-content">
-            <p class="modal-content-text">- Daha yüksək səviyyəli xidmət üçün müştəri ehtiyaclarını qabaqlayırıq</p>
+            <p class="modal-content-text">- Müştəriləri duyaraq onlara özəl xidmət təqdim edirik</p>
             <p class="modal-content-text">- Müştərilərimizə dəyər ötürərək onların inkişafına dəstək oluruq</p>
             <p class="modal-content-text">- Müştərilərimizlə qurduğumuz dərin münasibətlərlə onları daha yaxşı anlayırıq</p>
-            <p class="modal-content-text">- Daha yüksək xidmət üçün müştəri ehtiyaclarından öndəyik</p>
+            <p class="modal-content-text">- Daha yüksək səviyyəli xidmət üçün müştəri ehtiyaclarını qabaqlayırıq</p>
         </div>
     </section>
 </section>

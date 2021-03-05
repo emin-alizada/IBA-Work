@@ -68,6 +68,10 @@ html, body {
   background: url("../img/bg-lider.png") no-repeat right, #1CBDC4;
 }
 
+.card-vetendas {
+  background: url("../img/bg-vetendas.png") no-repeat left, #61549F;
+}
+
 
 
 .card-logo {
@@ -185,6 +189,12 @@ html, body {
 
 .modal-lider {
   background: url("../img/lider-modal-icon.svg") no-repeat bottom right , #1CBDC4;
+  background-position-x: calc(100% - 40px);
+  background-position-y: calc(100% - 40px);
+}
+
+.modal-vetendas {
+  background: url("../img/vetendas-modal-icon.svg") no-repeat bottom right , #61549F;
   background-position-x: calc(100% - 40px);
   background-position-y: calc(100% - 40px);
 }

@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'Pepi';
+    src: url('PepiThin-Regular.eot');
+    src: url('PepiThin-Regular.eot?#iefix') format('embedded-opentype'),
+    url('PepiThin-Regular.ttf') format('truetype'),
+    url('PepiThin-Regular.woff') format('woff'),
+    url('PepiThin-Regular.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pepi';
+    src: url('PepiThin-Italic.eot');
+    src: url('PepiThin-Italic.eot?#iefix') format('embedded-opentype'),
+    url('PepiThin-Italic.ttf') format('truetype'),
+    url('PepiThin-Italic.woff') format('woff'),
+    url('PepiThin-Italic.woff2') format('woff2');
+    font-weight: 100;
+    font-style: italic;
+}
+
+/*@font-face {*/
+/*    font-family: 'Pepi';*/
+/*    src: url('PepiThin-Regular.eot');*/
+/*    src: url('PepiThin-Regular.eot?#iefix') format('embedded-opentype'),*/
+/*    url('PepiThin-Regular.ttf') format('truetype'),*/
+/*    url('PepiThin-Regular.woff') format('woff'),*/
+/*    url('PepiThin-Regular.woff2') format('woff2');*/
+/*    font-weight: 200;*/
+/*    font-style: normal;*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: 'Pepi';*/
+/*    src: url('PepiThin-Italic.eot');*/
+/*    src: url('PepiThin-Italic.eot?#iefix') format('embedded-opentype'),*/
+/*    url('PepiThin-Italic.ttf') format('truetype'),*/
+/*    url('PepiThin-Italic.woff') format('woff'),*/
+/*    url('PepiThin-Italic.woff2') format('woff2');*/
+/*    font-weight: 200;*/
+/*    font-style: italic;*/
+/*}*/
+
+@font-face {
+    font-family: 'Pepi';
+    src: url('PepiLight-Regular.eot');
+    src: url('PepiLight-Regular.eot?#iefix') format('embedded-opentype'),
+    url('PepiLight-Regular.ttf') format('truetype'),
+    url('PepiLight-Regular.woff') format('woff'),
+    url('PepiLight-Regular.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pepi';
+    src: url('PepiLight-Italic.eot');
+    src: url('PepiLight-Italic.eot?#iefix') format('embedded-opentype'),
+    url('PepiLight-Italic.ttf') format('truetype'),
+    url('PepiLight-Italic.woff') format('woff'),
+    url('PepiLight-Italic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Pepi';
+    src: url('PepiRegular-Regular.eot');
+    src: url('PepiRegular-Regular.eot?#iefix') format('embedded-opentype'),
+    url('PepiRegular-Regular.ttf') format('truetype'),
+    url('PepiRegular-Regular.woff') format('woff'),
+    url('PepiRegular-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pepi';
+    src: url('PepiRegular-Italic.eot');
+    src: url('PepiRegular-Italic.eot?#iefix') format('embedded-opentype'),
+    url('PepiRegular-Italic.ttf') format('truetype'),
+    url('PepiRegular-Italic.woff') format('woff'),
+    url('PepiRegular-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Pepi';
+    src: url('PepiMedium-Regular.eot');
+    src: url('PepiMedium-Regular.eot?#iefix') format('embedded-opentype'),
+    url('PepiMedium-Regular.ttf') format('truetype'),
+    url('PepiMedium-Regular.woff') format('woff'),
+    url('PepiMedium-Regular.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pepi';
+    src: url('PepiMedium-Italic.eot');
+    src: url('PepiMedium-Italic.eot?#iefix') format('embedded-opentype'),
+    url('PepiMedium-Italic.ttf') format('truetype'),
+    url('PepiMedium-Italic.woff') format('woff'),
+    url('PepiMedium-Italic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Pepi';
+    src: url('PepiSemiBold.eot');
+    src: url('PepiSemiBold.eot?#iefix') format('embedded-opentype'),
+    url('PepiSemiBold.ttf') format('truetype'),
+    url('PepiSemiBold.woff') format('woff'),
+    url('PepiSemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pepi';
+    src: url('PepiSemiBold-Italic.eot');
+    src: url('PepiSemiBold-Italic.eot?#iefix') format('embedded-opentype'),
+    url('PepiSemiBold-Italic.ttf') format('truetype'),
+    url('PepiSemiBold-Italic.woff') format('woff'),
+    url('PepiSemiBold-Italic.woff2') format('woff2');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Pepi';
+    src: url('PepiBold-Bold.eot');
+    src: url('PepiBold-Bold.eot?#iefix') format('embedded-opentype'),
+    url('PepiBold-Bold.ttf') format('truetype'),
+    url('PepiBold-Bold.woff') format('woff'),
+    url('PepiBold-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pepi';
+    src: url('PepiBold-BoldItalic.eot');
+    src: url('PepiBold-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('PepiBold-BoldItalic.ttf') format('truetype'),
+    url('PepiBold-BoldItalic.woff') format('woff'),
+    url('PepiBold-BoldItalic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Pepi';
+    src: url('PepiHeavy-Regular.eot');
+    src: url('PepiHeavy-Regular.eot?#iefix') format('embedded-opentype'),
+    url('PepiHeavy-Regular.ttf') format('truetype'),
+    url('PepiHeavy-Regular.woff') format('woff'),
+    url('PepiHeavy-Regular.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pepi';
+    src: url('PepiHeavy-Italic.eot');
+    src: url('PepiHeavy-Italic.eot?#iefix') format('embedded-opentype'),
+    url('PepiHeavy-Italic.ttf') format('truetype'),
+    url('PepiHeavy-Italic.woff') format('woff'),
+    url('PepiHeavy-Italic.woff2') format('woff2');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Pepi';
+    src: url('PepiBlack-Regular.eot');
+    src: url('PepiBlack-Regular.eot?#iefix') format('embedded-opentype'),
+    url('PepiBlack-Regular.ttf') format('truetype'),
+    url('PepiBlack-Regular.woff') format('woff'),
+    url('PepiBlack-Regular.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pepi';
+    src: url('PepiBlack-Italic.eot');
+    src: url('PepiBlack-Italic.eot?#iefix') format('embedded-opentype'),
+    url('PepiBlack-Italic.ttf') format('truetype'),
+    url('PepiBlack-Italic.woff') format('woff'),
+    url('PepiBlack-Italic.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+}

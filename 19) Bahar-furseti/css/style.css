@@ -1,0 +1,147 @@
+@import url('reset.css');
+@import url('../fonts/stylesheet.css');
+
+html, body {
+  font-family: 'Pepi';
+}
+
+.main {
+  height: 100vh;
+  background: linear-gradient(131.3deg, #D4D2E1 2.85%, #C5D2E5 94.64%);
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+  width: 100%;
+}
+
+.nav-social {
+  display: flex;
+}
+
+.nav-social-icon-container {
+  margin-right: 12px;
+}
+
+.nav-social-icon-container:last-child {
+  margin-right: 0;
+}
+
+.main-content {
+  width: 100%;
+}
+
+.content {
+  width: 588px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-subtitle {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+
+  margin-bottom: 24px;
+  padding: 9px 12px;
+
+  background: linear-gradient(92.39deg, #EC87FF 9.61%, #E454FF 94.69%);
+  border-radius: 64px;
+}
+
+.content-header {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 54px;
+  text-align: center;
+  color: #0A1133;
+  margin-bottom: 20px;
+}
+
+.content-text {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #0A1133;
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.cards {
+  background: #FFFFFF;
+  border-radius: 24px;
+  border: 6px solid #fff;
+  width: 22%;
+}
+
+.cards-img {
+  border-radius: 16px 16px 0 0;
+  width: 100%;
+}
+
+.cards-header {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #0A1133;
+  margin: 16px 0 14px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  width: 100%;
+}
+
+.footer-app-container {
+  display: flex;
+  align-items: center;
+}
+
+.footer-app {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-app:first-child {
+  margin-right: 12px;
+}
+
+.footer-app img {
+  margin-right: 8px;
+}
+
+.footer-app span {
+  color: #677387;
+}

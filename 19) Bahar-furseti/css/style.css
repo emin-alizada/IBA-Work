@@ -2,15 +2,20 @@
 @import url('../fonts/stylesheet.css');
 
 html, body {
-  font-family: 'Pepi';
+  font-family: 'Pepi', sans-serif;
+  background: linear-gradient(131.3deg, #D4D2E1 2.85%, #C5D2E5 94.64%);
 }
 
 .main {
   height: 100vh;
-  background: linear-gradient(131.3deg, #D4D2E1 2.85%, #C5D2E5 94.64%);
   padding: 20px 0;
   display: flex;
   flex-direction: column;
+}
+
+.inner-main {
+  height: auto;
+  display: block;
 }
 
 .container {
@@ -92,11 +97,27 @@ html, body {
   align-items: stretch;
 }
 
+.card-container-mobile {
+  display: none;
+}
+
 .cards {
   background: #FFFFFF;
   border-radius: 24px;
   border: 6px solid #fff;
   width: 22%;
+}
+
+.inner-cards-container {
+  margin-bottom: 100px;
+}
+
+.inner-cards-container .cards {
+  width: 30%;
+}
+
+.inner-content-main {
+  width: 47%;
 }
 
 .cards-img {
@@ -113,6 +134,76 @@ html, body {
   margin: 16px 0 14px;
 }
 
+.inner-cards-container .cards-header {
+  margin: 20px 0 8px 18px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.cards-desc {
+  font-size: 16px;
+  line-height: 20px;
+  color: #0A1133;
+  opacity: 0.8;
+  margin-left: 18px;
+  margin-right: 18px;
+  margin-bottom: 18px;
+}
+
+.inner-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+  align-items: flex-start;
+}
+
+.inner-content-main-header {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 54px;
+  color: #0A1133;
+  margin: 20px 0 12px;
+}
+
+.inner-content-main-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #0A1133;
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+.mr-40 {
+  margin-right: 40px;
+}
+
+.order-button {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 18px 24px;
+  background: linear-gradient(102.43deg, #67B7F9 7.52%, #249BFD 98.06%);
+  border-radius: 8px;
+}
+
+.inner-content-photo {
+  width: 47%;
+  border: 6px solid white;
+  border-radius: 16px;
+  display: flex;
+  align-items: start;
+}
+
+.inner-content-photo img {
+  border-radius: 10px;
+  width: 100%;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -123,7 +214,7 @@ html, body {
 
 .footer-app-container {
   display: flex;
-  align-items: center;
+  align-items: stretch;
 }
 
 .footer-app {
@@ -144,4 +235,8 @@ html, body {
 
 .footer-app span {
   color: #677387;
+}
+
+.footer .nav-social {
+  display: none;
 }

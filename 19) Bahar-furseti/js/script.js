@@ -1,22 +1,12 @@
-function openModal(e, modalId) {
-    document.body.style.overflow = "hidden";
-    const id = modalId || $(this).data("modalId");
-    $(`#${id}`).fadeIn("fast");
+const defaults = {
+    speed: 500,
+    loop: false,
+    grabCursor: true,
+    slidesPerView: 'auto',
+    autoHeight: true,
+    autoplay: {
+        delay: 5000
+    }
+};
 
-    $(`#${id}`).on('click', function (event) {
-        if (id === event.target.id) {
-            closeModal();
-        }
-    })
-}
-
-function closeModal() {
-    $(".modal-container").fadeOut("fast");
-    document.body.style.overflow = "auto";
-}
-
-$('.card').on('click', openModal);
-
-$(document).ready(function (e) {
-    $('.card').addClass('animated');
-});
+const slider =  new Swiper(".swiper", defaults);
